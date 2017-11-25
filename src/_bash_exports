@@ -51,6 +51,10 @@ if [ -d "$HOME/.rvm/bin" ] ; then
     PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 fi
 
+if [ -d "$HOME/.cargo/bin" ] ; then
+    export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
 export PATH
 
 # enable 256 colors in terminal (useful for vim colorschemes)

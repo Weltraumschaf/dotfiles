@@ -8,3 +8,5 @@ fi
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" 
 
 [[ -s "/usr/libexec/path_helper" ]] && eval $(/usr/libexec/path_helper -s)
+
+[[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env" 
