@@ -43,16 +43,21 @@ if [ -d "${HOME}/bin" ] ; then
   PATH="${HOME}/bin:${PATH}"
 fi
 
-if [ -d "$HOME/Library/Haskell/bin" ] ; then
+if [ -d "${HOME}/Library/Haskell/bin" ] ; then
     PATH="$HOME/Library/Haskell/bin:$PATH"
 fi
 
-if [ -d "$HOME/.rvm/bin" ] ; then
+if [ -d "${HOME}/.rvm/bin" ] ; then
     PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 fi
 
-if [ -d "$HOME/.cargo/bin" ] ; then
+if [ -d "${HOME}/.cargo/bin" ] ; then
     export PATH="$HOME/.cargo/bin:$PATH"
+
+fi
+
+if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
+    export RUST_SRC_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 fi
 
 export PATH
