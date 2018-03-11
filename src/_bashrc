@@ -95,8 +95,8 @@ if [ -f "/etc/bash_completion" ] && ! shopt -oq posix ; then
   source "/etc/bash_completion"
 fi
 
-if [ -f "${HOME}/.config/git-completion.bash" ] ; then
-  source "${HOME}/.config/git-completion.bash"
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+   source $(brew --prefix)/etc/bash_completion
 fi
 
 # Set CONCURRENCY_LEVEL to number of CPUs
@@ -156,3 +156,6 @@ fi
 [[ -s "${HOME}/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
 
 direnv help >/dev/null 2>&1 && eval "$(direnv hook bash)"
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
