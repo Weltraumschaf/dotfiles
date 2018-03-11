@@ -53,5 +53,3 @@ node_modules/
 *.synctex.gz
 *.toc
 *.lof
-
-.envrc
