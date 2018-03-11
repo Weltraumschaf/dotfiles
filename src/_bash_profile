@@ -10,3 +10,5 @@ fi
 [[ -s "/usr/libexec/path_helper" ]] && eval $(/usr/libexec/path_helper -s)
 
 [[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env" 
+
+export PATH="$HOME/.cargo/bin:$PATH"

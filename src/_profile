@@ -23,3 +23,5 @@ if [ -n "$ZSH_VERSION" ] ; then
         source "${HOME}/.zshrc"
     fi
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -63,6 +63,14 @@ if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/r
     export RUST_SRC_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 fi
 
+if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib" ] ; then
+    export DYLD_LIBRARY_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib"
+fi
+
+if [ -d "${HOME}/src/third/rls" ] ; then
+    export RLS_ROOT="${HOME}/src/third/rls"
+fi
+
 export PATH
 
 # enable 256 colors in terminal (useful for vim colorschemes)
