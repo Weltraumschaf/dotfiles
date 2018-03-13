@@ -157,5 +157,10 @@ fi
 
 direnv help >/dev/null 2>&1 && eval "$(direnv hook bash)"
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+if [ -f "$HOME/.nvm" ] ; then
+  export NVM_DIR="$HOME/.nvm"
+fi
+
+if [ -f "/usr/local/opt/nvm/nvm.sh" ] ; then
+  source "/usr/local/opt/nvm/nvm.sh"
+fi
