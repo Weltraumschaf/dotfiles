@@ -15,6 +15,8 @@ target/
 # Logs and databases #
 ######################
 *.log
+*.log.[0-9]
+*.log.*.[0-9]
 *.sqlite
 
 # OS generated files #
