@@ -54,10 +54,6 @@ else
     export TERM='xterm-color'
 fi
 
-if [ -d "${HOME}/Applications/UMLet" ] ; then
-    export UMLET_HOME="${HOME}/Applications/UMLet"
-fi
-
 if [ -d /usr/share/ant/ ] ; then
     export ANT_HOME="/usr/share/ant"
 fi
