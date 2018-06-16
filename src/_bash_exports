@@ -6,11 +6,6 @@ if [ -d "/opt/local/libexec/gnubin" ] ; then
   PATH="/opt/local/libexec/gnubin:${PATH}"
 fi
 
-# mysql binaries
-if [ -d "/usr/local/mysql/bin" ] ; then
-  PATH="/usr/local/mysql/bin:${PATH}"
-fi
-
 # Haskell Plattform
 if [ -d "${HOME}/Library/Haskell/bin" ] ; then
   PATH="${HOME}/Library/Haskell/bin:${PATH}"
