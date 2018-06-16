@@ -12,10 +12,6 @@ fi
 # dont nerv me!
 set bell-style none
 
-# don't put duplicate lines in the history. See bash(1) for more options
-# ... or force ignoredups and ignorespace
-HISTCONTROL=ignoredups:ignorespace
-
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -29,10 +25,6 @@ shopt -s checkwinsize
 
 if [ -f "${HOME}/.bash_exports" ] ; then
   source "${HOME}/.bash_exports"
-fi
-
-if [ -f "${HOME}/.config/golang" ] ; then
-  source "${HOME}/.config/golang"
 fi
 
 if [ -f "$HOME/.config/perl" ] ; then

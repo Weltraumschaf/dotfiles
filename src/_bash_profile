@@ -3,12 +3,10 @@ if [ -f "${HOME}/.profile" ] ; then
 fi
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc" 
+[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
 
 [[ -s "/usr/libexec/path_helper" ]] && eval $(/usr/libexec/path_helper -s)
 
-[[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env" 
-
-export PATH="$HOME/.cargo/bin:$PATH"
+[[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
