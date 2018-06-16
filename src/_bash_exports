@@ -54,7 +54,7 @@ else
     export TERM='xterm-color'
 fi
 
-if [ -d /usr/share/ant/ ] ; then
+if [ -d "/usr/share/ant" ] ; then
     export ANT_HOME="/usr/share/ant"
 fi
 
@@ -70,6 +70,7 @@ export EDITOR="nano"
 export MANPAGER="less -X"
 
 # Highlight section titles in manual pages
+# https://unix.stackexchange.com/questions/87261/getting-unexpected-colorized-output-on-several-commands
 export LESS_TERMCAP_md="$ORANGE"
 
 # make less more friendly for non-text input files, see lesspipe(1)
@@ -83,13 +84,11 @@ export PAGER=less
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
-
 # Make some commands not show up in history
 export HISTIGNORE="cd:cd -:pwd;exit:date:* --help"
 
 # http://www.gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html#The-LANGUAGE-variable
 export LANGUAGE=en_US.UTF-8
-
 # Set to UTF-8 and english locale
 # http://www.gnu.org/software/gettext/manual/html_node/Locale-Environment-Variables.html
 export LANG=en_US.UTF-8
@@ -101,7 +100,6 @@ export CLICOLOR=1
 export DARCS_DONT_ESCAPE_8BIT=1
 export DARCS_DO_COLOR_LINES=1
 export DARCS_ALWAYS_COLOR=1
-
 
 if [ "linux-gnu" = "${OSTYPE}" ]; then
     # Export some debian stuff
