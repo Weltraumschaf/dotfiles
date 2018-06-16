@@ -38,12 +38,12 @@ force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	    # We have color support; assume it's compliant with Ecma-48
-	    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	    # a case would tend to support setf rather than setaf.)
-	    color_prompt=yes
+        # We have color support; assume it's compliant with Ecma-48
+        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+        # a case would tend to support setf rather than setaf.)
+        color_prompt=yes
     else
-	    color_prompt=
+        color_prompt=
     fi
 fi
 
@@ -59,9 +59,9 @@ else
 fi
 
 if [ "${color_prompt}" = yes ] ; then
-	PS1='\u@\h \w \[\033[90m\]$(__git_ps1)\[\033[37m\]$\[\033[00m\] '
+    PS1='\u@\h \w \[\033[90m\]$(__git_ps1)\[\033[37m\]$\[\033[00m\] '
 else
-	PS1='\u@\h \w $(__git_ps1) '
+    PS1='\u@\h \w $(__git_ps1) '
 fi
 
 export PS1
@@ -69,22 +69,22 @@ export PS1
 unset color_prompt force_color_prompt
 
 if [ -f "${HOME}/.bash_aliases" ] ; then
-  source "${HOME}/.bash_aliases"
+    source "${HOME}/.bash_aliases"
 fi
 
 if [ -f "${HOME}/.ssh_aliases" ] ; then
- 	source "${HOME}/.ssh_aliases"
+    source "${HOME}/.ssh_aliases"
 fi
 
 if [ -f "${HOME}/.local_aliases" ] ; then
-  source "${HOME}/.local_aliases"
+    source "${HOME}/.local_aliases"
 fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if [ -f "/etc/bash_completion" ] && ! shopt -oq posix ; then
-  source "/etc/bash_completion"
+    source "/etc/bash_completion"
 fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -108,7 +108,7 @@ export CONCURRENCY_LEVEL
 
 # Source additional information, which applies to the current host only
 if [ -f "${HOME}/.bash_local" ]; then
-	source "${HOME}/.bash_local"
+    source "${HOME}/.bash_local"
 fi
 
 # In case, we've changed the directory, switch back to home dir
@@ -117,32 +117,8 @@ cd
 #if [ "$SHLVL" -lt 2 ]; then
 #	echo "Hit Ctrl+C to not raise screen now!"
 #	sleep 1
-#	screen -D -r
-#else
-if [ "$SHLVL" -gt 4 ]; then
-    function ssh() {
-        hname=${1##*@}
-        echo -n -e "\033k$hname\033\\"
-        $(which ssh) $@
-        echo -n -e "\033k`hostname`\033\\"
-    }
-
-    function telnet() {
-        echo -n -e "\033k$1\033\\"
-        $(which telnet) $@
-        echo -n -e "\033k`hostname`\033\\"
-    }
-
-  echo -n -e "\033k`hostname`\033\\"
-fi
-
-export _PATH=$PATH # Workaround for screen on mac os
-
-if command -v brew >/dev/null 2>&1; then
-    if [ -f `brew --prefix`/Library/Contributions/brew_bash_completion.sh ]; then
-      source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
-    fi
-fi
+#	tmux attach
+#fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "${HOME}/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
