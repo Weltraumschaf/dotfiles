@@ -45,10 +45,6 @@ if [ -d "${HOME}/src/third/rls" ] ; then
     export RLS_ROOT="${HOME}/src/third/rls"
 fi
 
-if [ -d "${HOME}/.cargo/bin" ] ; then
-    export PATH="${HOME}/.cargo/bin:$PATH"
-fi
-
 export PATH
 
 # enable 256 colors in terminal (useful for vim colorschemes)
