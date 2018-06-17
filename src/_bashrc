@@ -87,21 +87,21 @@ if [ -f "/etc/bash_completion" ] && ! shopt -oq posix ; then
     source "/etc/bash_completion"
 fi
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-   source $(brew --prefix)/etc/bash_completion
+if [ -f "/usr/local/bin/brew" ] && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+   source "$(brew --prefix)/etc/bash_completion"
 fi
 
 # Set CONCURRENCY_LEVEL to number of CPUs
 if [ -f /proc/cpuinfo ]; then
-  # linux style
-  CONCURRENCY_LEVEL=`grep -c processor /proc/cpuinfo`
+    # linux style
+    CONCURRENCY_LEVEL=`grep -c processor /proc/cpuinfo`
 elif [ -x "`which system_profiler`" ]; then
-  # mac os style
-  CONCURRENCY_LEVEL=`system_profiler SPHardwareDataType 2> /dev/null \
-    | grep --color=never -i "total number of cores" \
-    | sed 's/[^0-9]*//g'`
+    # mac os style
+    CONCURRENCY_LEVEL=`system_profiler SPHardwareDataType 2> /dev/null \
+        | grep --color=never -i "total number of cores" \
+        | sed 's/[^0-9]*//g'`
 else
-  CONCURRENCY_LEVEL=1
+    CONCURRENCY_LEVEL=1
 fi
 
 export CONCURRENCY_LEVEL
