@@ -17,6 +17,7 @@
   packedGitWindowSize = 16m
   packedGitLimit = 64m
   commentchar = %
+	quotepath = false
   
 [merge]
 #  tool = opendiff
