@@ -1,3 +1,32 @@
+[user]
+  name = Sven Strittmatter
+  email = sven.strittmatter@iteratec.de
+
+[core]
+  editor   = nano
+  autocrlf = input
+  excludesfile = ~/.gitignore_global
+  packedGitWindowSize = 16m
+  packedGitLimit = 64m
+  commentchar = %
+	quotepath = false  
+
+[branch]
+  autosetuprebase = always
+    
+[push]
+  default = matching
+
+[pull]
+	rebase = true
+
+[rebase]
+	autoStash = true
+
+[merge]
+  tool = opendiff
+  conflictstyle = diff3
+    
 [color]
   diff   = auto
   status = auto
@@ -7,37 +36,23 @@
 [color "diff"]
   whitespace = red reverse
 
-[push]
-  default = matching
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 
-[core]
-  editor   = nano
-  autocrlf = input
-  excludesfile = ~/.gitignore_global
-  packedGitWindowSize = 16m
-  packedGitLimit = 64m
-  commentchar = %
-	quotepath = false
-  
-[merge]
-#  tool = opendiff
-  tool = meld
-  conflictstyle = diff3
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 
 [credential]
   helper = cache --timeout=3600
-[branch]
-  autosetuprebase = always
+
 [pack]
   windowMemory = 256m
   packSizeLimit = 512m
   threads = 2
   deltaCacheSize = 100m
-[rerere]
-  enabled = true
-[user]
-  name = Sven Strittmatter
-  email = sven.strittmatter@iteratec.de
+  
 [alias]
   # SVN like shortcuts.
   ci = commit
@@ -119,18 +134,5 @@
 
   # Grep grouped by files with lines.
   # http://travisjeffery.com/b/2012/02/search-a-git-repo-like-a-ninja/
-  g = grep --break --heading --line-number
-  
-  stash-svn-rebase = ! sh -c 'git stash && git svn rebase && git stash pop'
-  stash-svn-dcommit = ! sh -c 'git stash && git svn dcommit && git stash pop'
- 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[pull]
-	rebase = true
-[rebase]
-	autoStash = true
+  # https://git-scm.com/docs/git-grep
+  g = grep --break --heading --line-number --ignore-case -I
