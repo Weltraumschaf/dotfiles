@@ -1,11 +1,28 @@
 #!/usr/bin/env bash
 
+set -eu
+
 ##
 ## Intsalls the dotfiles into $HOME by softlinking them.
 ## Existing files are backupped.
 ##
 
-sourceDir="src/_*"
+program="${0}"
+
+while [ -h "${program}" ]; do
+  ls=$(ls -ld "${program}")
+  link=$(expr "${ls}" : '.*-> \(.*\)$')
+
+  if expr "${link}" : '.*/.*' > /dev/null; then
+    program="${link}"
+  else
+    program=$(dirname "${program}")/"${link}"
+  fi
+done
+
+sourceDir=$(realpath "${program}")
+sourceDir=$(dirname "${sourceDir}")
+sourceDir="${sourceDir}/src"
 
 ##
 ## Links source file into target directory.
@@ -14,11 +31,13 @@ sourceDir="src/_*"
 ## @param $1 source script
 ## @param $2 target direcotry
 ##
-function linkFile {
-    source="${PWD}/$1"
-    targetFile="${1/src\//}"
-    targetFile="${targetFile/_/.}"
-    target="${2}/${targetFile}"
+function link_file {
+    source="${1}"
+    target="${source##*/}"
+    target="${target/_/.}"
+    target="${2}/${target}"
+
+    echo "Install ${source} to ${target} ..."
 
     # Only create backup if target is a file or directory
     if [ -f "${target}" ] || [ -d "${target}" ]; then
@@ -31,9 +50,8 @@ function linkFile {
     ln -svf "${source}" "${target}"
 }
 
-for file in ${sourceDir}
-do
-  linkFile "${file}" "${HOME}"
+for file in "${sourceDir}/_"*; do
+  link_file "${file}" "${HOME}"
 done
 
 echo "Finished :)"
