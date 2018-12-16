@@ -26,12 +26,18 @@ if [ -d "${HOME}/.rvm/bin" ] ; then
 fi
 
 if [ -d "${HOME}/.cargo/bin" ] ; then
-    export PATH="$HOME/.cargo/bin:$PATH"
+    PATH="$HOME/.cargo/bin:$PATH"
 fi
 
 if [ -d "${HOME}/perl5/bin" ] ; then
-    export PATH="$HOME/perl5/bin:$PATH"
+    PATH="$HOME/perl5/bin:$PATH"
 fi
+
+if [ -d "${HOME}/.cargo/bin" ] ; then
+    PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+export PATH
 
 if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
     export RUST_SRC_PATH="${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
@@ -44,8 +50,6 @@ fi
 if [ -d "${HOME}/src/third/rls" ] ; then
     export RLS_ROOT="${HOME}/src/third/rls"
 fi
-
-export PATH
 
 # enable 256 colors in terminal (useful for vim colorschemes)
 if [ -e /usr/share/terminfo/x/xterm-256color ] ; then
@@ -113,3 +117,4 @@ fi
 if [ -f "${HOME}/.local_exports" ] ; then
     source "${HOME}/.local_exports"
 fi
+
