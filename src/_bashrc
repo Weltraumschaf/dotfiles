@@ -120,17 +120,9 @@ cd
 #	tmux attach
 #fi
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "${HOME}/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
-
 direnv help >/dev/null 2>&1 && eval "$(direnv hook bash)"
 
-if [ -f "$HOME/.nvm" ] ; then
-  export NVM_DIR="$HOME/.nvm"
-fi
-
-if [ -f "/usr/local/opt/nvm/nvm.sh" ] ; then
-  source "/usr/local/opt/nvm/nvm.sh"
-fi
-
 command -v hcloud >/dev/null 2>&1 && source <(hcloud completion bash)
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "${HOME}/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
