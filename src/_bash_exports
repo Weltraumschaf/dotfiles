@@ -22,19 +22,23 @@ if [ -d "${HOME}/bin" ] ; then
 fi
 
 if [ -d "${HOME}/.rvm/bin" ] ; then
-    PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+    PATH="${HOME}/.rvm/bin:${PATH}" # Add RVM to PATH for scripting
 fi
 
 if [ -d "${HOME}/.cargo/bin" ] ; then
-    PATH="$HOME/.cargo/bin:$PATH"
+    PATH="${HOME}/.cargo/bin:${PATH}"
 fi
 
 if [ -d "${HOME}/perl5/bin" ] ; then
-    PATH="$HOME/perl5/bin:$PATH"
+    PATH="${HOME}/perl5/bin:${PATH}"
 fi
 
 if [ -d "${HOME}/.cargo/bin" ] ; then
-    PATH="$HOME/.cargo/bin:$PATH"
+    PATH="${HOME}/.cargo/bin:${PATH}"
+fi
+
+if [ -d "${HOME}/.fastlane/bin" ] ; then
+    PATH="${HOME}/.fastlane/bin:${PATH}"
 fi
 
 export PATH
