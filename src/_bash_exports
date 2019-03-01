@@ -1,10 +1,7 @@
+# shellcheck disable=SC2148
+
 # Extend the PATH
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
-
-# GNU core utils
-if [ -d "/opt/local/libexec/gnubin" ] ; then
-  PATH="/opt/local/libexec/gnubin:${PATH}"
-fi
 
 # Haskell Plattform
 if [ -d "${HOME}/Library/Haskell/bin" ] ; then
@@ -88,7 +85,7 @@ export LESS="-iFRsX"
 # Make less the pager
 export PAGER=less
 
-# Larger bash history (allow 32³ entries; default is 500)
+# Larger bash history (allow 32^2 entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 # don't put duplicate lines in the history. See bash(1) for more options

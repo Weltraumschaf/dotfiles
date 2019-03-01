@@ -1,39 +1,46 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+# shellcheck disable=SC2148
 
-# If not running interactively, don't do anything
+#
+# ~/.bashrc: executed by bash(1) for non-login shells.
+#
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples.
+#
+
+# If not running interactively, don't do anything.
 [ -z "${PS1}" ] && return
 
 if [ -f "${HOME}/.bash_functions" ]; then
-  . "${HOME}/.bash_functions"
+    # shellcheck disable=SC1090
+    source "${HOME}/.bash_functions"
 fi
 
-# dont nerv me!
+# Don't nerv me!
 set bell-style none
 
-# append to the history file, don't overwrite it
+# Append to the history file, don't overwrite it.
 shopt -s histappend
-
-# Save history immediatly after running command
-# With "history -n" it's possible to read all new lines since last read
+# Save history immediatly after running command.
+# With "history -n" it's possible to read all new lines since last read.
 PROMPT_COMMAND="history -a"
 
-# check the window size after each command and, if necessary,
+# Check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
 if [ -f "${HOME}/.bash_exports" ] ; then
-  source "${HOME}/.bash_exports"
+    # shellcheck disable=SC1090
+    source "${HOME}/.bash_exports"
 fi
 
 if [ -f "$HOME/.config/perl" ] ; then
-  source "$HOME/.config/perl"
+    # shellcheck disable=SC1090
+    source "$HOME/.config/perl"
 fi
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
+# Uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
+# should be on the output of commands, not on the prompt.
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
@@ -43,18 +50,26 @@ if [ -n "$force_color_prompt" ]; then
         # a case would tend to support setf rather than setaf.)
         color_prompt=yes
     else
+        # shellcheck disable=SC2034
         color_prompt=
     fi
 fi
 
-if [ -f "${HOME}/.git-prompt" ] ; then
+if [ -f "${HOME}/.git_prompt" ] ; then
+    # shellcheck disable=SC2034
     GIT_PS1_SHOWCOLORHINTS="true"
+    # shellcheck disable=SC2034
     GIT_PS1_SHOWDIRTYSTATE="true"
+    # shellcheck disable=SC2034
     GIT_PS1_SHOWSTASHSTATE="true"
+    # shellcheck disable=SC2034
     GIT_PS1_SHOWUNTRACKEDFILES="true"
+    # shellcheck disable=SC2034
     GIT_PS1_SHOWUPSTREAM="auto"
-    source "${HOME}/.git-prompt"
+    # shellcheck disable=SC1090
+    source "${HOME}/.git_prompt"
 else
+    # shellcheck disable=SC2034
     __git_ps1=""
 fi
 
@@ -69,66 +84,61 @@ export PS1
 unset color_prompt force_color_prompt
 
 if [ -f "${HOME}/.bash_aliases" ] ; then
+    # shellcheck disable=SC1090
     source "${HOME}/.bash_aliases"
 fi
 
 if [ -f "${HOME}/.ssh_aliases" ] ; then
+    # shellcheck disable=SC1090
     source "${HOME}/.ssh_aliases"
 fi
 
 if [ -f "${HOME}/.local_aliases" ] ; then
+    # shellcheck disable=SC1090
     source "${HOME}/.local_aliases"
 fi
 
-# enable programmable completion features (you don't need to enable
+# Enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if [ -f "/etc/bash_completion" ] && ! shopt -oq posix ; then
+    # shellcheck disable=SC1091
     source "/etc/bash_completion"
 fi
 
 if [ -f "/usr/local/bin/brew" ] && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-   source "$(brew --prefix)/etc/bash_completion"
+    # shellcheck disable=SC1090
+    source "$(brew --prefix)/etc/bash_completion"
 fi
 
-# Set CONCURRENCY_LEVEL to number of CPUs
-if [ -f /proc/cpuinfo ]; then
-    # linux style
-    CONCURRENCY_LEVEL=`grep -c processor /proc/cpuinfo`
-elif [ -x "`which system_profiler`" ]; then
-    # mac os style
-    CONCURRENCY_LEVEL=`system_profiler SPHardwareDataType 2> /dev/null \
-        | grep --color=never -i "total number of cores" \
-        | sed 's/[^0-9]*//g'`
-else
-    CONCURRENCY_LEVEL=1
-fi
-
-export CONCURRENCY_LEVEL
-
-# Source additional information, which applies to the current host only
+# Source additional information, which applies to the current host only.
 if [ -f "${HOME}/.bash_local" ]; then
+    # shellcheck disable=SC1090
     source "${HOME}/.bash_local"
 fi
 
-direnv help >/dev/null 2>&1 && eval "$(direnv hook bash)"
+[[ "$(command -v direnv)" ]] && eval "$(direnv hook bash)"
 
-command -v hcloud >/dev/null 2>&1 && source <(hcloud completion bash)
+# shellcheck disable=SC1090
+[[ "$(command -v hcloud)" ]] && source <(hcloud completion bash)
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# shellcheck disable=SC1090
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "${HOME}/.rvm/scripts/rvm"
 
-[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
+# shellcheck disable=SC1090
+[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "${HOME}/perl5/perlbrew/etc/bashrc"
 
+# shellcheck disable=SC1090
 [[ -s "/usr/libexec/path_helper" ]] && eval $(/usr/libexec/path_helper -s)
 
-[[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+# shellcheck disable=SC1090
+[[ -s "$HOME/.cargo/env" ]] && source "${HOME}/.cargo/env"
 
+# shellcheck disable=SC1090
 [[ "$(command -v kubectl)" ]] && source <(kubectl completion bash)
 
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
+if [ -f "$(brew --prefix)/etc/brew-wrap" ] ; then
+    # shellcheck disable=SC1090
+    source "$(brew --prefix)/etc/brew-wrap"
 fi
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "${HOME}/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
