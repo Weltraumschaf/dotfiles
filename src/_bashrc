@@ -109,6 +109,11 @@ fi
 if [ -f "/usr/local/bin/brew" ] && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
     # shellcheck disable=SC1090
     source "$(brew --prefix)/etc/bash_completion"
+
+    if [ -f "$(brew --prefix)/etc/brew-wrap" ] ; then
+        # shellcheck disable=SC1090
+        source "$(brew --prefix)/etc/brew-wrap"
+    fi
 fi
 
 # Source additional information, which applies to the current host only.
@@ -137,8 +142,3 @@ fi
 
 # shellcheck disable=SC1090
 [[ "$(command -v kubectl)" ]] && source <(kubectl completion bash)
-
-if [ -f "$(brew --prefix)/etc/brew-wrap" ] ; then
-    # shellcheck disable=SC1090
-    source "$(brew --prefix)/etc/brew-wrap"
-fi
