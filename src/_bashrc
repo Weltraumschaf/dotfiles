@@ -135,7 +135,7 @@ fi
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "${HOME}/perl5/perlbrew/etc/bashrc"
 
 # shellcheck disable=SC1090
-[[ -s "/usr/libexec/path_helper" ]] && eval $(/usr/libexec/path_helper -s)
+[[ -s "/usr/libexec/path_helper" ]] && eval "$(/usr/libexec/path_helper -s)"
 
 # shellcheck disable=SC1090
 [[ -s "$HOME/.cargo/env" ]] && source "${HOME}/.cargo/env"
