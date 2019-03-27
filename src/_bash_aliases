@@ -30,6 +30,9 @@ alias du='du -h'
 alias df='df -h'
 alias ..='cd ..'
 
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
 alias finddarcsbup="find . -iname \"*-darcs-backup*\""
 alias rmdarcsbup="find . -iname \"*-darcs-backup*\" -exec rm -rf {} \;"
 alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
