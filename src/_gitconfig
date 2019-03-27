@@ -9,11 +9,11 @@
   packedGitWindowSize = 16m
   packedGitLimit = 64m
   commentchar = %
-	quotepath = false  
+	quotepath = false
 
 [branch]
   autosetuprebase = always
-    
+
 [push]
   default = matching
 
@@ -26,7 +26,7 @@
 [merge]
   tool = opendiff
   conflictstyle = diff3
-    
+
 [color]
   diff   = auto
   status = auto
@@ -38,7 +38,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
@@ -52,7 +52,7 @@
   packSizeLimit = 512m
   threads = 2
   deltaCacheSize = 100m
-  
+
 [alias]
   # SVN like shortcuts.
   ci = commit
@@ -62,39 +62,6 @@
   # Shows the email address used for commits.
   iam = !git config --get user.email
 
-  # Shows a short log about what you did suince one day ago.
-  daily = ! git log --all \
-    --oneline \
-    --since '1 day ago' \
-    --regexp-ignore-case \
-    --committer $(git iam)
-
-  # A nice git log with branches shown as railroads.
-  tree = log \
-    --oneline \
-    --graph \
-    --decorate \
-    --all
-  # Also nice log output.
-  graph = log \
-    --oneline \
-    --graph \
-    --abbrev-commit \
-    --date=relative \
-    --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-  # And a third flavor for log.
-  lg = log \
-    --graph \
-    --abbrev-commit \
-    --date=relative \
-    --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-
-  # Shows a list of tags. Annotated tags have an * before the name.
-  listtags = ! git for-each-ref \
-    --sort=subject refs/tags \
-    | awk '{print $2, $3}' \
-    | sed 's,tag refs/tags/, * ,' \
-    | sed 's,commit refs/tags/,   ,'
 
   # Show all commits with the giben ticket id.
   # Example (single ticket id):
@@ -106,31 +73,11 @@
     --reverse --pretty=format:\"%H%x09%ad%x09%cn%x09%s\" \
     --regexp-ignore-case \
     --grep=\"${1}\"' -
+
   # Similar to `git ticket` but shows all affected files instead of the commit list.
   ticket-files = ! sh -c 'git log --pretty=format:\"\" \
     --regexp-ignore-case \
     --grep=\"${1}\" --name-only | sort | uniq' -
-
-  # Add a new alias to global config.
-  alias = "! sh -c '[ $# = 2 ] && \
-    git config --global alias.\"$1\" \"$2\" && \
-    exit 0 || echo \"usage: git alias <new alias> <original command>\" >&2 && \
-    exit 1' -"
-
-  # Shows the name of current branch checked out.
-  branchname = rev-parse --abbrev-ref HEAD
-
-  # Updates your repo by rebasing and shows a log of the updated stuff.
-  up = ! sh -c 'git pull --rebase && \
-    git log \
-      --pretty=format:\"%Cgreen%h %Cblue%s %Cred[%an (%cn)] %Creset- (%ai [%ci])\" ORIG_HEAD..'
-
-    most-affected-files = ! sh -c 'git log --since=\"90 days ago\" --pretty=format:\"\" --name-only | \
-        grep "[^\\s]" | \
-        sort | \
-        uniq -c | \
-        sort -nr | \
-        head -10'
 
   # Grep grouped by files with lines.
   # http://travisjeffery.com/b/2012/02/search-a-git-repo-like-a-ninja/
