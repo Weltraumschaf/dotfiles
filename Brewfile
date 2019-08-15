@@ -1,4 +1,3 @@
-# See https://github.com/Homebrew/homebrew-bundle
 tap "caffix/amass"
 tap "caskroom/versions"
 tap "go-gitea/gitea"
