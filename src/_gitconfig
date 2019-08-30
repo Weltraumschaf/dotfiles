@@ -11,6 +11,9 @@
   commentchar = %
 	quotepath = false
 
+[commit]
+  gpgsign = true
+
 [branch]
   autosetuprebase = always
 
@@ -47,7 +50,7 @@
 
 [alias]
   # SVN like shortcuts.
-  ci = commit
+  ci = commit -s
   st = status
   co = checkout
 
