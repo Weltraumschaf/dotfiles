@@ -146,3 +146,6 @@ fi
 # https://sdkman.io
 # shellcheck disable=SC1090
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
+
+# shellcheck disable=SC1090
+[[ "$(command -v eksctl)" ]] && source <(eksctl completion bash)
