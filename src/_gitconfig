@@ -12,9 +12,6 @@
   commentchar = %
   quotepath = false
 
-[commit]
-  gpgsign = true
-
 [branch]
   autosetuprebase = always
 
