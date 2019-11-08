@@ -15,6 +15,9 @@
 [branch]
   autosetuprebase = always
 
+[diff]
+  noprefix = true
+
 [push]
   default = matching
 
