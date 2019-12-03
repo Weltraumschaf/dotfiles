@@ -60,5 +60,6 @@ fi
 
 if [ -x /usr/local/bin/docker ] ; then
     # https://medium.com/@airman604/kali-linux-in-a-docker-container-5a06311624eb
-    alias dkali="docker run -ti --rm --mount type=bind,src=${HOME}/dkali-root,dst=/root --mount src=kali-postgres,dst=/var/lib/postgresql my-kali /bin/bash"
+    alias dkali='docker run -ti --rm --mount type=bind,src=${HOME}/dkali-root,dst=/root --mount src=kali-postgres,dst=/var/lib/postgresql my-kali /bin/bash'
+    alias ddebian='docker run --rm -it -v ${HOME}/Downloads:/root/host weltraumschaf/debian-in-a-nutshell:1.0.0 /bin/bash'
 fi
