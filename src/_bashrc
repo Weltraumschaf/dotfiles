@@ -28,6 +28,10 @@ PROMPT_COMMAND="history -a"
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# http://www.softec.lu/site/DevelopersCorner/MasteringThePathHelper`
+# shellcheck disable=SC1090
+[[ -s "/usr/libexec/path_helper" ]] && eval "$(/usr/libexec/path_helper -s)"
+
 if [ -f "${HOME}/.bash_exports" ] ; then
     # shellcheck disable=SC1090
     source "${HOME}/.bash_exports"
@@ -131,9 +135,6 @@ fi
 [[ -s "${HOME}/perl5/perlbrew/etc/bashrc" ]] && source "${HOME}/perl5/perlbrew/etc/bashrc"
 
 # shellcheck disable=SC1090
-[[ -s "/usr/libexec/path_helper" ]] && eval "$(/usr/libexec/path_helper -s)"
-
-# shellcheck disable=SC1090
 [[ -s "${HOME}/.cargo/env" ]] && source "${HOME}/.cargo/env"
 
 # shellcheck disable=SC1090
@@ -145,9 +146,6 @@ fi
 # https://sdkman.io
 # shellcheck disable=SC1090
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
-
-# shellcheck disable=SC1090
-[[ "$(command -v eksctl)" ]] && source <(eksctl completion bash)
 
 # https://stackoverflow.com/questions/39381360/how-do-i-install-ruby-gems-on-mac/43293653#43293653
 [[ "$(command -v rbenv)" ]] && eval "$(rbenv init -)"
