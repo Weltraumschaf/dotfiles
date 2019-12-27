@@ -375,8 +375,6 @@ brew "shellcheck"
 brew "sloccount"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
-# This is sSMTP, a program that replaces sendmail on workstations that should send their mail via the departmental mailhub from which they pick up their mail (via pop, imap, rsmtp, pop_fetch, NFS... or the like).
-brew "ssmtp"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
