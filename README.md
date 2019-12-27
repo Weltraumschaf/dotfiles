@@ -45,3 +45,9 @@ brew bundle
 ```bash
 brew bundle dump --describe --force
 ```
+
+Automate with cron:
+
+```text
+0 11 * * * (cd "${HOME}/src/private/dotfiles" && /usr/local/bin/brew bundle dump --describe --force
+```
