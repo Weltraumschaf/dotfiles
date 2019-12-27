@@ -150,4 +150,4 @@ fi
 # https://stackoverflow.com/questions/39381360/how-do-i-install-ruby-gems-on-mac/43293653#43293653
 [[ "$(command -v rbenv)" ]] && eval "$(rbenv init -)"
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[[ -f ~/.fzf.bash ]] && source "${HOME}/.fzf.bash"
