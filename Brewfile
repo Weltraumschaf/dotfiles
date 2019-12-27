@@ -105,16 +105,12 @@ brew "fontconfig"
 brew "pixman"
 # Object-file caching compiler wrapper
 brew "ccache"
-# Compiler for the Scheme programming language
-brew "chicken"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Statistics utility to count lines of code
 brew "cloc"
 # The Clojure Programming Language
 brew "clojure"
-# Generate code for scanning Z-polyhedra
-brew "cloog"
 # Cross-platform make
 brew "cmake"
 # Color-highlighted diff(1) output
@@ -353,8 +349,6 @@ brew "reattach-to-user-namespace"
 brew "recode"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# Repository tool for Android development
-brew "repo"
 # Fast, efficient and secure backup program
 brew "restic"
 # Utility for computing and verifying hash sums of files
