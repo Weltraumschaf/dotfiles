@@ -33,3 +33,15 @@ I've extended the install.sh script to handle .config directory, too. Just creat
 ## Homebrew on macOS
 
 There is a `Brewfile` generated from/for [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) as described at [Thoughtbot's blog](https://thoughtbot.com/blog/brewfile-a-gemfile-but-for-homebrew.)
+
+### Install the Brew Stuff
+
+```bash
+brew bundle
+```
+
+### Update the Brewfile
+
+```bash
+brew bundle dump --describe --force
+```
