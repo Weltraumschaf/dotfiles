@@ -451,7 +451,6 @@ cask "vscodium"
 cask "wireshark"
 mas "EasyFind", id: 411673888
 mas "iMovie", id: 408981434
-mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
