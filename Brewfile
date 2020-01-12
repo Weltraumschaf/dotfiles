@@ -213,8 +213,6 @@ brew "gnuplot"
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
-# SDK for Groovy: a Java-based scripting language
-brew "groovysdk"
 # Command-line interface for Hetzner Cloud
 brew "hcloud"
 # Library for communicating with USB and Bluetooth HID devices
