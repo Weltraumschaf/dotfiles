@@ -250,7 +250,7 @@ brew "jhipster"
 # Featureful UNIX password cracker
 brew "john"
 # Note taking and to-do application with synchronisation capabilities
-brew "joplin", link: false
+brew "joplin"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Python implementation written in Java (successor to JPython)
@@ -420,6 +420,7 @@ brew "wagoodman/dive/dive"
 brew "weaveworks/tap/eksctl"
 cask "android-sdk"
 cask "asciidocfx"
+cask "atom"
 cask "bitwarden"
 cask "burp-suite"
 cask "fastlane"
@@ -427,6 +428,7 @@ cask "firefox"
 cask "freemind"
 cask "inkscape"
 cask "insomnia"
+cask "intellij-idea"
 cask "iterm2"
 cask "joplin"
 cask "mactex"
@@ -442,11 +444,13 @@ cask "send-to-kindle"
 cask "skype"
 cask "skype-for-business"
 cask "thunderbird"
+cask "tor-browser"
 cask "vagrant"
 cask "vagrant-manager"
 cask "vlc"
 cask "vscodium"
 cask "wireshark"
+mas "Annotate", id: 918207447
 mas "EasyFind", id: 411673888
 mas "iMovie", id: 408981434
 mas "Magnet", id: 441258766
