@@ -417,6 +417,7 @@ brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 cask "android-sdk"
+cask "appcleaner"
 cask "asciidocfx"
 cask "atom"
 cask "bitwarden"
