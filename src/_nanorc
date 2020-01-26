@@ -40,10 +40,6 @@ set brackets ""')>]}"
 ## Do case sensitive searches by default.
 # set casesensitive
 
-## Constantly display the cursor position in the statusbar.  Note that
-## this overrides "quickblank".
-set const
-
 ## Use cut to end of line by default.
 # set cut
 
