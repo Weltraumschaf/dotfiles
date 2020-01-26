@@ -452,14 +452,18 @@ cask "vlc"
 cask "vscodium"
 cask "wireshark"
 mas "Annotate", id: 918207447
+mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
 mas "iMovie", id: 408981434
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "MindNode Lite", id: 402397683
 mas "OneDrive", id: 823766827
 mas "Outbank", id: 1094255754
+mas "Pocket", id: 568494494
+mas "SimpleMind Lite", id: 439654198
 mas "Trello", id: 1278508951
 mas "uBlock", id: 1385985095
 mas "Xcode", id: 497799835
