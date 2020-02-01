@@ -120,3 +120,6 @@ target/
 *.userprefs
 *.usertasks
 *.user
+
+# Ignore stash folders
+stash/
