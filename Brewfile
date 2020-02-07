@@ -97,6 +97,8 @@ brew "binwalk"
 brew "bitwarden-cli"
 # The Swiss Army Knife for OSGi bundles
 brew "bnd"
+# New way to see and navigate directory trees
+brew "broot"
 # Asynchronous DNS library
 brew "c-ares"
 # XML-based font configuration API for X Windows

@@ -151,3 +151,6 @@ fi
 [[ "$(command -v rbenv)" ]] && eval "$(rbenv init -)"
 
 [[ -f ~/.fzf.bash ]] && source "${HOME}/.fzf.bash"
+
+BROOT="${HOME}/Library/Preferences/org.dystroy.broot/launcher/bash/br"
+[[ -f "${BROOT}" ]] && source "${BROOT}"
