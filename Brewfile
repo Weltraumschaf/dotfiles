@@ -321,6 +321,8 @@ brew "ocamlbuild"
 brew "open-sp"
 # OpenShift command-line interface tools
 brew "openshift-cli"
+# Tool for creating identical machine images for multiple platforms
+brew "packer"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Shell command parallelization utility
