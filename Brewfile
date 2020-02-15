@@ -387,6 +387,8 @@ brew "tig"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# This UML tool aimed at providing a fast way of creating UML diagrams
+brew "umlet"
 # Extract, view, and test RAR archives
 brew "unrar"
 # Bash completion for Vagrant
@@ -458,6 +460,7 @@ cask "wireshark"
 mas "Annotate", id: 918207447
 mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
+mas "Flycut", id: 442160987
 mas "iMovie", id: 408981434
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
