@@ -1,0 +1,11 @@
+# https://macromates.com/blog/2011/git-style-configuration/
+
+TM_GIT = "/usr/local/bin/git"
+TM_HG = "/usr/local/bin/hg"
+
+fontName = "Source Code Pro"
+fontSize = 12
+
+softWrap = true
+tabSize = 4
+softTabs = true
