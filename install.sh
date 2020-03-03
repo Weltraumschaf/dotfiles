@@ -12,9 +12,7 @@ set -eu
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )" \
     && export SCRIPT_DIRECTORY
 
-sourceDir=$(realpath "${SCRIPT_DIRECTORY}")
-sourceDir=$(dirname "${sourceDir}")
-sourceDir="${sourceDir}/src"
+sourceDir="${SCRIPT_DIRECTORY}/src"
 
 ##
 ## Links source file into target directory.
@@ -43,7 +41,7 @@ function link_file {
 }
 
 for file in "${sourceDir}/_"*; do
-  link_file "${file}" "${HOME}"
+    link_file "${file}" "${HOME}"
 done
 
 echo "Finished :)"

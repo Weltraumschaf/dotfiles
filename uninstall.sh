@@ -9,9 +9,7 @@
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )" \
     && export SCRIPT_DIRECTORY
 
-sourceDir=$(realpath "${SCRIPT_DIRECTORY}")
-sourceDir=$(dirname "${sourceDir}")
-sourceDir="${sourceDir}/src"
+sourceDir="${SCRIPT_DIRECTORY}/src"
 
 ##
 ## Removes link from target directory.
@@ -20,7 +18,7 @@ sourceDir="${sourceDir}/src"
 ## @param $2 target direcotry
 ##
 function unlinkFile {
-    targetFile="${1/src\//}"
+    targetFile="${1##*/}"
     targetFile="${targetFile/_/.}"
     target="${2}/${targetFile}"
 
