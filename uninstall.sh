@@ -4,7 +4,14 @@
 ## Uninstalls the scripts from $HOME by removing the symlinks.
 ##
 
-sourceDir="src/_*"
+# @see: http://wiki.bash-hackers.org/syntax/shellvars
+[ -z "${SCRIPT_DIRECTORY:-}" ] \
+    && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )" \
+    && export SCRIPT_DIRECTORY
+
+sourceDir=$(realpath "${SCRIPT_DIRECTORY}")
+sourceDir=$(dirname "${sourceDir}")
+sourceDir="${sourceDir}/src"
 
 ##
 ## Removes link from target directory.
@@ -20,8 +27,7 @@ function unlinkFile {
     rm -v "${target}"
 }
 
-for file in ${sourceDir}
-do
+for file in "${sourceDir}/_"*; do
   unlinkFile "${file}" "${HOME}"
 done
 
