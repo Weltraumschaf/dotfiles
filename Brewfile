@@ -301,8 +301,6 @@ brew "youtube-dl"
 brew "mpv"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
-# Open source relational database management system
-brew "mysql", restart_service: true
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
 # NCurses Disk Usage
