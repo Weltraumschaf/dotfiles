@@ -37,6 +37,7 @@ alias finddarcsbup="find . -iname \"*-darcs-backup*\""
 alias rmdarcsbup="find . -iname \"*-darcs-backup*\" -exec rm -rf {} \;"
 alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
 alias mvndirs="mkdir -p src/main/java && mkdir -p src/main/resources && mkdir -p src/test/java && mkdir -p src/test/resources"
+alias webserver="python -m SimpleHTTPServer"
 
 if [ -x /usr/local/bin/brew ] ; then
     alias brew-update="brew update && brew update && brew upgrade && brew cask upgrade && brew cleanup"
