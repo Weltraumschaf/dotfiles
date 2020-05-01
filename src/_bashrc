@@ -7,6 +7,22 @@
 # for examples.
 #
 
+#
+# Debug slow startup time
+#
+# https://mdjnewman.me/2017/10/debugging-slow-bash-startup-files/
+#
+# `ts` is in `brew install moreutils`
+#
+# open file descriptor 5 such that anything written to /dev/fd/5
+# is piped through ts and then to /tmp/timestamps
+# BASH_TRACING_LOG="${HOME}/tmp/bash_tracing.log"
+# exec 5> >(ts -i "%.s" >> "${BASH_TRACING_LOG}")
+# https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html
+# export BASH_XTRACEFD="5"
+# Enable tracing
+# set -x
+
 # If not running interactively, don't do anything.
 [ -z "${PS1}" ] && return
 
