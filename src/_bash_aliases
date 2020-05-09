@@ -39,6 +39,7 @@ alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
 alias mvndirs="mkdir -p src/main/java && mkdir -p src/main/resources && mkdir -p src/test/java && mkdir -p src/test/resources"
 alias webserver="python -m SimpleHTTPServer"
 alias now="date +'%Y-%m-%dT%H:%M:%S%z'"
+alias kali="(cd $HOME/src/private/vagrant/kali && vagrant up)"
 
 if [ -x /usr/local/bin/brew ] ; then
     alias brew-update="brew update && brew update && brew upgrade && brew cask upgrade && brew cleanup"
