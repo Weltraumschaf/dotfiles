@@ -22,10 +22,10 @@
   default = matching
 
 [pull]
-	rebase = true
+  rebase = true
 
 [rebase]
-	autoStash = true
+  autoStash = true
 
 [merge]
   tool = opendiff
@@ -48,6 +48,9 @@
   packSizeLimit = 512m
   threads = 2
   deltaCacheSize = 100m
+
+[rerere]
+  enabled = true
 
 [alias]
   # SVN like shortcuts.
