@@ -22,7 +22,7 @@ function unlinkFile {
     targetFile="${targetFile/_/.}"
     target="${2}/${targetFile}"
 
-    rm -v "${target}"
+    rm -vf "${target}"
 }
 
 for file in "${sourceDir}/_"*; do
