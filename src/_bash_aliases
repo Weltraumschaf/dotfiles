@@ -40,6 +40,7 @@ alias mvndirs="mkdir -p src/main/java && mkdir -p src/main/resources && mkdir -p
 alias webserver="python -m SimpleHTTPServer"
 alias now="date +'%Y-%m-%dT%H:%M:%S%z'"
 alias kali="(cd $HOME/src/private/vagrant/kali && vagrant up)"
+alias wd="echo -n $(pwd)"
 
 if [ -x /usr/local/bin/brew ] ; then
     alias brew-update="brew update && brew update && brew upgrade && brew cask upgrade && brew cleanup"
