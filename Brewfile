@@ -1,5 +1,6 @@
 tap "caffix/amass"
 tap "caskroom/versions"
+tap "filippo.io/age", "https://filippo.io/age"
 tap "go-gitea/gitea"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -11,6 +12,7 @@ tap "mas-cli/tap"
 tap "petere/sgml"
 tap "rcmdnk/file"
 tap "scyv/jenkins-slave"
+tap "theseal/ssh-askpass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
 # Portable ASCII art graphics library
@@ -29,6 +31,8 @@ brew "gcc"
 brew "abi-compliance-checker"
 # Search tool like grep, but optimized for programmers
 brew "ack"
+# Simple, modern, secure file encryption
+brew "age"
 # Platform built on V8 to build network applications
 brew "node"
 # CLI tool for Angular
@@ -40,7 +44,7 @@ brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Automate deployment, configuration, and upgrading
-brew "ansible", link: false
+brew "ansible"
 # Java build tool
 brew "ant"
 # ANother Tool for Language Recognition
@@ -79,6 +83,8 @@ brew "aws-iam-authenticator"
 brew "aws-shell"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -145,6 +151,8 @@ brew "docker-compose-completion"
 brew "dos2unix"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
+# Functional programming language for building browser-based GUIs
+brew "elm"
 # Charset analyzer and converter
 brew "enca"
 # Perl lib for reading and writing EXIF metadata
@@ -193,6 +201,10 @@ brew "fortune"
 brew "fzf"
 # Graphics library to dynamically manipulate images
 brew "gd"
+# Generic library support script
+brew "libtool"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # GNU debugger
 brew "gdb"
 # This library is for the GeoIP Legacy format (dat)
@@ -211,12 +223,16 @@ brew "gnupg"
 brew "qt"
 # Command-driven, interactive function plotting
 brew "gnuplot"
+# Log analyzer and interactive viewer for the Apache Webserver
+brew "goaccess"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Command-line interface for Hetzner Cloud
 brew "hcloud"
+# The Kubernetes package manager
+brew "helm"
 # Library for communicating with USB and Bluetooth HID devices
 brew "hidapi"
 # Improved top (interactive process viewer)
@@ -229,8 +245,6 @@ brew "hub"
 brew "hugo"
 # Improved colored diff
 brew "icdiff"
-# Generic library support script
-brew "libtool"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Tool to capture still images from an iSight or other video source
@@ -293,6 +307,8 @@ brew "micro"
 brew "mit-scheme"
 # Project documentation with Markdown
 brew "mkdocs"
+# Collection of tools that nobody wrote when UNIX was young
+brew "moreutils"
 # Remote terminal application
 brew "mosh"
 # Download YouTube videos from the command-line
@@ -323,19 +339,15 @@ brew "openshift-cli"
 brew "packer"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Shell command parallelization utility
-brew "parallel"
 # Parallel bzip2
 brew "pbzip2"
 # Simplistic interactive filtering tool
 brew "peco"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Draw UML diagrams
 brew "plantuml"
 # Password generator
 brew "pwgen"
-# x86 and PowerPC Emulator
+# Emulator for x86 and PowerPC
 brew "qemu"
 # File browser
 brew "ranger"
@@ -369,16 +381,19 @@ brew "shellcheck"
 brew "sloccount"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+brew "sshpass"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
 brew "subversion"
 # Generate scripting interfaces to C/C++ code
 brew "swig"
-# User interface to the TELNET protocol (built from macOS Sierra sources)
+# User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Linter for Terraform files
+brew "tflint"
 # Text interface for Git repositories
 brew "tig"
 # Terminal multiplexer
@@ -399,15 +414,14 @@ brew "wdiff"
 brew "webpack"
 # Internet file retriever
 brew "wget"
+# Black box WordPress vulnerability scanner
+brew "wpscan"
 # ISO9660+RR manipulation tool
 brew "xorriso"
 # JavaScript package manager
 brew "yarn"
 # In-depth Attack Surface Mapping and Asset Discovery
 brew "caffix/amass/amass"
-brew "go-gitea/gitea/gitea"
-# A tool to install and interact with Jenkins X on your Kubernetes cluster.
-brew "jenkins-x/jx/jx"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 # Mac App Store command-line interface
@@ -416,27 +430,34 @@ brew "mas-cli/tap/mas"
 brew "petere/sgml/docbook-dsssl"
 # Implementation of the DSSSL language
 brew "petere/sgml/openjade"
+# The ssh-askpass util for MacOS
+brew "theseal/ssh-askpass/ssh-askpass"
 # A tool for exploring each layer in a docker image
 brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 cask "android-sdk"
 cask "appcleaner"
-cask "asciidocfx"
 cask "atom"
 cask "bitwarden"
 cask "burp-suite"
+cask "docker"
 cask "fastlane"
 cask "firefox"
 cask "freemind"
+cask "hex-fiend"
 cask "inkscape"
 cask "insomnia"
 cask "intellij-idea"
 cask "iterm2"
+cask "jitsi-meet"
 cask "joplin"
+cask "kitematic"
 cask "mactex"
 cask "mattermost"
 cask "metasploit"
+cask "miro"
+cask "multifirefox"
 cask "nextcloud"
 cask "openzfs"
 cask "owasp-zap"
@@ -448,6 +469,8 @@ cask "skype"
 cask "skype-for-business"
 cask "thunderbird"
 cask "tor-browser"
+cask "transmission"
+cask "tunnelblick"
 cask "vagrant"
 cask "vagrant-manager"
 cask "virtualbox"
