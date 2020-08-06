@@ -69,5 +69,5 @@ if [ -x /usr/local/bin/docker ] ; then
     alias d-debian='docker run --rm -it -v ${HOME}/Downloads:/root/host weltraumschaf/debian-in-a-nutshell:1.0.0 /bin/bash'
     alias d-nodejs='docker run --rm -it -v ${HOME}/Downloads:/root/host weltraumschaf/debian-nodejs-v8:1.0.0 /bin/bash'
     alias d-juiceshop="docker run --rm -it -p 3000:3000 bkimminich/juice-shop"
-    alias d-swagger-editor="docker run -d -p 80:8080 swaggerapi/swagger-editor"
+    alias d-swagger-editor="docker run -d -p 80:8080 swaggerapi/swagger-editor && sleep 3 && open http://localhost"
 fi
