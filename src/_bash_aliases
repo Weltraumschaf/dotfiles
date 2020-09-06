@@ -43,7 +43,7 @@ alias kali="(cd $HOME/src/private/vagrant/kali && vagrant up)"
 alias wd='echo -n $(pwd)'
 
 if [ -x /usr/local/bin/brew ] ; then
-    alias brew-update="brew update && brew update && brew upgrade && brew cask upgrade && brew cleanup"
+    alias brew-update="brew update && brew update && brew upgrade && brew upgrade --cask && brew cleanup"
 fi
 
 # svn helpers
