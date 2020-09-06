@@ -1,5 +1,6 @@
 tap "caffix/amass"
 tap "caskroom/versions"
+tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
 tap "go-gitea/gitea"
 tap "homebrew/bundle"
@@ -181,6 +182,8 @@ brew "libunistring"
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Vorbis General Audio Compression Codec
 brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
@@ -201,10 +204,6 @@ brew "fortune"
 brew "fzf"
 # Graphics library to dynamically manipulate images
 brew "gd"
-# Generic library support script
-brew "libtool"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # GNU debugger
 brew "gdb"
 # This library is for the GeoIP Legacy format (dat)
@@ -227,6 +226,8 @@ brew "gnuplot"
 brew "goaccess"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
+# Generic library support script
+brew "libtool"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Command-line interface for Hetzner Cloud
@@ -331,6 +332,8 @@ brew "nmap"
 brew "ocaml"
 # Generic build tool for OCaml
 brew "ocamlbuild"
+# Kubernetes introspection tool for developers
+brew "octant"
 # SGML parser
 brew "open-sp"
 # OpenShift command-line interface tools
@@ -388,6 +391,8 @@ brew "utf8proc"
 brew "subversion"
 # Generate scripting interfaces to C/C++ code
 brew "swig"
+# Open source continuous file synchronization application
+brew "syncthing", restart_service: true, link: false
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
@@ -396,6 +401,8 @@ brew "terraform"
 brew "tflint"
 # Text interface for Git repositories
 brew "tig"
+# High-performance, platform-neutral implementation of VNC
+brew "tiger-vnc"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -420,8 +427,12 @@ brew "wpscan"
 brew "xorriso"
 # JavaScript package manager
 brew "yarn"
+# Process YAML documents from the CLI
+brew "yq"
 # In-depth Attack Surface Mapping and Asset Discovery
 brew "caffix/amass/amass"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "derailed/k9s/k9s"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 # Mac App Store command-line interface
@@ -445,6 +456,7 @@ cask "docker"
 cask "fastlane"
 cask "firefox"
 cask "freemind"
+cask "github"
 cask "hex-fiend"
 cask "inkscape"
 cask "insomnia"
@@ -454,11 +466,13 @@ cask "jitsi-meet"
 cask "joplin"
 cask "kitematic"
 cask "mactex"
+cask "mark-text"
 cask "mattermost"
 cask "metasploit"
 cask "miro"
 cask "multifirefox"
 cask "nextcloud"
+cask "notion"
 cask "openzfs"
 cask "owasp-zap"
 cask "podman"
@@ -467,6 +481,8 @@ cask "powershell"
 cask "send-to-kindle"
 cask "skype"
 cask "skype-for-business"
+cask "slack"
+cask "syncthing"
 cask "thunderbird"
 cask "tor-browser"
 cask "transmission"
