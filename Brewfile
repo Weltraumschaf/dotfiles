@@ -102,7 +102,7 @@ brew "p7zip"
 brew "binwalk"
 # Secure and free password manager for all of your devices
 brew "bitwarden-cli"
-# The Swiss Army Knife for OSGi bundles
+# Swiss Army Knife for OSGi bundles
 brew "bnd"
 # New way to see and navigate directory trees
 brew "broot"
@@ -118,7 +118,7 @@ brew "ccache"
 brew "clang-format"
 # Statistics utility to count lines of code
 brew "cloc"
-# The Clojure Programming Language
+# Dynamic, general-purpose programming language
 brew "clojure"
 # Cross-platform make
 brew "cmake"
@@ -146,7 +146,7 @@ brew "docbook"
 brew "docbook-xsl"
 # Bash, Zsh and Fish completion for Docker
 brew "docker-completion"
-# Docker-compose completion script
+# Completion script for docker-compose
 brew "docker-compose-completion"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
@@ -232,7 +232,7 @@ brew "libtool"
 brew "graphviz"
 # Command-line interface for Hetzner Cloud
 brew "hcloud"
-# The Kubernetes package manager
+# Kubernetes package manager
 brew "helm"
 # Library for communicating with USB and Bluetooth HID devices
 brew "hidapi"
@@ -370,7 +370,7 @@ brew "restic"
 brew "rhash"
 # JavaScript engine
 brew "rhino"
-# The Rust toolchain installer
+# Rust toolchain installer
 brew "rustup-init"
 # Wrapper around libsass that helps to create command-line apps
 brew "sassc"
