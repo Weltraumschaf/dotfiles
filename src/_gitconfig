@@ -83,8 +83,8 @@
   g = grep --break --heading --line-number --ignore-case -I
 
   # https://thoughtbot.com/blog/dumpster-diving-through-dotfiles-better-git-logging
-  sl = log --oneline --decorate -40
-  sla = log --oneline --decorate --graph --all -40
+  sl = log --oneline --decorate
+  sla = log --oneline --decorate --graph --all
   slap = log --oneline --decorate --graph --all
 
   # https://thoughtbot.com/blog/dumpster-diving-through-dotfiles-git-branches
