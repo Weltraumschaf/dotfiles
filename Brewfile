@@ -382,6 +382,8 @@ brew "scummvm"
 brew "shellcheck"
 # Count lines of code in many languages
 brew "sloccount"
+# S/MIME signing utility for use with Git
+brew "smimesign"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 brew "sshpass"
