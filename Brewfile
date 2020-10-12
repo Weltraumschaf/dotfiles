@@ -174,16 +174,18 @@ brew "fdupes"
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
-# Asynchronous event library
-brew "libevent"
+# Generic library support script
+brew "libtool"
 # C string library for manipulating Unicode strings
 brew "libunistring"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Asynchronous event library
+brew "libevent"
 # Low-level cryptographic library
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Vorbis General Audio Compression Codec
 brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
@@ -226,8 +228,6 @@ brew "gnuplot"
 brew "goaccess"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
-# Generic library support script
-brew "libtool"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Command-line interface for Hetzner Cloud
