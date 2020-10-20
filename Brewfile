@@ -502,7 +502,6 @@ cask "wireshark"
 mas "Annotate", id: 918207447
 mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
-mas "Flycut", id: 442160987
 mas "iMovie", id: 408981434
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
