@@ -27,8 +27,6 @@ brew "mpfr", link: false
 brew "libmpc"
 # GNU compiler collection
 brew "gcc"
-# Check binary and source compatibility for C/C++
-brew "abi-compliance-checker"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Simple, modern, secure file encryption
@@ -211,8 +209,6 @@ brew "gdb"
 brew "geoip"
 # Distributed revision control system
 brew "git"
-# GNU multiple precision arithmetic library
-brew "gmp@4"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -249,10 +245,6 @@ brew "icdiff"
 brew "imagemagick"
 # Tool to capture still images from an iSight or other video source
 brew "imagesnap"
-# Integer Set Library for the polyhedral model
-brew "isl@0.11"
-# Integer Set Library for the polyhedral model
-brew "isl@0.12"
 # Agile dependency manager
 brew "ivy"
 # Library for creating multi-platform software
@@ -265,8 +257,6 @@ brew "jhipster"
 brew "jinja2-cli"
 # Featureful UNIX password cracker
 brew "john"
-# Note taking and to-do application with synchronisation capabilities
-brew "joplin"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Python implementation written in Java (successor to JPython)
@@ -279,8 +269,6 @@ brew "leiningen"
 brew "libmagic"
 # Portable sound library
 brew "libmikmod"
-# C library for high precision complex numbers
-brew "libmpc@0.8"
 # Low-level access to audio, keyboard, mouse, joystick and graphics
 brew "sdl"
 # Library like getopt(3) with a number of enhancements
@@ -387,7 +375,6 @@ brew "sloccount"
 brew "smimesign"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
-brew "sshpass"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
@@ -424,8 +411,6 @@ brew "wdiff"
 brew "webpack"
 # Internet file retriever
 brew "wget"
-# Black box WordPress vulnerability scanner
-brew "wpscan"
 # ISO9660+RR manipulation tool
 brew "xorriso"
 # JavaScript package manager
