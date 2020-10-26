@@ -379,8 +379,6 @@ brew "utf8proc"
 brew "subversion"
 # Generate scripting interfaces to C/C++ code
 brew "swig"
-# Open source continuous file synchronization application
-brew "syncthing", restart_service: true, link: false
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
