@@ -261,6 +261,8 @@ brew "s-lang"
 brew "jed"
 # Generate, develop and deploy Spring Boot + Angular/React applications
 brew "jhipster"
+# CLI for the Jinja2 templating language
+brew "jinja2-cli"
 # Featureful UNIX password cracker
 brew "john"
 # Note taking and to-do application with synchronisation capabilities
