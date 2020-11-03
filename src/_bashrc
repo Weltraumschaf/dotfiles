@@ -170,3 +170,9 @@ fi
 
 BROOT="${HOME}/Library/Preferences/org.dystroy.broot/launcher/bash/br"
 [[ -f "${BROOT}" ]] && source "${BROOT}"
+
+export NVM_DIR="${HOME}/.nvm"
+# This loads nvm:
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"
+# This loads nvm bash_completion:
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
