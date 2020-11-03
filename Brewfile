@@ -15,6 +15,7 @@ tap "rcmdnk/file"
 tap "theseal/ssh-askpass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
+tap "weltraumschaf/tap"
 # Portable ASCII art graphics library
 brew "aalib"
 # Search tool like grep, but optimized for programmers
@@ -431,6 +432,9 @@ brew "theseal/ssh-askpass/ssh-askpass"
 brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called "interactive keyboard password authentication".
+# Most user should use SSH's more secure public key authentiaction instead.
+brew "weltraumschaf/tap/sshpass"
 cask "android-sdk"
 cask "appcleaner"
 cask "atom"
