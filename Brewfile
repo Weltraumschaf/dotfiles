@@ -17,16 +17,6 @@ tap "wagoodman/dive"
 tap "weaveworks/tap"
 # Portable ASCII art graphics library
 brew "aalib"
-# GNU multiple precision arithmetic library
-brew "gmp"
-# Integer Set Library for the polyhedral model
-brew "isl"
-# C library for multiple-precision floating-point computations
-brew "mpfr", link: false
-# C library for the arithmetic of high precision complex numbers
-brew "libmpc"
-# GNU compiler collection
-brew "gcc"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Simple, modern, secure file encryption
@@ -61,14 +51,6 @@ brew "ascii"
 brew "asciidoctor"
 # Record and share terminal sessions
 brew "asciinema"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
-# Portable Foreign Function Interface library
-brew "libffi"
-# Perl compatible regular expressions library
-brew "pcre"
-# Core application library for C
-brew "glib"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -92,7 +74,7 @@ brew "bats"
 # Google's own build tool
 brew "bazel"
 # GNU binary tools for native development
-brew "binutils", link: true
+brew "binutils"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Searches a binary image for embedded files and executable code
@@ -107,6 +89,14 @@ brew "broot"
 brew "c-ares"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# Portable Foreign Function Interface library
+brew "libffi"
+# Perl compatible regular expressions library
+brew "pcre"
+# Core application library for C
+brew "glib"
 # Low-level library for pixel manipulation
 brew "pixman"
 # Object-file caching compiler wrapper
@@ -122,7 +112,7 @@ brew "cmake"
 # Color-highlighted diff(1) output
 brew "colordiff"
 # GNU File, Shell, and Text utilities
-brew "coreutils"
+brew "coreutils", link: false
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -169,6 +159,8 @@ brew "fdupes"
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
+# GNU multiple precision arithmetic library
+brew "gmp"
 # Generic library support script
 brew "libtool"
 # C string library for manipulating Unicode strings
@@ -199,6 +191,14 @@ brew "fop"
 brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Integer Set Library for the polyhedral model
+brew "isl"
+# C library for multiple-precision floating-point computations
+brew "mpfr", link: false
+# C library for the arithmetic of high precision complex numbers
+brew "libmpc"
+# GNU compiler collection
+brew "gcc"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # GNU debugger
