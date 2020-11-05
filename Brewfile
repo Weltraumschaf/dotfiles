@@ -316,6 +316,8 @@ brew "ncrack"
 brew "nikto"
 # Port scanning utility for large networks
 brew "nmap"
+# Manage multiple Node.js versions
+brew "nvm"
 # General purpose programming language in the ML family
 brew "ocaml"
 # Generic build tool for OCaml
