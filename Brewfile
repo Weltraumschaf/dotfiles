@@ -376,6 +376,8 @@ brew "sloccount"
 brew "smimesign"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# File system client based on SSH File Transfer Protocol
+brew "sshfs"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
