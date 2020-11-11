@@ -52,6 +52,8 @@ brew "ascii"
 brew "asciidoctor"
 # Record and share terminal sessions
 brew "asciinema"
+# Automatically exclude development dependencies from Time Machine backups
+brew "asimov"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -296,6 +298,8 @@ brew "micro"
 brew "mit-scheme"
 # Project documentation with Markdown
 brew "mkdocs"
+# Automated testing for Ansible roles
+brew "molecule"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Remote terminal application
@@ -338,6 +342,8 @@ brew "pbzip2"
 brew "peco"
 # Draw UML diagrams
 brew "plantuml"
+# Tool for managing OCI containers and pods
+brew "podman"
 # Password generator
 brew "pwgen"
 # Emulator for x86 and PowerPC
