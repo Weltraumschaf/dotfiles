@@ -59,7 +59,7 @@ svn() {
 
 if [ -f "${HOME}/.local_aliases" ] ; then
     # shellcheck disable=SC1090
-	source "${HOME}/.local_aliases"
+    source "${HOME}/.local_aliases"
 fi
 
 if [ -x /usr/local/bin/docker ] ; then
