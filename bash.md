@@ -56,4 +56,64 @@ Ctrl + z – suspend/stop the command
 !*:p – print out what !* would substitute
 ```
 
-From [Slorks](http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/).
+## Navigate with Less
+
+### Search Navigation
+
+#### Forward Search
+
+- `/` search for a pattern which will take you to the next occurrence.
+- `n` for next match in forward
+- `N` for previous match in backward
+
+#### Backward Search
+
+- `?` search for a pattern which will take you to the previous occurrence.
+- `n` for next match in backward direction
+- `N` for previous match in forward direction
+
+### Screen Navigation
+
+- `CTRL + F` forward one window
+- `CTRL + B` backward one window
+- `CTRL + D` forward half window
+- `CTRL + U` backward half window
+
+### Line navigation
+
+- `j` navigate forward by one line
+- `k` navigate backward by one line
+
+### Other Navigations
+
+- `G` go to the end of file
+- `g` go to the start of file
+- `q` or `ZZ` exit the less pager
+- `F` Similiar to `tailf -f`
+
+### Count magic
+
+- `10j` 10 lines forward
+- `10k` 10 lines backward
+- `CTRL + G` show the current file name along with line, byte and percentage statistics
+
+### Other useful Less Command Operations
+
+- `v` using the configured editor edit the current file
+- `h` summary of less commands
+- `&pattern` display only the matching lines, not all
+
+### Marked navigation
+
+- `ma` mark the current position with the letter ‘a’
+- `‘a` go to the marked position `a`
+
+### Multiple file paging
+
+- `less file1 file2` open two files
+- `:e file2` open second file
+- :n – go to the next file.
+- :p – go to the previous file.
+
+From [Slorks](http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/) and
+[The Geek Stuff](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/)
