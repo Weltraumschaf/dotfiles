@@ -118,8 +118,6 @@ brew "colordiff"
 brew "coreutils", link: false
 # Configurable talking characters in ASCII art
 brew "cowsay"
-# Asynchronous event library
-brew "libevent"
 # C string library for manipulating Unicode strings
 brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -172,6 +170,8 @@ brew "gmp"
 brew "libtool"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Asynchronous event library
+brew "libevent"
 # Low-level cryptographic library
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
