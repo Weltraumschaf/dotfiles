@@ -195,7 +195,7 @@ brew "fzf"
 # Integer Set Library for the polyhedral model
 brew "isl"
 # C library for multiple-precision floating-point computations
-brew "mpfr", link: false
+brew "mpfr"
 # C library for the arithmetic of high precision complex numbers
 brew "libmpc"
 # GNU compiler collection
