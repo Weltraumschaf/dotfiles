@@ -445,61 +445,105 @@ brew "weltraumschaf/tap/sshpass"
 cask "alfred"
 cask "android-sdk"
 cask "appcleaner"
+# Text editor
 cask "atom"
 cask "background-music"
+# Desktop password and login vault
 cask "bitwarden"
 cask "burp-suite"
+# Utility that prevents the system from going to sleep
 cask "caffeine"
+# Clipboard extension app
 cask "clipy"
+# Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Finds duplicate files in a computer system
 cask "dupeguru"
+# Web browser
 cask "firefox"
+# Mind-mapping software written in Java
 cask "freemind"
+# Desktop client for GitHub repositories
 cask "github"
+# Open-source video transcoder
 cask "handbrake"
+# Hex editor focussing on speed
 cask "hex-fiend"
 cask "inkscape"
+# HTTP and GraphQL Client
 cask "insomnia"
 cask "intellij-idea"
+# Wireless discovery tool
 cask "istumbler"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Free, open-source and secure video conferencing app
 cask "jitsi-meet"
+# Note taking and to-do application with synchronization capabilities
 cask "joplin"
+# Visual user interface for Docker Container management
 cask "kitematic"
+# Full TeX Live distribution with GUI applications
 cask "mactex"
+# Operating system maintenance and cleaning utility
 cask "maintenance"
 cask "mark-text"
+# Open-source, self-hosted Slack-alternative
 cask "mattermost"
+# Penetration testing framework
 cask "metasploit"
 cask "miro"
 cask "mpeg-streamclip"
 cask "multifirefox"
+# Orchestrates virtual Ubuntu instances
 cask "multipass"
+# Open-source development environment, tooling
 cask "netbeans"
+# Desktop sync client for Nextcloud software products
 cask "nextcloud"
+# App to write, plan, collaborate, and get organized
 cask "notion"
+# Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 cask "openzfs"
+# Free and open source web app scanner
 cask "owasp-zap"
+# Calculate the overall performance of an investment portfolio
 cask "portfolioperformance"
+# Collaboration platform for API development
 cask "postman"
+# Command-line shell and scripting language
 cask "powershell"
 cask "raspberry-pi-imager"
+# Tool for sending personal documents to Kindles from Macs
 cask "send-to-kindle"
+# Video chat, voice call and instant messaging application
 cask "skype"
+# Microsofts instant messaging enterprise software
 cask "skype-for-business"
+# Team communication and collaboration software
 cask "slack"
+# Customizable email client
 cask "thunderbird"
+# Web browser focusing on security
 cask "tor-browser"
+# Open-source BitTorrent client
 cask "transmission"
 cask "tunnelblick"
+# Development environment
 cask "vagrant"
 cask "vagrant-manager"
+# Free and open-source hosted hypervisor for x86 virtualization
 cask "virtualbox"
+# AMD64/Intel64 and x86 virtualization
 cask "virtualbox-extension-pack"
+# Multimedia player
 cask "vlc"
+# Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# Network protocol analyzer
 cask "wireshark"
 mas "Annotate", id: 918207447
 mas "Cyberduck", id: 409222199
