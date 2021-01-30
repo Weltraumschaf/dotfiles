@@ -441,6 +441,8 @@ brew "weaveworks/tap/eksctl"
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called "interactive keyboard password authentication".
 # Most user should use SSH's more secure public key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
+# Application launcher and productivity software
+cask "alfred"
 cask "android-sdk"
 cask "appcleaner"
 cask "atom"
