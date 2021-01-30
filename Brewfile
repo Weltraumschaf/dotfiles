@@ -124,8 +124,6 @@ brew "libunistring"
 brew "curl"
 # Message bus system, providing inter-application communication
 brew "dbus"
-# Go dependency management tool
-brew "dep"
 # Ncurses based advanced hex editor featuring diff mode and more
 brew "dhex"
 # Good-lookin' diffs with diff-highlight and more
