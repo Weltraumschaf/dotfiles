@@ -115,7 +115,7 @@ brew "cmake"
 # Color-highlighted diff(1) output
 brew "colordiff"
 # GNU File, Shell, and Text utilities
-brew "coreutils", link: false
+brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # C string library for manipulating Unicode strings
@@ -286,8 +286,6 @@ brew "maven"
 brew "maven-completion"
 # Recursively compute digests on files/directories
 brew "md5deep"
-# Hash utilities
-brew "md5sha1sum", link: false
 # Scalable distributed version control system
 brew "mercurial"
 # Modern and intuitive terminal-based text editor
