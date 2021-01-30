@@ -495,7 +495,6 @@ cask "mattermost"
 # Penetration testing framework
 cask "metasploit"
 cask "miro"
-cask "mpeg-streamclip"
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
