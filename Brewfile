@@ -471,7 +471,6 @@ cask "github"
 cask "handbrake"
 # Hex editor focussing on speed
 cask "hex-fiend"
-cask "inkscape"
 # HTTP and GraphQL Client
 cask "insomnia"
 cask "intellij-idea"
