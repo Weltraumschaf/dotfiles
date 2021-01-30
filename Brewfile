@@ -412,8 +412,6 @@ brew "wdiff"
 brew "webpack"
 # Internet file retriever
 brew "wget"
-# Graphical network analyzer and capture tool
-brew "wireshark"
 # ISO9660+RR manipulation tool
 brew "xorriso"
 # JavaScript package manager
