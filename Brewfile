@@ -402,8 +402,6 @@ brew "tmux"
 brew "tree"
 # This UML tool aimed at providing a fast way of creating UML diagrams
 brew "umlet"
-# Extract, view, and test RAR archives
-brew "unrar"
 # Bash completion for Vagrant
 brew "vagrant-completion"
 # Executes a program periodically, showing output fullscreen
