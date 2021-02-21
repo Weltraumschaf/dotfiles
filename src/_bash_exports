@@ -84,7 +84,8 @@ export LESS_TERMCAP_md="$ORANGE"
 
 # make less more friendly for non-text input files, see lesspipe(1)
 if [[ -x "/usr/local/bin/lesspipe.sh" ]]; then
-    export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
+    export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
+    export LESS_ADVANCED_PREPROCESSOR=1
 fi
 export LESS="-iFRsX"
 
