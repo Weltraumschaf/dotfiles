@@ -137,6 +137,9 @@ if [ -f "/usr/local/bin/brew" ] && [ -f "$(brew --prefix)/etc/bash_completion" ]
         # shellcheck disable=SC1090
         source "$(brew --prefix)/etc/brew-wrap"
     fi
+
+    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+    export RUBY_CONFIGURE_OPTS
 fi
 
 # Source additional information, which applies to the current host only.
