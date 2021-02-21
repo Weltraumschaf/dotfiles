@@ -129,10 +129,7 @@ elif [ -f "/usr/local/etc/bash_completion" ]; then
     source "/usr/local/etc/bash_completion"
 fi
 
-if [ -f "/usr/local/bin/brew" ] && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-    # shellcheck disable=SC1090
-    source "$(brew --prefix)/etc/bash_completion"
-
+if [ -x "/usr/local/bin/brew" ]; then
     if [ -f "$(brew --prefix)/etc/brew-wrap" ] ; then
         # shellcheck disable=SC1090
         source "$(brew --prefix)/etc/brew-wrap"
