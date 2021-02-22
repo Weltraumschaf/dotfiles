@@ -118,6 +118,8 @@ brew "colordiff"
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
+# Securely send things from one computer to another
+brew "croc"
 # C string library for manipulating Unicode strings
 brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -140,6 +142,14 @@ brew "docker-completion"
 brew "docker-compose-completion"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Ogg Bitstream Library
+brew "libogg"
+# Vorbis General Audio Compression Codec
+brew "libvorbis"
+# Low-level access to audio, keyboard, mouse, joystick and graphics
+brew "sdl"
+# DOS Emulator
+brew "dosbox"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Functional programming language for building browser-based GUIs
@@ -158,8 +168,6 @@ brew "fcrackzip"
 brew "fd"
 # Identify or delete duplicate files
 brew "fdupes"
-# Ogg Bitstream Library
-brew "libogg"
 # Free lossless audio codec
 brew "flac"
 # GNU multiple precision arithmetic library
@@ -174,8 +182,6 @@ brew "libevent"
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Vorbis General Audio Compression Codec
-brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
 # Open video compression format
@@ -208,6 +214,8 @@ brew "gdb"
 brew "geoip"
 # Distributed revision control system
 brew "git"
+# Enable transparent encryption/decryption of files in a git repo
+brew "git-crypt"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -264,12 +272,12 @@ brew "jython"
 brew "lastpass-cli"
 # Build tool for Clojure
 brew "leiningen"
+# Input filter for the pager less
+brew "lesspipe"
 # Implementation of the file(1) command
 brew "libmagic"
 # Portable sound library
 brew "libmikmod"
-# Low-level access to audio, keyboard, mouse, joystick and graphics
-brew "sdl"
 # Library like getopt(3) with a number of enhancements
 brew "popt"
 # Library that implements the rsync remote-delta algorithm
@@ -398,6 +406,8 @@ brew "tig"
 brew "tiger-vnc"
 # Terminal multiplexer
 brew "tmux"
+# Upgrade all the things
+brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # This UML tool aimed at providing a fast way of creating UML diagrams
@@ -455,8 +465,11 @@ cask "caffeine"
 cask "clipy"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
+cask "dia"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Draw.io is free online diagram software
+cask "drawio"
 # Finds duplicate files in a computer system
 cask "dupeguru"
 # Web browser
