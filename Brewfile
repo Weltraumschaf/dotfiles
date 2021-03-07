@@ -100,6 +100,8 @@ brew "libffi"
 brew "pcre"
 # Core application library for C
 brew "glib"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Low-level library for pixel manipulation
 brew "pixman"
 # Object-file caching compiler wrapper
@@ -174,8 +176,6 @@ brew "flac"
 brew "gmp"
 # Generic library support script
 brew "libtool"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Asynchronous event library
 brew "libevent"
 # Low-level cryptographic library
@@ -222,8 +222,6 @@ brew "libgpg-error"
 brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Cross-platform application and UI framework
-brew "qt"
 # Command-driven, interactive function plotting
 brew "gnuplot"
 # Log analyzer and interactive viewer for the Apache Webserver
@@ -258,8 +256,6 @@ brew "ivy"
 brew "s-lang"
 # Powerful editor for programmers
 brew "jed"
-# Generate, develop and deploy Spring Boot + Angular/React applications
-brew "jhipster"
 # CLI for the Jinja2 templating language
 brew "jinja2-cli"
 # Featureful UNIX password cracker
@@ -352,6 +348,8 @@ brew "podman"
 brew "pwgen"
 # Emulator for x86 and PowerPC
 brew "qemu"
+# Cross-platform application and UI framework
+brew "qt"
 # File browser
 brew "ranger"
 # Ruby version manager
@@ -504,6 +502,8 @@ cask "mark-text"
 cask "mattermost"
 # Penetration testing framework
 cask "metasploit"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 cask "miro"
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
@@ -514,6 +514,11 @@ cask "netbeans"
 cask "nextcloud"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Open-source software for live streaming and screen recording
+cask "obs"
+cask "obs-virtualcam"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 cask "openzfs"
@@ -525,6 +530,8 @@ cask "portfolioperformance"
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
+# Archive manager for data compression and backups
+cask "rar"
 cask "raspberry-pi-imager"
 # Tool for sending personal documents to Kindles from Macs
 cask "send-to-kindle"
@@ -534,6 +541,10 @@ cask "skype"
 cask "skype-for-business"
 # Team communication and collaboration software
 cask "slack"
+# Sets a minimum speed for built-in fans
+cask "smcfancontrol"
+# General-purpose text editor
+cask "textmate"
 # Customizable email client
 cask "thunderbird"
 # Web browser focusing on security
@@ -554,10 +565,14 @@ cask "vlc"
 cask "vscodium"
 # Network protocol analyzer
 cask "wireshark"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
 mas "Annotate", id: 918207447
 mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
 mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
@@ -569,4 +584,3 @@ mas "Pocket", id: 568494494
 mas "SimpleMind Lite", id: 439654198
 mas "Trello", id: 1278508951
 mas "uBlock", id: 1385985095
-mas "Xcode", id: 497799835
