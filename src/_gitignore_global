@@ -35,11 +35,14 @@ nbproject/
 nb-configuration.xml
 
 # IDEA
-.idea/
+.idea
+*.ipr
 *.iml
+*.iws
 
 # VS Code
 .vscode/
+.factorypath
 
 # Visual Studio
 .vs/
@@ -52,6 +55,11 @@ node_modules/
 
 # Maven
 dependency-reduced-pom.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+target/
 
 # Gradle
 .gradle/
@@ -89,7 +97,6 @@ autom4te.cache/
 _obj
 obj/
 _test
-target/
 *.jar
 
 # Archives #
@@ -120,6 +127,17 @@ target/
 *.userprefs
 *.usertasks
 *.user
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Local environment
+.env
 
 # Ignore stash folders
 stash/
