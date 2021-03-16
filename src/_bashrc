@@ -27,7 +27,7 @@ current_time() {
     date +"%T"
 }
 
-DEBUG_ON="true"
+DEBUG_ON=""
 
 debug() {
     if [ -z "${DEBUG_ON}" ]; then
@@ -42,7 +42,7 @@ debug() {
 # If not running interactively, don't do anything.
 [ -z "${PS1}" ] && return
 
-debug ">> Start custom .bashrc"
+echo "Loading .bashrc ..."
 
 if [ -f "${HOME}/.bash_functions" ]; then
     # shellcheck disable=SC1090
@@ -223,4 +223,5 @@ export NVM_DIR="${HOME}/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 debug ">> Nvm done."
 
-debug ">> .bashrc done."
+echo ".bashrc loaded :-)"
+echo
