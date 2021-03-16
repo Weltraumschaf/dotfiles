@@ -225,3 +225,9 @@ debug ">> Nvm done."
 
 echo ".bashrc loaded :-)"
 echo
+
+if [[ "$(command -v ultralist)" ]]; then
+    echo "Todos"
+    echo "====="
+    ultralist list
+fi
