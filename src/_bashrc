@@ -198,7 +198,10 @@ debug ">> Eksctl done."
 
 # https://sdkman.io
 # shellcheck disable=SC1090
-[[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
+if [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] ; then
+    source "${HOME}/.sdkman/bin/sdkman-init.sh"
+    source <(sdk completion bash)
+fi
 
 debug ">> SDKMAN done."
 
