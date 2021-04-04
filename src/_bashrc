@@ -121,7 +121,7 @@ export PS1
 
 unset color_prompt force_color_prompt
 
-debug >> "Git prompt dome."
+debug ">> Git prompt dome."
 
 if [ -f "${HOME}/.bash_aliases" ] ; then
     # shellcheck disable=SC1090
