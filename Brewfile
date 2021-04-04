@@ -78,6 +78,16 @@ brew "bats"
 brew "bazel"
 # GNU binary tools for native development
 brew "binutils"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# Integer Set Library for the polyhedral model
+brew "isl"
+# C library for multiple-precision floating-point computations
+brew "mpfr"
+# C library for the arithmetic of high precision complex numbers
+brew "libmpc"
+# GNU compiler collection
+brew "gcc"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Searches a binary image for embedded files and executable code
@@ -172,8 +182,6 @@ brew "fd"
 brew "fdupes"
 # Free lossless audio codec
 brew "flac"
-# GNU multiple precision arithmetic library
-brew "gmp"
 # Generic library support script
 brew "libtool"
 # Asynchronous event library
@@ -198,14 +206,6 @@ brew "fop"
 brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Integer Set Library for the polyhedral model
-brew "isl"
-# C library for multiple-precision floating-point computations
-brew "mpfr"
-# C library for the arithmetic of high precision complex numbers
-brew "libmpc"
-# GNU compiler collection
-brew "gcc"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # GNU debugger
@@ -408,6 +408,8 @@ brew "tmux"
 brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Simple GTD-style task management for the command-line
+brew "ultralist"
 # This UML tool aimed at providing a fast way of creating UML diagrams
 brew "umlet"
 # Bash completion for Vagrant
@@ -430,8 +432,6 @@ brew "yq"
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
-# A simple terminal UI for git commands, written in Go
-brew "jesseduffield/lazygit/lazygit"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
 # modular DocBook DSSSL stylesheets
@@ -510,6 +510,8 @@ cask "multifirefox"
 cask "multipass"
 # Open-source development environment, tooling
 cask "netbeans"
+# Free and open-source RSS reader
+cask "netnewswire"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
 # App to write, plan, collaborate, and get organized
@@ -532,6 +534,7 @@ cask "postman"
 cask "powershell"
 # Archive manager for data compression and backups
 cask "rar"
+# Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # Tool for sending personal documents to Kindles from Macs
 cask "send-to-kindle"
@@ -551,6 +554,7 @@ cask "thunderbird"
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
+# Free and open-source OpenVPN client
 cask "tunnelblick"
 # Development environment
 cask "vagrant"
