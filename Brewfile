@@ -22,6 +22,8 @@ brew "aalib"
 brew "ack"
 # Simple, modern, secure file encryption
 brew "age"
+# Asynchronous DNS library
+brew "c-ares"
 # Platform built on V8 to build network applications
 brew "node"
 # CLI tool for Angular
@@ -98,8 +100,6 @@ brew "bitwarden-cli"
 brew "bnd"
 # New way to see and navigate directory trees
 brew "broot"
-# Asynchronous DNS library
-brew "c-ares"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # GNU internationalization (i18n) and localization (l10n) library
@@ -456,6 +456,7 @@ cask "atom"
 cask "background-music"
 # Desktop password and login vault
 cask "bitwarden"
+# Web security testing toolkit
 cask "burp-suite"
 # Utility that prevents the system from going to sleep
 cask "caffeine"
