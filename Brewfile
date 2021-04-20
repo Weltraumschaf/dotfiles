@@ -434,7 +434,7 @@ brew "caffix/amass/amass"
 brew "derailed/k9s/k9s"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
-# modular DocBook DSSSL stylesheets
+# Modular DocBook DSSSL stylesheets
 brew "petere/sgml/docbook-dsssl"
 # Implementation of the DSSSL language
 brew "petere/sgml/openjade"
@@ -509,7 +509,7 @@ cask "miro"
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
-# Open-source development environment, tooling
+# Development environment, tooling platform and application framework
 cask "netbeans"
 # Free and open-source RSS reader
 cask "netnewswire"
