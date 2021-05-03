@@ -310,6 +310,8 @@ brew "youtube-dl"
 brew "mpv"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
 # NCurses Disk Usage
@@ -483,6 +485,7 @@ cask "handbrake"
 cask "hex-fiend"
 # HTTP and GraphQL Client
 cask "insomnia"
+# Java IDE by JetBrains
 cask "intellij-idea"
 # Wireless discovery tool
 cask "istumbler"
@@ -505,6 +508,7 @@ cask "mattermost"
 cask "metasploit"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Online collaborative whiteboard platform
 cask "miro"
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
