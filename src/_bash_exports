@@ -42,6 +42,14 @@ if [ -d "${HOME}/Library/Python/3.7/bin" ] ; then
     PATH="${HOME}/Library/Python/3.7/bin:${PATH}"
 fi
 
+if [ -d "${HOME}/Library/Python/3.8/bin" ] ; then
+    PATH="${HOME}/Library/Python/3.8/bin:${PATH}"
+fi
+
+if [ -d "${HOME}/Library/Python/3.9/bin" ] ; then
+    PATH="${HOME}/Library/Python/3.9/bin:${PATH}"
+fi
+
 export PATH
 
 if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
@@ -125,4 +133,3 @@ fi
 if [ -f "${HOME}/.local_exports" ] ; then
     source "${HOME}/.local_exports"
 fi
-
