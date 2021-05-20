@@ -12,6 +12,7 @@ tap "jesseduffield/lazygit"
 tap "mas-cli/tap"
 tap "petere/sgml"
 tap "rcmdnk/file"
+tap "remotemobprogramming/brew"
 tap "theseal/ssh-askpass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
@@ -50,6 +51,10 @@ brew "libnet"
 brew "arping"
 # List ASCII idiomatic names and octal/decimal code-point forms
 brew "ascii"
+# Standard SGML representation system for technical documents
+brew "docbook"
+# Formatter/translator for text files to numerous formats. Includes a2x
+brew "asciidoc"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
 # Record and share terminal sessions
@@ -144,8 +149,6 @@ brew "dhex"
 brew "diff-so-fancy"
 # Load/unload environment variables based on $PWD
 brew "direnv"
-# Standard SGML representation system for technical documents
-brew "docbook"
 # XML vocabulary to create presentation-neutral documents
 brew "docbook-xsl"
 # Bash, Zsh and Fish completion for Docker
@@ -386,8 +389,6 @@ brew "sloccount"
 brew "smimesign"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
-# File system client based on SSH File Transfer Protocol
-brew "sshfs"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
@@ -528,6 +529,7 @@ cask "obs-virtualcam"
 cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Open source port of OpenZFS
 cask "openzfs"
 # Free and open source web app scanner
 cask "owasp-zap"
@@ -590,6 +592,6 @@ mas "MindNode Lite", id: 402397683
 mas "OneDrive", id: 823766827
 mas "Outbank", id: 1094255754
 mas "Pocket", id: 568494494
-mas "SimpleMind Lite", id: 439654198
+mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
 mas "uBlock", id: 1385985095
