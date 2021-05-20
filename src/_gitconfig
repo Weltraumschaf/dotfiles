@@ -85,7 +85,6 @@
   # https://thoughtbot.com/blog/dumpster-diving-through-dotfiles-better-git-logging
   sl = log --oneline --decorate
   sla = log --oneline --decorate --graph --all
-  slap = log --oneline --decorate --graph --all
 
   # https://thoughtbot.com/blog/dumpster-diving-through-dotfiles-git-branches
   branches = for-each-ref --sort=-committerdate \
