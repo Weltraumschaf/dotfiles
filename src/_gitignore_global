@@ -63,6 +63,7 @@ target/
 
 # Gradle
 .gradle/
+build/
 
 # .Net Core
 [Oo]bj/
