@@ -83,6 +83,8 @@ brew "bat"
 brew "bats"
 # Google's own build tool
 brew "bazel"
+# Remove large files or passwords from Git history like git-filter-branch
+brew "bfg"
 # GNU binary tools for native development
 brew "binutils"
 # GNU multiple precision arithmetic library
@@ -143,6 +145,8 @@ brew "libunistring"
 brew "curl"
 # Message bus system, providing inter-application communication
 brew "dbus"
+# Converts boring normal dates to fun Discordian Date
+brew "ddate"
 # Ncurses based advanced hex editor featuring diff mode and more
 brew "dhex"
 # Good-lookin' diffs with diff-highlight and more
@@ -239,6 +243,8 @@ brew "hcloud"
 brew "helm"
 # Library for communicating with USB and Bluetooth HID devices
 brew "hidapi"
+# Advanced HTML-to-text converter
+brew "html2text"
 # Improved top (interactive process viewer)
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -247,6 +253,8 @@ brew "httpie"
 brew "hub"
 # Configurable static site generator
 brew "hugo"
+# Converts many CD-ROM image formats to ISO9660
+brew "iat"
 # Improved colored diff
 brew "icdiff"
 # Tools and libraries to manipulate images in many formats
@@ -299,6 +307,8 @@ brew "mercurial"
 brew "micro"
 # MIT/GNU Scheme development tools and runtime library
 brew "mit-scheme"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
 # Project documentation with Markdown
 brew "mkdocs"
 # Automated testing for Ansible roles
@@ -311,6 +321,8 @@ brew "mosh"
 brew "youtube-dl"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
 # Free (GNU) replacement for the Pico text editor
@@ -321,12 +333,18 @@ brew "nasm"
 brew "ncdu"
 # Network authentication cracking tool
 brew "ncrack"
+# Robust (fully ACID) transactional property graph database
+brew "neo4j"
 # Web server scanner
 brew "nikto"
 # Port scanning utility for large networks
 brew "nmap"
+# Libraries for security-enabled client and server applications
+brew "nss"
 # Manage multiple Node.js versions
 brew "nvm"
+# Tools for one-time password authentication systems
+brew "oath-toolkit"
 # General purpose programming language in the ML family
 brew "ocaml"
 # Generic build tool for OCaml
@@ -387,6 +405,10 @@ brew "shellcheck"
 brew "sloccount"
 # S/MIME signing utility for use with Git
 brew "smimesign"
+# Launcher to analyze a project with SonarQube
+brew "sonar-scanner"
+# Editor of encrypted files
+brew "sops"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Clean C library for processing UTF-8 Unicode data
@@ -411,6 +433,8 @@ brew "tmux"
 brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Language for application scale JavaScript development
+brew "typescript", link: false
 # Simple GTD-style task management for the command-line
 brew "ultralist"
 # This UML tool aimed at providing a fast way of creating UML diagrams
@@ -441,6 +465,8 @@ brew "mas-cli/tap/mas"
 brew "petere/sgml/docbook-dsssl"
 # Implementation of the DSSSL language
 brew "petere/sgml/openjade"
+# Swift handover for remote mobs using git. mob is a CLI tool written in GO. It keeps your master branch clean and creates WIP commits on mob-session branch.
+brew "remotemobprogramming/brew/mob"
 # The ssh-askpass util for MacOS
 brew "theseal/ssh-askpass/ssh-askpass"
 # A tool for exploring each layer in a docker image
@@ -459,6 +485,8 @@ cask "atom"
 cask "background-music"
 # Desktop password and login vault
 cask "bitwarden"
+# Six Degrees of Domain Admin
+cask "bloodhound"
 # Web security testing toolkit
 cask "burp-suite"
 # Utility that prevents the system from going to sleep
@@ -474,6 +502,9 @@ cask "docker"
 cask "drawio"
 # Finds duplicate files in a computer system
 cask "dupeguru"
+cask "edex-ui"
+# Collaborative team software
+cask "figma"
 # Web browser
 cask "firefox"
 # Mind-mapping software written in Java
@@ -496,8 +527,15 @@ cask "iterm2"
 cask "jitsi-meet"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
+cask "keystore-explorer"
 # Visual user interface for Docker Container management
 cask "kitematic"
+# Tool to show what is persistently installed on the computer
+cask "knockknock"
+# Create, manage and debug system- and user services
+cask "launchcontrol"
+# Official client for LBRY, a decentralised file-sharing and payment network
+cask "lbry"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Operating system maintenance and cleaning utility
@@ -543,6 +581,8 @@ cask "powershell"
 cask "rar"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
+# Scans, detects, and monitors keyboard taps
+cask "reikey"
 # Tool for sending personal documents to Kindles from Macs
 cask "send-to-kindle"
 # Video chat, voice call and instant messaging application
@@ -553,8 +593,14 @@ cask "skype-for-business"
 cask "slack"
 # Sets a minimum speed for built-in fans
 cask "smcfancontrol"
+# Application for inspecting installer packages
+cask "suspicious-package"
+# Tool to explore all the running tasks (processes)
+cask "taskexplorer"
 # General-purpose text editor
 cask "textmate"
+# Python IDE for beginners
+cask "thonny"
 # Customizable email client
 cask "thunderbird"
 # Web browser focusing on security
@@ -578,9 +624,16 @@ cask "vscodium"
 cask "wireshark"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
+# Multi-platform graphical interface for official Nmap Security Scanner
+cask "zenmap"
+# Open-source markdown editor
+cask "zettlr"
+# Collect, organize, cite, and share research sources
+cask "zotero"
 mas "Annotate", id: 918207447
 mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
+mas "GIF Brewery 3", id: 1081413713
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
