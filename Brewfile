@@ -333,8 +333,6 @@ brew "nasm"
 brew "ncdu"
 # Network authentication cracking tool
 brew "ncrack"
-# Robust (fully ACID) transactional property graph database
-brew "neo4j"
 # Web server scanner
 brew "nikto"
 # Port scanning utility for large networks
@@ -434,7 +432,7 @@ brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Language for application scale JavaScript development
-brew "typescript", link: false
+brew "typescript"
 # Simple GTD-style task management for the command-line
 brew "ultralist"
 # This UML tool aimed at providing a fast way of creating UML diagrams
@@ -482,11 +480,8 @@ cask "android-sdk"
 cask "appcleaner"
 # Text editor
 cask "atom"
-cask "background-music"
 # Desktop password and login vault
 cask "bitwarden"
-# Six Degrees of Domain Admin
-cask "bloodhound"
 # Web security testing toolkit
 cask "burp-suite"
 # Utility that prevents the system from going to sleep
@@ -567,7 +562,7 @@ cask "obs-virtualcam"
 cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
-# Open source port of OpenZFS
+# ZFS driver and utilities
 cask "openzfs"
 # Free and open source web app scanner
 cask "owasp-zap"
