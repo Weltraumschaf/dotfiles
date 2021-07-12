@@ -490,6 +490,7 @@ cask "caffeine"
 cask "clipy"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
+# Draw structured diagrams
 cask "dia"
 # App to build and share containerized applications and microservices
 cask "docker"
