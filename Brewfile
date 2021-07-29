@@ -233,6 +233,8 @@ brew "gnupg"
 brew "gnuplot"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
+# Manage your GnuPG keys with ease! 🔐
+brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
@@ -321,6 +323,8 @@ brew "mosh"
 brew "youtube-dl"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
+# SMTP client that can be used as an SMTP plugin for Mutt
+brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Tail multiple files in one terminal simultaneously
@@ -363,12 +367,12 @@ brew "pbzip2"
 brew "peco"
 # Draw UML diagrams
 brew "plantuml"
+# Emulator for x86 and PowerPC
+brew "qemu"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Password generator
 brew "pwgen"
-# Emulator for x86 and PowerPC
-brew "qemu"
 # Cross-platform application and UI framework
 brew "qt"
 # File browser
@@ -545,6 +549,8 @@ cask "metasploit"
 cask "microsoft-auto-update"
 # Online collaborative whiteboard platform
 cask "miro"
+# Open source implementation of Microsoft's .NET Framework
+cask "mono-mdk"
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
