@@ -155,8 +155,8 @@ brew "diff-so-fancy"
 brew "direnv"
 # XML vocabulary to create presentation-neutral documents
 brew "docbook-xsl"
-# Bash, Zsh and Fish completion for Docker
-brew "docker-completion"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Completion script for docker-compose
 brew "docker-compose-completion"
 # Convert text between DOS, UNIX, and Mac formats
@@ -385,6 +385,8 @@ brew "rclone"
 brew "reattach-to-user-namespace"
 # Convert character set (charsets)
 brew "recode"
+# Web Reconnaissance Framework
+brew "recon-ng"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Fast, efficient and secure backup program
@@ -536,6 +538,8 @@ cask "knockknock"
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
 cask "lbry"
+# Office suite
+cask "libreoffice"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Operating system maintenance and cleaning utility
