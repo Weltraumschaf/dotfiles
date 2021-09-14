@@ -35,6 +35,8 @@ brew "readline"
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Java build tool
@@ -87,6 +89,20 @@ brew "bazel"
 brew "bfg"
 # GNU binary tools for native development
 brew "binutils"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# Portable Foreign Function Interface library
+brew "libffi"
+# Perl compatible regular expressions library
+brew "pcre"
+# Core application library for C
+brew "glib"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Low-level library for pixel manipulation
+brew "pixman"
 # GNU multiple precision arithmetic library
 brew "gmp"
 # Integer Set Library for the polyhedral model
@@ -107,20 +123,6 @@ brew "bitwarden-cli"
 brew "bnd"
 # New way to see and navigate directory trees
 brew "broot"
-# XML-based font configuration API for X Windows
-brew "fontconfig"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
-# Portable Foreign Function Interface library
-brew "libffi"
-# Perl compatible regular expressions library
-brew "pcre"
-# Core application library for C
-brew "glib"
-# Manage compile and link flags for libraries
-brew "pkg-config"
-# Low-level library for pixel manipulation
-brew "pixman"
 # Object-file caching compiler wrapper
 brew "ccache"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
@@ -343,6 +345,8 @@ brew "nikto"
 brew "nmap"
 # Libraries for security-enabled client and server applications
 brew "nss"
+# HTTP/DNS scanner configurable via YAML templates
+brew "nuclei"
 # Manage multiple Node.js versions
 brew "nvm"
 # Tools for one-time password authentication systems
@@ -483,6 +487,7 @@ brew "weltraumschaf/tap/sshpass"
 # Application launcher and productivity software
 cask "alfred"
 cask "android-sdk"
+# Application uninstaller
 cask "appcleaner"
 # Text editor
 cask "atom"
@@ -545,8 +550,6 @@ cask "mactex"
 # Operating system maintenance and cleaning utility
 cask "maintenance"
 cask "mark-text"
-# Open-source, self-hosted Slack-alternative
-cask "mattermost"
 # Penetration testing framework
 cask "metasploit"
 # Provides updates to various Microsoft products
@@ -556,8 +559,6 @@ cask "miro"
 # Open source implementation of Microsoft's .NET Framework
 cask "mono-mdk"
 cask "multifirefox"
-# Orchestrates virtual Ubuntu instances
-cask "multipass"
 # Development environment, tooling platform and application framework
 cask "netbeans"
 # Free and open-source RSS reader
