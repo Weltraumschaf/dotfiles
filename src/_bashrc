@@ -232,5 +232,5 @@ echo
 if [[ "$(command -v ultralist)" ]]; then
     echo "Todos"
     echo "====="
-    ultralist list
+    ultralist list group:project
 fi
