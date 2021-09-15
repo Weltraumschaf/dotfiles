@@ -177,6 +177,8 @@ brew "elixir"
 brew "elm"
 # Charset analyzer and converter
 brew "enca"
+# AST-based pattern checker for JavaScript
+brew "eslint", link: false
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Test various flash cards
@@ -381,6 +383,8 @@ brew "pwgen"
 brew "qt"
 # File browser
 brew "ranger"
+# Install various Ruby versions and implementations
+brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
 # Rsync for cloud storage
