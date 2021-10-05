@@ -227,6 +227,8 @@ brew "geoip"
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -297,6 +299,8 @@ brew "popt"
 brew "librsync"
 # C implementation of a Sass compiler
 brew "libsass"
+# Library for database change tracking
+brew "liquibase"
 # Python generator for the console
 brew "lorem"
 # MPEG audio decoder
@@ -333,6 +337,8 @@ brew "msmtp"
 brew "mtr"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
+# Open source relational database management system
+brew "mysql"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
@@ -411,6 +417,8 @@ brew "sassc"
 brew "scons"
 # Graphic adventure game interpreter
 brew "scummvm"
+# Easily detect and prevent bugs and anti-patterns in your codebase
+brew "semgrep"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Count lines of code in many languages
@@ -423,6 +431,8 @@ brew "sonar-scanner"
 brew "sops"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# SSL scanner
+brew "sslyze"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
@@ -563,6 +573,8 @@ cask "miro"
 # Open source implementation of Microsoft's .NET Framework
 cask "mono-mdk"
 cask "multifirefox"
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
 # Development environment, tooling platform and application framework
 cask "netbeans"
 # Free and open-source RSS reader
@@ -646,7 +658,6 @@ mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
 mas "GIF Brewery 3", id: 1081413713
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
