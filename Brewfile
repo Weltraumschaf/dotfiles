@@ -81,8 +81,6 @@ brew "bash"
 brew "bash-completion"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# TAP-compliant test framework for Bash scripts
-brew "bats"
 # Google's own build tool
 brew "bazel"
 # Remove large files or passwords from Git history like git-filter-branch
@@ -335,8 +333,6 @@ brew "mpv"
 brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
-# Tail multiple files in one terminal simultaneously
-brew "multitail"
 # Open source relational database management system
 brew "mysql"
 # Free (GNU) replacement for the Pico text editor
