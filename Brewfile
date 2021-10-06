@@ -2,6 +2,7 @@ tap "caffix/amass"
 tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
 tap "go-gitea/gitea"
+tap "go-task/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
@@ -176,7 +177,7 @@ brew "elm"
 # Charset analyzer and converter
 brew "enca"
 # AST-based pattern checker for JavaScript
-brew "eslint", link: false
+brew "eslint"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Test various flash cards
