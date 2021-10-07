@@ -182,6 +182,10 @@ export NVM_DIR="${HOME}/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 debug ">> Nvm done."
 
+# https://starship.rs/
+eval "$(starship init bash)"
+debug ">> Starship done."
+
 echo ".bashrc loaded :-)"
 echo
 
