@@ -45,7 +45,7 @@ debug() {
 echo "Loading .bashrc ..."
 
 if [ -f "${HOME}/.bash_functions" ]; then
-    # shellcheck disable=SC1090
+    # shellcheck disable=SC1091
     source "${HOME}/.bash_functions"
 fi
 
@@ -67,12 +67,12 @@ shopt -s checkwinsize
 [[ -s "/usr/libexec/path_helper" ]] && eval "$(/usr/libexec/path_helper -s)"
 
 if [ -f "${HOME}/.bash_exports" ] ; then
-    # shellcheck disable=SC1090
+    # shellcheck disable=SC1091
     source "${HOME}/.bash_exports"
 fi
 
 if [ -f "$HOME/.config/perl" ] ; then
-    # shellcheck disable=SC1090
+    # shellcheck disable=SC1091
     source "$HOME/.config/perl"
 fi
 
@@ -124,23 +124,23 @@ unset color_prompt force_color_prompt
 debug ">> Git prompt dome."
 
 if [ -f "${HOME}/.bash_aliases" ] ; then
-    # shellcheck disable=SC1090
+    # shellcheck disable=SC1091
     source "${HOME}/.bash_aliases"
 fi
 
 if [ -f "${HOME}/.ssh_aliases" ] ; then
-    # shellcheck disable=SC1090
+    # shellcheck disable=SC1091
     source "${HOME}/.ssh_aliases"
 fi
 
 if [ -f "${HOME}/.local_aliases" ] ; then
-    # shellcheck disable=SC1090
+    # shellcheck disable=SC1091
     source "${HOME}/.local_aliases"
 fi
 
 # Source additional information, which applies to the current host only.
 if [ -f "${HOME}/.bash_local" ]; then
-    # shellcheck disable=SC1090
+    # shellcheck disable=SC1091
     source "${HOME}/.bash_local"
 fi
 
@@ -176,12 +176,12 @@ debug ">> Direnv done."
 
 debug ">> Hcloud done."
 
-# shellcheck disable=SC1090
+# shellcheck disable=SC1091
 [[ -s "${HOME}/perl5/perlbrew/etc/bashrc" ]] && source "${HOME}/perl5/perlbrew/etc/bashrc"
 
 debug ">> Perlbrew done."
 
-# shellcheck disable=SC1090
+# shellcheck disable=SC1091
 [[ -s "${HOME}/.cargo/env" ]] && source "${HOME}/.cargo/env"
 
 debug ">> Cargo done."
@@ -199,6 +199,7 @@ debug ">> Eksctl done."
 # https://sdkman.io
 # shellcheck disable=SC1090
 if [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] ; then
+    # shellcheck disable=SC1091
     source "${HOME}/.sdkman/bin/sdkman-init.sh"
     source <(sdk completion bash)
 fi
@@ -210,11 +211,13 @@ debug ">> SDKMAN done."
 
 debug ">> Rbenv done."
 
+# shellcheck disable=SC1091
 [[ -f "${HOME}/.fzf.bash" ]] && source "${HOME}/.fzf.bash"
 
 debug ">> FZF done."
 
 BROOT="${HOME}/Library/Preferences/org.dystroy.broot/launcher/bash/br"
+# shellcheck disable=SC1090
 [[ -f "${BROOT}" ]] && source "${BROOT}"
 
 debug ">> Broot done."
