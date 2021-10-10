@@ -430,6 +430,8 @@ brew "sops"
 brew "speedtest-cli"
 # SSL scanner
 brew "sslyze"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
@@ -478,6 +480,8 @@ brew "yq"
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# Task runner / simpler Make alternative written in Go
+brew "go-task/tap/go-task"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
 # Modular DocBook DSSSL stylesheets
