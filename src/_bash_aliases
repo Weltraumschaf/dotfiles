@@ -72,3 +72,8 @@ if [ -x /usr/local/bin/docker ] ; then
     alias d-swagger-editor="docker run --rm -d -p 80:8080 swaggerapi/swagger-editor && sleep 3 && open http://localhost"
     alias d-jenkins="docker run --rm -d -p 8080:8080 -p 50000:50000 jenkins/jenkins"
 fi
+
+if [ -x /usr/local/bin/ultralist ] ; then
+    alias todos='ultralist l group:project --notes'
+    alias priv-todos='ultralist l project:Privat --notes'
+fi
