@@ -22,14 +22,12 @@ tap "weltraumschaf/tap"
 brew "aalib"
 # Search tool like grep, but optimized for programmers
 brew "ack"
+# Run your GitHub Actions locally 🚀
+brew "act"
 # Simple, modern, secure file encryption
 brew "age"
 # Asynchronous DNS library
 brew "c-ares"
-# Platform built on V8 to build network applications
-brew "node"
-# CLI tool for Angular
-brew "angular-cli"
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
@@ -38,6 +36,10 @@ brew "sqlite"
 brew "xz"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Platform built on V8 to build network applications
+brew "node"
+# CLI tool for Angular
+brew "angular-cli"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Java build tool
@@ -56,7 +58,7 @@ brew "arping"
 brew "ascii"
 # Standard SGML representation system for technical documents
 brew "docbook"
-# Formatter/translator for text files to numerous formats. Includes a2x
+# Formatter/translator for text files to numerous formats
 brew "asciidoc"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
@@ -158,8 +160,6 @@ brew "direnv"
 brew "docbook-xsl"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
-# Completion script for docker-compose
-brew "docker-compose-completion"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
 # Ogg Bitstream Library
@@ -232,6 +232,8 @@ brew "gnu-sed"
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
 brew "libgcrypt"
+# Library for USB device access
+brew "libusb"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Command-driven, interactive function plotting
@@ -260,6 +262,8 @@ brew "httpie"
 brew "hub"
 # Configurable static site generator
 brew "hugo"
+# Toolkit for embedding hypervisor capabilities in your application
+brew "hyperkit"
 # Converts many CD-ROM image formats to ISO9660
 brew "iat"
 # Improved colored diff
@@ -298,6 +302,8 @@ brew "popt"
 brew "librsync"
 # C implementation of a Sass compiler
 brew "libsass"
+# City simulation game
+brew "lincity-ng"
 # Library for database change tracking
 brew "liquibase"
 # Python generator for the console
@@ -314,6 +320,8 @@ brew "md5deep"
 brew "mercurial"
 # Modern and intuitive terminal-based text editor
 brew "micro"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # MIT/GNU Scheme development tools and runtime library
 brew "mit-scheme"
 # Simple tool to make locally trusted development certificates
@@ -406,6 +414,8 @@ brew "restic"
 brew "rhash"
 # JavaScript engine
 brew "rhino"
+# Utility that provides fast incremental file transfer
+brew "rsync"
 # Rust toolchain installer
 brew "rustup-init"
 # Wrapper around libsass that helps to create command-line apps
@@ -432,6 +442,8 @@ brew "speedtest-cli"
 brew "sslyze"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Version control system designed to be a better CVS
@@ -510,20 +522,19 @@ cask "atom"
 cask "bitwarden"
 # Web security testing toolkit
 cask "burp-suite"
-# Utility that prevents the system from going to sleep
-cask "caffeine"
 # Clipboard extension app
 cask "clipy"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
 # Draw structured diagrams
 cask "dia"
-# App to build and share containerized applications and microservices
-cask "docker"
+# Digital photo manager
+cask "digikam"
 # Draw.io is free online diagram software
 cask "drawio"
 # Finds duplicate files in a computer system
 cask "dupeguru"
+# Sci-fi themed terminal emulator and system monitor
 cask "edex-ui"
 # Collaborative team software
 cask "figma"
@@ -554,12 +565,16 @@ cask "keystore-explorer"
 cask "kitematic"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
+# Free and open-source painting and sketching program
+cask "krita"
 # Create, manage and debug system- and user services
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
 cask "lbry"
 # Office suite
 cask "libreoffice"
+# Go IDE
+cask "liteide"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Operating system maintenance and cleaning utility
@@ -595,6 +610,8 @@ cask "onyx"
 cask "openzfs"
 # Free and open source web app scanner
 cask "owasp-zap"
+# Simple Gtk# Paint Program
+cask "pinta"
 # Calculate the overall performance of an investment portfolio
 cask "portfolioperformance"
 # Collaboration platform for API development
@@ -655,6 +672,7 @@ cask "zettlr"
 # Collect, organize, cite, and share research sources
 cask "zotero"
 mas "Annotate", id: 918207447
+mas "Caffeinated", id: 1362171212
 mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
 mas "GIF Brewery 3", id: 1081413713
