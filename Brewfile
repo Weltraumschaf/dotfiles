@@ -530,6 +530,8 @@ cask "deeper"
 cask "dia"
 # Digital photo manager
 cask "digikam"
+# App to build and share containerized applications and microservices
+cask "docker"
 # Draw.io is free online diagram software
 cask "drawio"
 # Finds duplicate files in a computer system
@@ -556,7 +558,7 @@ cask "intellij-idea"
 cask "istumbler"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Free, open-source and secure video conferencing app
+# Secure video conferencing app
 cask "jitsi-meet"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
