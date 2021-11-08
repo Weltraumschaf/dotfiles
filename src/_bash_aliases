@@ -77,4 +77,5 @@ fi
 if [ -x /usr/local/bin/ultralist ] ; then
     alias todos='ultralist l group:project --notes'
     alias priv-todos='ultralist l project:Privat --notes'
+    alias work-todos='ultralist l project:-Privat group:project --notes'
 fi
