@@ -68,9 +68,10 @@ if [ -x /usr/local/bin/docker ] ; then
     alias d-kali='docker run -ti --rm --mount type=bind,src=${HOME}/dkali-root,dst=/root/host --mount src=kali-postgres,dst=/var/lib/postgresql weltraumschaf/kali:1.0.0 /bin/bash'
     alias d-debian='docker run --rm -it -v ${HOME}/Downloads:/root/host weltraumschaf/debian-in-a-nutshell:1.0.0 /bin/bash'
     alias d-nodejs='docker run --rm -it -v ${HOME}/Downloads:/root/host weltraumschaf/debian-nodejs-v8:1.0.0 /bin/bash'
-    alias d-juiceshop="docker run --rm -it -p 3000:3000 bkimminich/juice-shop"
-    alias d-swagger-editor="docker run --rm -d -p 80:8080 swaggerapi/swagger-editor && sleep 3 && open http://localhost"
-    alias d-jenkins="docker run --rm -d -p 8080:8080 -p 50000:50000 jenkins/jenkins"
+    alias d-juiceshop='docker run --rm -it -p 3000:3000 bkimminich/juice-shop'
+    alias d-swagger-editor='docker run --rm -d -p 80:8080 swaggerapi/swagger-editor && sleep 3 && open http://localhost'
+    alias d-jenkins='docker run --rm -d -p 8080:8080 -p 50000:50000 jenkins/jenkins'
+    alias d-juice-shop='docker run --rm -p 3000:3000 bkimminich/juice-shop'
 fi
 
 if [ -x /usr/local/bin/ultralist ] ; then
