@@ -158,8 +158,10 @@ brew "diff-so-fancy"
 brew "direnv"
 # XML vocabulary to create presentation-neutral documents
 brew "docbook-xsl"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
+# Isolated development environments using Docker
+brew "docker-compose", link: false
+# Completion script for docker-compose
+brew "docker-compose-completion", link: false
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
 # Ogg Bitstream Library
@@ -226,6 +228,12 @@ brew "geoip"
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
+# Clean C library for processing UTF-8 Unicode data
+brew "utf8proc"
+# Version control system designed to be a better CVS
+brew "subversion"
+# Bidirectional operation between a Subversion repository and Git
+brew "git-svn"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # Common error values for all GnuPG components
@@ -444,10 +452,6 @@ brew "sslyze"
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Clean C library for processing UTF-8 Unicode data
-brew "utf8proc"
-# Version control system designed to be a better CVS
-brew "subversion"
 # Generate scripting interfaces to C/C++ code
 brew "swig"
 # User interface to the TELNET protocol
@@ -674,6 +678,7 @@ cask "zettlr"
 # Collect, organize, cite, and share research sources
 cask "zotero"
 mas "Annotate", id: 918207447
+mas "Apple Configurator 2", id: 1037126344
 mas "Caffeinated", id: 1362171212
 mas "Cyberduck", id: 409222199
 mas "EasyFind", id: 411673888
