@@ -382,6 +382,8 @@ brew "octant"
 brew "open-sp"
 # OpenShift command-line interface tools
 brew "openshift-cli"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Tool for creating identical machine images for multiple platforms
 brew "packer"
 # Swiss-army knife of markup format conversion
@@ -398,6 +400,8 @@ brew "qemu"
 brew "podman"
 # Password generator
 brew "pwgen"
+# Python version management
+brew "pyenv"
 # Cross-platform application and UI framework
 brew "qt"
 # File browser
@@ -492,6 +496,8 @@ brew "xorriso"
 brew "yarn"
 # Process YAML documents from the CLI
 brew "yq"
+# General-purpose lossless data-compression library
+brew "zlib"
 # In-depth Attack Surface Mapping and Asset Discovery
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
