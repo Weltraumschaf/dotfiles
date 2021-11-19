@@ -519,19 +519,37 @@ brew "weaveworks/tap/eksctl"
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called "interactive keyboard password authentication".
 # Most user should use SSH's more secure public key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
+# Instant messaging application
+cask "adium"
 # Application launcher and productivity software
 cask "alfred"
 cask "android-sdk"
 # Application uninstaller
 cask "appcleaner"
+# Electronics prototyping platform
+cask "arduino"
+# Multi-cloud backup application
+cask "arq"
 # Text editor
 cask "atom"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Compare files and folders
+cask "beyond-compare"
 # Desktop password and login vault
 cask "bitwarden"
 # Web security testing toolkit
 cask "burp-suite"
+# Calendar software focusing on flexibility and reliability
+cask "busycal"
 # Clipboard extension app
 cask "clipy"
+# Tool to show live information about the batteries in various devices
+cask "coconutbattery"
+# Server and cloud storage browser
+cask "cyberduck"
+# Disk space visualizer
+cask "daisydisk"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
 # Draw structured diagrams
@@ -546,16 +564,24 @@ cask "docker"
 cask "drawio"
 # Finds duplicate files in a computer system
 cask "dupeguru"
+# Find files, folders, or contents in any file
+cask "easyfind"
 # Sci-fi themed terminal emulator and system monitor
 cask "edex-ui"
 # Collaborative team software
 cask "figma"
 # Web browser
 cask "firefox"
+# GIT client
+cask "fork"
 # Mind-mapping software written in Java
 cask "freemind"
 # Desktop client for GitHub repositories
 cask "github"
+# Web browser
+cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Open-source video transcoder
 cask "handbrake"
 # Hex editor focussing on speed
@@ -568,10 +594,14 @@ cask "intellij-idea"
 cask "istumbler"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
 # Secure video conferencing app
 cask "jitsi-meet"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
+# End-to-end encryption software
+cask "keybase"
 cask "keystore-explorer"
 # Visual user interface for Docker Container management
 cask "kitematic"
@@ -591,15 +621,27 @@ cask "liteide"
 cask "mactex"
 # Operating system maintenance and cleaning utility
 cask "maintenance"
+# Open source intelligence and graphical link analysis tool
+cask "maltego"
 cask "mark-text"
 # Penetration testing framework
 cask "metasploit"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Spreadsheet software
+cask "microsoft-excel"
+# Presentation software
+cask "microsoft-powerpoint"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
+# Word processor
+cask "microsoft-word"
 # Online collaborative whiteboard platform
 cask "miro"
+# German banking and financial management software
+cask "moneymoney"
 # Open source implementation of Microsoft's .NET Framework
-cask "mono-mdk"
+cask "mono-mdk-for-visual-studio"
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
@@ -616,6 +658,8 @@ cask "obs"
 cask "obs-virtualcam"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Cloud storage client
+cask "onedrive"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # ZFS driver and utilities
@@ -624,18 +668,24 @@ cask "openzfs"
 cask "owasp-zap"
 # Simple Gtk# Paint Program
 cask "pinta"
+# Translation editor
+cask "poedit"
 # Calculate the overall performance of an investment portfolio
 cask "portfolioperformance"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
+# Protect your personal files
+cask "ransomwhere"
 # Archive manager for data compression and backups
 cask "rar"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # Scans, detects, and monitors keyboard taps
 cask "reikey"
+# Manage SSH tunnels
+cask "secure-pipes"
 # Tool for sending personal documents to Kindles from Macs
 cask "send-to-kindle"
 # Instant messaging application focusing on security
@@ -652,21 +702,35 @@ cask "smcfancontrol"
 cask "suspicious-package"
 # Tool to explore all the running tasks (processes)
 cask "taskexplorer"
+# Remote access and connectivity software focused on security
+cask "teamviewer"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin11"
+# LaTeX editor
+cask "texpad"
 # General-purpose text editor
 cask "textmate"
+# Unpacks archive files
+cask "the-unarchiver"
 # Python IDE for beginners
 cask "thonny"
 # Customizable email client
 cask "thunderbird"
+# Flexible level editor
+cask "tiled"
 # Web browser focusing on security
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
+# Configurable document editor that supports Markdown
+cask "typora"
 # Development environment
 cask "vagrant"
 cask "vagrant-manager"
+# GUI frontend for youtube-dl
+cask "vidl"
 # Free and open-source hosted hypervisor for x86 virtualization
 cask "virtualbox"
 # AMD64/Intel64 and x86 virtualization
@@ -677,6 +741,8 @@ cask "vlc"
 cask "vscodium"
 # Network protocol analyzer
 cask "wireshark"
+# X Certificate and Key management
+cask "xca"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # Multi-platform graphical interface for official Nmap Security Scanner
@@ -688,17 +754,13 @@ cask "zotero"
 mas "Annotate", id: 918207447
 mas "Apple Configurator 2", id: 1037126344
 mas "Caffeinated", id: 1362171212
-mas "Cyberduck", id: 409222199
-mas "EasyFind", id: 411673888
 mas "GIF Brewery 3", id: 1081413713
 mas "iMovie", id: 408981434
-mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "MindNode Lite", id: 402397683
-mas "OneDrive", id: 823766827
 mas "Outbank", id: 1094255754
 mas "Pocket", id: 568494494
 mas "SimpleMind", id: 439654198
