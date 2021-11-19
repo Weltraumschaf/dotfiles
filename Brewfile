@@ -178,8 +178,6 @@ brew "elixir"
 brew "elm"
 # Charset analyzer and converter
 brew "enca"
-# AST-based pattern checker for JavaScript
-brew "eslint"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Test various flash cards
@@ -342,8 +340,6 @@ brew "molecule"
 brew "moreutils"
 # Remote terminal application
 brew "mosh"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
 # SMTP client that can be used as an SMTP plugin for Mutt
@@ -494,6 +490,8 @@ brew "wget"
 brew "xorriso"
 # JavaScript package manager
 brew "yarn"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
 # Process YAML documents from the CLI
 brew "yq"
 # General-purpose lossless data-compression library
@@ -540,6 +538,8 @@ cask "deeper"
 cask "dia"
 # Digital photo manager
 cask "digikam"
+# Voice and text chat software
+cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Draw.io is free online diagram software
@@ -638,6 +638,8 @@ cask "raspberry-pi-imager"
 cask "reikey"
 # Tool for sending personal documents to Kindles from Macs
 cask "send-to-kindle"
+# Instant messaging application focusing on security
+cask "signal"
 # Video chat, voice call and instant messaging application
 cask "skype"
 # Microsofts instant messaging enterprise software
