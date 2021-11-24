@@ -158,6 +158,8 @@ brew "diff-so-fancy"
 brew "direnv"
 # XML vocabulary to create presentation-neutral documents
 brew "docbook-xsl"
+# Clean Docker containers, images, networks, and volumes
+brew "docker-clean"
 # Isolated development environments using Docker
 brew "docker-compose", link: false
 # Completion script for docker-compose
@@ -294,6 +296,8 @@ brew "jq"
 brew "jython"
 # LastPass command-line interface tool
 brew "lastpass-cli"
+# Lazier way to manage everything docker
+brew "lazydocker"
 # Build tool for Clojure
 brew "leiningen"
 # Input filter for the pager less
@@ -731,9 +735,9 @@ cask "vagrant"
 cask "vagrant-manager"
 # GUI frontend for youtube-dl
 cask "vidl"
-# Free and open-source hosted hypervisor for x86 virtualization
+# Virtualizer for x86 hardware
 cask "virtualbox"
-# AMD64/Intel64 and x86 virtualization
+# Extend the functionality of VirtualBox
 cask "virtualbox-extension-pack"
 # Multimedia player
 cask "vlc"
