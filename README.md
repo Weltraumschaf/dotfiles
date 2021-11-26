@@ -36,8 +36,13 @@ There is a `Brewfile` generated from/for [Homebrew Bundle](https://github.com/Ho
 
 ### Install the Brew Stuff
 
-```bash
-brew bundle
+```shell
+curl -sSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash
+brew bundle install --file "./Brewfile"
+/usr/local/opt/fzf/install \
+    --key-bindings \
+    --completion \
+    --no-update-rc
 ```
 
 ### Update the Brewfile
