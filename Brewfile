@@ -670,8 +670,6 @@ cask "onyx"
 cask "openzfs"
 # Free and open source web app scanner
 cask "owasp-zap"
-# Simple Gtk# Paint Program
-cask "pinta"
 # Translation editor
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
@@ -760,6 +758,7 @@ mas "Apple Configurator 2", id: 1037126344
 mas "Caffeinated", id: 1362171212
 mas "GIF Brewery 3", id: 1081413713
 mas "iMovie", id: 408981434
+mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
