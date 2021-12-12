@@ -6,23 +6,26 @@ set -euo pipefail
 [ -z "${SCRIPT_DIRECTORY:-}" ] \
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-BASE_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
+PROJECT_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
+SRC_DIR="${PROJECT_DIR}/src"
+MACOS_DIR="${SRC_DIR}/macos"
+ANSIBLE_DIR="${SRC_DIR}/ansible"
 
 step_home_brew_stuff() {
-    if [ -n "${SKIP_HOME_BREW_STUFF}" ] && [ -z "${DO_HOME_BREW_STUFF}" ]; then return 0; fi
+    echo "Setup home brew stuff..."
 
     if [ -x /usr/local/bin/brew ] ; then
-        log "Homebrew already installed!"
+        echo "Homebrew already installed!"
         brew update && brew update && brew upgrade && brew upgrade --cask && brew cleanup
     else
-        log "Install homebrew..."
+        echo "Install homebrew..."
         (curl -sSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash)
     fi
 
-    log "Install basics with homebrew..."
+    echo "Install basics with homebrew..."
     # https://thoughtbot.com/blog/brewfile-a-gemfile-but-for-homebrew
     # Write the Brewfile: brew bundle dump --describe --force --verbose --file "${PROJECT}/src/macos/Brewfile"
-    brew bundle install --file "${BASE_DIR}/Brewfile"
+    brew bundle install --file "${MACOS_DIR}/Brewfile"
     /usr/local/opt/fzf/install \
         --key-bindings \
         --completion \
@@ -33,3 +36,5 @@ main() {
     step_home_brew_stuff
     echo "Done :-)"
 }
+
+main
