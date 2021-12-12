@@ -1,0 +1,6 @@
+- hosts: local_macos
+  connection: local
+  pre_tasks: []
+  tasks: []
+  roles:
+  - dev-mac

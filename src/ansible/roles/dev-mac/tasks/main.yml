@@ -1,0 +1,3 @@
+- name: Welcome
+  debug:
+    msg: Setup developer mac!
