@@ -34,6 +34,7 @@ step_home_brew_stuff() {
 
 main() {
     step_home_brew_stuff
+    ansible-playbook "${ANSIBLE_DIR}/setup-macos.yml"
     echo "Done :-)"
 }
 
