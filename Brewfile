@@ -28,18 +28,16 @@ brew "act"
 brew "age"
 # Asynchronous DNS library
 brew "c-ares"
+# Platform built on V8 to build network applications
+brew "node"
+# CLI tool for Angular
+brew "angular-cli"
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Platform built on V8 to build network applications
-brew "node"
-# CLI tool for Angular
-brew "angular-cli"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Java build tool
@@ -65,7 +63,7 @@ brew "asciidoctor"
 # Record and share terminal sessions
 brew "asciinema"
 # Automatically exclude development dependencies from Time Machine backups
-brew "asimov"
+brew "asimov", restart_service: true
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -76,6 +74,8 @@ brew "autossh"
 brew "aws-iam-authenticator"
 # Integrated shell for working with the AWS CLI
 brew "aws-shell"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -147,7 +147,7 @@ brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Message bus system, providing inter-application communication
-brew "dbus"
+brew "dbus", restart_service: true
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
 # Ncurses based advanced hex editor featuring diff mode and more
@@ -280,6 +280,8 @@ brew "icdiff"
 brew "imagemagick"
 # Tool to capture still images from an iSight or other video source
 brew "imagesnap"
+# Calculate various network masks, etc. from a given IP address
+brew "ipcalc"
 # Agile dependency manager
 brew "ivy"
 # Library for creating multi-platform software
@@ -351,7 +353,7 @@ brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Open source relational database management system
-brew "mysql"
+brew "mysql", restart_service: true
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
