@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefaile
+
 ##
 ## Uninstalls the scripts from $HOME by removing the symlinks.
 ##
@@ -8,7 +10,8 @@
 [ -z "${SCRIPT_DIRECTORY:-}" ] \
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-sourceDir="${SCRIPT_DIRECTORY}/src"
+BASE_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
+sourceDir="${BASE_DIR}/src/dotfiles"
 
 ##
 ## Removes link from target directory.

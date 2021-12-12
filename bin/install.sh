@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eu
+set -euo pipefail
 
 ##
 ## Intsalls the dotfiles into $HOME by softlinking them.
@@ -11,7 +11,8 @@ set -eu
 [ -z "${SCRIPT_DIRECTORY:-}" ] \
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-sourceDir="${SCRIPT_DIRECTORY}/src"
+BASE_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
+sourceDir="${BASE_DIR}/src/dotfiles"
 
 ##
 ## Links source file into target directory.
