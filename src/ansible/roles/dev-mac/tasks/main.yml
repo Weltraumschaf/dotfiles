@@ -4,10 +4,15 @@
   debug:
     msg: Setup developer mac!
 
-# 0 11 * * * /usr/local/bin/brew bundle dump --describe --force --verbose --file /Users/sst/src/private/dotfiles/Brewfile 2>&1 >>/tmp/auto-brew.log
 - name: Cron to dump Brewfile
   cron:
-    name: "Dump Brewfile"
+    name: Dump Brewfile
     minute: 0
-    hour: 11
+    hour: 22
     job: /usr/local/bin/brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
+- name: Cron to wipe Maven repo
+  cron:
+    name: Wipe Maven Repo
+    minute: 15
+    hour: 22
+    job: rm -rf $HOME/.m2/repository/
