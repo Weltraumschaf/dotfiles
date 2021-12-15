@@ -147,7 +147,7 @@ brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Message bus system, providing inter-application communication
-brew "dbus", restart_service: true
+brew "dbus"
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
 # Ncurses based advanced hex editor featuring diff mode and more
@@ -353,7 +353,7 @@ brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
