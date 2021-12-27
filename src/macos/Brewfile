@@ -1,7 +1,6 @@
 tap "caffix/amass"
 tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
-tap "go-gitea/gitea"
 tap "go-task/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
