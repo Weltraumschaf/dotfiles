@@ -14,6 +14,7 @@ tap "mas-cli/tap"
 tap "petere/sgml"
 tap "rcmdnk/file"
 tap "remotemobprogramming/brew"
+tap "robotsandpencils/made"
 tap "theseal/ssh-askpass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
@@ -48,6 +49,8 @@ brew "antlr"
 brew "apr"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Download with resuming and segmented downloading
+brew "aria2"
 # C library for creating IP packets
 brew "libnet"
 # Utility to check whether MAC addresses are already taken on a LAN
@@ -516,6 +519,8 @@ brew "petere/sgml/docbook-dsssl"
 brew "petere/sgml/openjade"
 # Swift handover for remote mobs using git. mob is a CLI tool written in GO. It keeps your master branch clean and creates WIP commits on mob-session branch.
 brew "remotemobprogramming/brew/mob"
+# Install and switch between multiple versions of Xcode
+brew "robotsandpencils/made/xcodes"
 # The ssh-askpass util for MacOS
 brew "theseal/ssh-askpass/ssh-askpass"
 # A tool for exploring each layer in a docker image
@@ -623,6 +628,8 @@ cask "lbry"
 cask "libreoffice"
 # Go IDE
 cask "liteide"
+# Open-source Markdown editor
+cask "macdown"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Operating system maintenance and cleaning utility
