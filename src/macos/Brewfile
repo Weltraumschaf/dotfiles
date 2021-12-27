@@ -599,8 +599,6 @@ cask "handbrake"
 cask "hex-fiend"
 # HTTP and GraphQL Client
 cask "insomnia"
-# Java IDE by JetBrains
-cask "intellij-idea"
 # Wireless discovery tool
 cask "istumbler"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -614,8 +612,6 @@ cask "joplin"
 # End-to-end encryption software
 cask "keybase"
 cask "keystore-explorer"
-# Visual user interface for Docker Container management
-cask "kitematic"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
 # Free and open-source painting and sketching program
@@ -626,8 +622,6 @@ cask "launchcontrol"
 cask "lbry"
 # Office suite
 cask "libreoffice"
-# Go IDE
-cask "liteide"
 # Open-source Markdown editor
 cask "macdown"
 # Full TeX Live distribution with GUI applications
@@ -683,8 +677,6 @@ cask "owasp-zap"
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
 cask "portfolioperformance"
-# Collaboration platform for API development
-cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
 # Protect your personal files
