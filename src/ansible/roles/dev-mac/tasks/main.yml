@@ -10,6 +10,7 @@
     minute: 0
     hour: 22
     job: /usr/local/bin/brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
+
 - name: Cron to wipe Maven repo
   cron:
     name: Wipe Maven Repo
