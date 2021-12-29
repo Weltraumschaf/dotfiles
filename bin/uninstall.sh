@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefaile
+set -euo pipefail
 
 ##
 ## Uninstalls the scripts from $HOME by removing the symlinks.
