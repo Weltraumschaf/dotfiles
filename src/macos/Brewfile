@@ -24,8 +24,6 @@ brew "aalib"
 brew "ack"
 # Run your GitHub Actions locally 🚀
 brew "act"
-# Simple, modern, secure file encryption
-brew "age"
 # Asynchronous DNS library
 brew "c-ares"
 # Platform built on V8 to build network applications
@@ -70,6 +68,10 @@ brew "asimov", restart_service: true
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Fast, efficient and secure backup program
+brew "restic"
+# High level CLI utility for restic
+brew "autorestic"
 # Automatically restart SSH sessions and tunnels
 brew "autossh"
 # Use AWS IAM credentials to authenticate to Kubernetes
@@ -248,6 +250,8 @@ brew "libusb"
 brew "gnupg"
 # Command-driven, interactive function plotting
 brew "gnuplot"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
 # Manage your GnuPG keys with ease! 🔐
@@ -355,7 +359,7 @@ brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Open source relational database management system
-brew "mysql"
+brew "mysql", restart_service: true
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
@@ -424,8 +428,6 @@ brew "recode"
 brew "recon-ng"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# Fast, efficient and secure backup program
-brew "restic"
 # Utility for computing and verifying hash sums of files
 brew "rhash"
 # JavaScript engine
@@ -608,9 +610,9 @@ cask "jetbrains-toolbox"
 cask "jitsi-meet"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
-# End-to-end encryption software
-cask "keybase"
 cask "keystore-explorer"
+# Visual user interface for Docker Container management
+cask "kitematic"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
 # Free and open-source painting and sketching program
@@ -621,6 +623,8 @@ cask "launchcontrol"
 cask "lbry"
 # Office suite
 cask "libreoffice"
+# Host-based application firewall
+cask "little-snitch4"
 # Open-source Markdown editor
 cask "macdown"
 # Full TeX Live distribution with GUI applications
@@ -716,6 +720,8 @@ cask "textmate"
 cask "the-unarchiver"
 # Python IDE for beginners
 cask "thonny"
+# End-to-end encrypted instant messaging application
+cask "threema"
 # Customizable email client
 cask "thunderbird"
 # Flexible level editor
@@ -737,6 +743,8 @@ cask "vidl"
 cask "virtualbox"
 # Extend the functionality of VirtualBox
 cask "virtualbox-extension-pack"
+# Integrated development environment
+cask "visual-studio"
 # Multimedia player
 cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
@@ -756,6 +764,7 @@ cask "zotero"
 mas "Annotate", id: 918207447
 mas "Apple Configurator 2", id: 1037126344
 mas "Caffeinated", id: 1362171212
+mas "Cuppa", id: 1297865739
 mas "GIF Brewery 3", id: 1081413713
 mas "iMovie", id: 408981434
 mas "LastPass", id: 926036361
