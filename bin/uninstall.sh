@@ -24,7 +24,7 @@ function unlinkFile {
     targetFile="${targetFile/_/.}"
     target="${2}/${targetFile}"
 
-    rm -vf "${target}"
+    rm -vrf "${target}"
 }
 
 for file in "${sourceDir}/_"*; do
