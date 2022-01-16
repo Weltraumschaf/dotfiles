@@ -4,12 +4,18 @@
   debug:
     msg: Setup developer mac!
 
+- name: Add PATH for brew cront
+  cron:
+    name: PATH
+    env: yes
+    job: /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
+
 - name: Cron to dump Brewfile
   cron:
     name: Dump Brewfile
     minute: 0
     hour: 22
-    job: /usr/local/bin/brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
+    job: brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
 
 - name: Cron to wipe Maven repo
   cron:
