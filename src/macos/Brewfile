@@ -130,6 +130,8 @@ brew "bnd"
 brew "broot"
 # Object-file caching compiler wrapper
 brew "ccache"
+# Create and view interactive cheat sheets for *nix commands
+brew "cheat"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Statistics utility to count lines of code
@@ -138,6 +140,8 @@ brew "cloc"
 brew "clojure"
 # Cross-platform make
 brew "cmake"
+# Interactive terminal based UI application for tracking cryptocurrencies
+brew "cointop"
 # Color-highlighted diff(1) output
 brew "colordiff"
 # GNU File, Shell, and Text utilities
@@ -562,6 +566,8 @@ cask "coconutbattery"
 cask "cyberduck"
 # Disk space visualizer
 cask "daisydisk"
+# Browser for SQLite databases
+cask "db-browser-for-sqlite"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
 # Draw structured diagrams
@@ -586,6 +592,8 @@ cask "figma"
 cask "firefox"
 # GIT client
 cask "fork"
+# 3D parametric modeler
+cask "freecad"
 # Mind-mapping software written in Java
 cask "freemind"
 # Desktop client for GitHub repositories
@@ -777,3 +785,4 @@ mas "Outbank", id: 1094255754
 mas "Pocket", id: 568494494
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
+mas "XChat Azure", id: 447521961
