@@ -12,6 +12,9 @@
   commentchar = %
   quotepath = false
 
+[init]
+  defaultBranch = main
+
 [branch]
   autosetuprebase = always
 
