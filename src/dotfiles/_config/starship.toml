@@ -1,6 +1,6 @@
 # https://starship.rs/config/
 
-command_timeout = 800
+command_timeout = 1000
 
 [character]
 success_symbol = "[»](bold green)"
