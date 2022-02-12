@@ -10,6 +10,7 @@ tap "homebrew/services"
 tap "jenkins-x/jx"
 tap "jesseduffield/lazygit"
 tap "mas-cli/tap"
+tap "norwoodj/tap"
 tap "petere/sgml"
 tap "rcmdnk/file"
 tap "remotemobprogramming/brew"
@@ -306,6 +307,8 @@ brew "john"
 brew "jq"
 # Python implementation written in Java (successor to JPython)
 brew "jython"
+# Run local Kubernetes cluster in Docker
+brew "kind"
 # LastPass command-line interface tool
 brew "lastpass-cli"
 # Lazier way to manage everything docker
@@ -518,6 +521,8 @@ brew "derailed/k9s/k9s"
 brew "go-task/tap/go-task"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
+# Automatically generate markdown documentation for helm charts
+brew "norwoodj/tap/helm-docs"
 # Modular DocBook DSSSL stylesheets
 brew "petere/sgml/docbook-dsssl"
 # Implementation of the DSSSL language
@@ -618,6 +623,7 @@ cask "jetbrains-toolbox"
 cask "jitsi-meet"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
+# GUI replacement for the Java command-line utilities keytool and jarsigner
 cask "keystore-explorer"
 # Visual user interface for Docker Container management
 cask "kitematic"
