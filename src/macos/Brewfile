@@ -553,6 +553,8 @@ cask "arduino"
 cask "arq"
 # Text editor
 cask "atom"
+# Two-factor authentication software
+cask "authy"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Compare files and folders
