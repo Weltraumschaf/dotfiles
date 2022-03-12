@@ -166,6 +166,9 @@ debug ">> Rbenv done."
 
 # shellcheck disable=SC1091
 [[ -f "${HOME}/.fzf.bash" ]] && source "${HOME}/.fzf.bash"
+# https://salsa.debian.org/debian/fzf/blob/master/debian/README.Debian
+[[ -f /usr/share/doc/fzf/examples/key-bindings.bash ]] && source /usr/share/doc/fzf/examples/key-bindings.bash
+[[ -f /usr/share/doc/fzf/examples/completion.bash ]] && source /usr/share/doc/fzf/examples/completion.bash
 
 debug ">> FZF done."
 
