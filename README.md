@@ -23,7 +23,7 @@ ${HOME}/.bashrc
 It's as simple as running:
 
 ```bash
-./install.sh
+./bin/install.sh
 ```
 
 From this top-level directory.
