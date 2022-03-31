@@ -1,8 +1,8 @@
 # Don't ask for confirmations
-#assume_yes = true
+assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-#disable = ["system", "emacs"]
+disable = ["pnpm"]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
@@ -11,7 +11,7 @@
 #only = ["system", "emacs"]
 
 # Do not ask to retry failed steps (default: false)
-#no_retry = true
+no_retry = true
 
 # Run inside tmux
 #run_in_tmux = true
@@ -32,7 +32,7 @@
 #set_title = false
 
 # Cleanup temporary or old files
-#cleanup = true
+cleanup = true
 
 [git]
 #max_concurrency = 5
@@ -60,7 +60,7 @@
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 
 [brew]
-#greedy_cask = true
+greedy_cask = true
 
 [linux]
 # Arguments to pass yay when updating packages
