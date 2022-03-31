@@ -698,6 +698,8 @@ cask "poedit"
 cask "portfolioperformance"
 # Command-line shell and scripting language
 cask "powershell"
+# Flexible software sketchbook and a language for learning how to code
+cask "processing"
 # Protect your personal files
 cask "ransomwhere"
 # Archive manager for data compression and backups
