@@ -161,8 +161,12 @@ brew "dbus"
 brew "ddate"
 # Ncurses based advanced hex editor featuring diff mode and more
 brew "dhex"
+# Passphrases to remember
+brew "diceware"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Diff that understands syntax
+brew "difftastic"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # XML vocabulary to create presentation-neutral documents
@@ -173,6 +177,8 @@ brew "docker-clean"
 brew "docker-compose", link: false
 # Completion script for docker-compose
 brew "docker-compose-completion", link: false
+# Command-line DNS client
+brew "dog"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
 # Ogg Bitstream Library
@@ -189,6 +195,8 @@ brew "elixir"
 brew "elm"
 # Charset analyzer and converter
 brew "enca"
+# Modern replacement for 'ls'
+brew "exa"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Test various flash cards
@@ -233,6 +241,8 @@ brew "gd"
 brew "gdb"
 # This library is for the GeoIP Legacy format (dat)
 brew "geoip"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
@@ -259,6 +269,8 @@ brew "gnuplot"
 brew "go"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
+# Directory/file & DNS busting tool written in Go
+brew "gobuster"
 # Manage your GnuPG keys with ease! 🔐
 brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -409,14 +421,14 @@ brew "pbzip2"
 brew "peco"
 # Draw UML diagrams
 brew "plantuml"
-# Emulator for x86 and PowerPC
-brew "qemu"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Password generator
 brew "pwgen"
 # Python version management
 brew "pyenv"
+# Emulator for x86 and PowerPC
+brew "qemu"
 # Cross-platform application and UI framework
 brew "qt"
 # File browser
@@ -463,10 +475,14 @@ brew "sonar-scanner"
 brew "sops"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# SQLite extension providing 256-bit AES encryption
+brew "sqlcipher"
 # SSL scanner
 brew "sslyze"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Crypto and x509 Swiss-Army-Knife
+brew "step"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Generate scripting interfaces to C/C++ code
@@ -481,6 +497,8 @@ brew "tflint"
 brew "tig"
 # High-performance, platform-neutral implementation of VNC
 brew "tiger-vnc"
+# Simplified and community-driven man pages
+brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # Upgrade all the things
@@ -611,6 +629,7 @@ cask "google-chrome"
 cask "google-drive"
 # Open-source video transcoder
 cask "handbrake"
+cask "haroopad"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # HTTP and GraphQL Client
@@ -637,6 +656,8 @@ cask "krita"
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
 cask "lbry"
+# Kubernetes IDE
+cask "lens"
 # Office suite
 cask "libreoffice"
 # Host-based application firewall
@@ -649,6 +670,7 @@ cask "mactex"
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
 cask "maltego"
+# Simple and elegant markdown editor
 cask "mark-text"
 # Penetration testing framework
 cask "metasploit"
@@ -692,6 +714,8 @@ cask "onyx"
 cask "openzfs"
 # Free and open source web app scanner
 cask "owasp-zap"
+# Markdown editor with pandoc integration and paginated preview
+cask "panwriter"
 # Translation editor
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
@@ -700,6 +724,8 @@ cask "portfolioperformance"
 cask "powershell"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
+# Microsoft Project in your browser
+cask "projectlibre"
 # Protect your personal files
 cask "ransomwhere"
 # Archive manager for data compression and backups
@@ -722,6 +748,10 @@ cask "skype-for-business"
 cask "slack"
 # Sets a minimum speed for built-in fans
 cask "smcfancontrol"
+# Code-based music creation and performance tool
+cask "sonic-pi"
+# Create, edit, browse SQLite databases
+cask "sqlitestudio"
 # Application for inspecting installer packages
 cask "suspicious-package"
 # Tool to explore all the running tasks (processes)
@@ -750,8 +780,6 @@ cask "tor-browser"
 cask "transmission"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
-# Configurable document editor that supports Markdown
-cask "typora"
 # Development environment
 cask "vagrant"
 cask "vagrant-manager"
@@ -763,6 +791,8 @@ cask "virtualbox"
 cask "virtualbox-extension-pack"
 # Integrated development environment
 cask "visual-studio"
+# Open-source code editor
+cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
@@ -791,7 +821,7 @@ mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "MindNode Lite", id: 402397683
-mas "Outbank", id: 1094255754
+mas "MultiMarkdown Composer", id: 1275176220
 mas "Pocket", id: 568494494
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
