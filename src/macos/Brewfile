@@ -421,8 +421,6 @@ brew "pbzip2"
 brew "peco"
 # Draw UML diagrams
 brew "plantuml"
-# Tool for managing OCI containers and pods
-brew "podman"
 # Password generator
 brew "pwgen"
 # Python version management
@@ -625,6 +623,8 @@ cask "freemind"
 cask "github"
 # Web browser
 cask "google-chrome"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
 # Open-source video transcoder
