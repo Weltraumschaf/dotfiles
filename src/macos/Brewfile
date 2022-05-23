@@ -419,6 +419,7 @@ brew "pandoc"
 brew "pbzip2"
 # Simplistic interactive filtering tool
 brew "peco"
+pinentry-mac
 # Draw UML diagrams
 brew "plantuml"
 # Password generator
