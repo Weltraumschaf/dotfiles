@@ -661,7 +661,7 @@ cask "lens"
 # Office suite
 cask "libreoffice"
 # Host-based application firewall
-cask "little-snitch4"
+cask "little-snitch"
 # Open-source Markdown editor
 cask "macdown"
 # Full TeX Live distribution with GUI applications
