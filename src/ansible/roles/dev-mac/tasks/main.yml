@@ -1,25 +1,28 @@
 # Some ideas: https://adamj.eu/tech/2019/03/20/how-i-provision-my-macbook-with-ansible/
 
 - name: Welcome
-  debug:
+  ansible.builtin.debug:
     msg: Setup developer mac!
 
 - name: Add PATH for brew cront
-  cron:
+  ansible.builtin.cron:
     name: PATH
     env: yes
     job: /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
 
 - name: Cron to dump Brewfile
-  cron:
+  ansible.builtin.cron:
     name: Dump Brewfile
     minute: 0
     hour: 22
     job: brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
 
 - name: Cron to wipe Maven repo
-  cron:
+  ansible.builtin.cron:
     name: Wipe Maven Repo
     minute: 15
     hour: 22
     job: rm -rf $HOME/.m2/repository/
+
+- name: Setup FZF (https://github.com/junegunn/fzf)
+  ansible.builtin.shell: /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc

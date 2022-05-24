@@ -1,5 +1,12 @@
 # Dotfiles
 
+## Setup of a New Mac
+
+1. install [Homebrew](https://brew.sh/): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+1. install all brews:  `brew bundle install --file "src/macos/Brewfile"`
+1. run Ansible playbook: `ansible-playbook src/ansible/setup-macos.yml`
+1. install the dotfiles: `./bin/install.sh`
+
 ## Instructions
 
 ### Creating source files
@@ -18,41 +25,14 @@ becomes
 ${HOME}/.bashrc
 ```
 
-### Installing source files
-
-It's as simple as running:
-
-```bash
-./bin/install.sh
-```
-
-From this top-level directory.
-
-I've extended the install.sh script to handle .config directory, too. Just create a directory named '_config' and add files or directories in this directory. Everything inside _config will be symlinked to .config.
+I've extended the `install.sh` script to handle `.config` directory, too. Just create a directory named `_config` and add files or directories in this directory. Everything inside `_config` will be symlinked to `.config`.
 
 ## Homebrew on macOS
 
 There is a `Brewfile` generated from/for [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) as described at [Thoughtbot's blog](https://thoughtbot.com/blog/brewfile-a-gemfile-but-for-homebrew).
 
-### Install the Brew Stuff
-
-```shell
-curl -sSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash
-brew bundle install --file "./Brewfile"
-/usr/local/opt/fzf/install \
-    --key-bindings \
-    --completion \
-    --no-update-rc
-```
-
 ### Update the Brewfile
 
 ```bash
 brew bundle dump --describe --force
-```
-
-Automate with cron:
-
-```text
-0 11 * * * (cd "${HOME}/src/private/dotfiles" && /usr/local/bin/brew bundle dump --describe --force
 ```
