@@ -47,6 +47,8 @@ brew "antlr"
 brew "apr"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
 # Download with resuming and segmented downloading
 brew "aria2"
 # C library for creating IP packets
@@ -97,8 +99,6 @@ brew "bfg"
 brew "binutils"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
 # Portable Foreign Function Interface library
 brew "libffi"
 # Perl compatible regular expressions library
@@ -419,7 +419,8 @@ brew "pandoc"
 brew "pbzip2"
 # Simplistic interactive filtering tool
 brew "peco"
-pinentry-mac
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Draw UML diagrams
 brew "plantuml"
 # Password generator
@@ -566,8 +567,6 @@ cask "android-sdk"
 cask "appcleaner"
 # Electronics prototyping platform
 cask "arduino"
-# Multi-cloud backup application
-cask "arq"
 # Text editor
 cask "atom"
 # Two-factor authentication software
@@ -691,6 +690,7 @@ cask "miro"
 cask "moneymoney"
 # Open source implementation of Microsoft's .NET Framework
 cask "mono-mdk-for-visual-studio"
+# Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
@@ -781,6 +781,8 @@ cask "tor-browser"
 cask "transmission"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
+# Configurable document editor that supports Markdown
+cask "typora"
 # Development environment
 cask "vagrant"
 cask "vagrant-manager"
@@ -811,18 +813,21 @@ cask "zettlr"
 # Collect, organize, cite, and share research sources
 cask "zotero"
 mas "Annotate", id: 918207447
-mas "Apple Configurator 2", id: 1037126344
+mas "Apple Configurator", id: 1037126344
 mas "Caffeinated", id: 1362171212
 mas "Cuppa", id: 1297865739
+mas "GarageBand", id: 682658836
 mas "GIF Brewery 3", id: 1081413713
 mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "MindNode Lite", id: 402397683
 mas "MultiMarkdown Composer", id: 1275176220
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
