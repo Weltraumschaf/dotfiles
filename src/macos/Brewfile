@@ -156,7 +156,7 @@ brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Message bus system, providing inter-application communication
-brew "dbus"
+brew "dbus", restart_service: true
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
 # Ncurses based advanced hex editor featuring diff mode and more
@@ -646,8 +646,6 @@ cask "jitsi-meet"
 cask "joplin"
 # GUI replacement for the Java command-line utilities keytool and jarsigner
 cask "keystore-explorer"
-# Visual user interface for Docker Container management
-cask "kitematic"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
 # Free and open-source painting and sketching program
@@ -692,8 +690,6 @@ cask "moneymoney"
 cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
-# Orchestrates virtual Ubuntu instances
-cask "multipass"
 # Development environment, tooling platform and application framework
 cask "netbeans"
 # Free and open-source RSS reader
