@@ -156,7 +156,7 @@ brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Message bus system, providing inter-application communication
-brew "dbus", restart_service: true
+brew "dbus"
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
 # Ncurses based advanced hex editor featuring diff mode and more
