@@ -672,16 +672,6 @@ cask "maltego"
 cask "mark-text"
 # Penetration testing framework
 cask "metasploit"
-# Provides updates to various Microsoft products
-cask "microsoft-auto-update"
-# Spreadsheet software
-cask "microsoft-excel"
-# Presentation software
-cask "microsoft-powerpoint"
-# Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
-# Word processor
-cask "microsoft-word"
 # Online collaborative whiteboard platform
 cask "miro"
 # German banking and financial management software
@@ -739,8 +729,6 @@ cask "send-to-kindle"
 cask "signal"
 # Video chat, voice call and instant messaging application
 cask "skype"
-# Microsofts instant messaging enterprise software
-cask "skype-for-business"
 # Team communication and collaboration software
 cask "slack"
 # Sets a minimum speed for built-in fans
