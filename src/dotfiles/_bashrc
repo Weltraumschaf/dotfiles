@@ -186,7 +186,7 @@ export NVM_DIR="${HOME}/.nvm"
 debug ">> Nvm done."
 
 # https://starship.rs/
-eval "$(starship init bash)"
+[[ "$(command -v starship)" ]] && eval "$(starship init bash)"
 debug ">> Starship done."
 
 if [[ "$(command -v pyenv)" ]]; then
