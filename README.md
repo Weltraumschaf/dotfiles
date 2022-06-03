@@ -4,7 +4,7 @@
 
 1. install [Homebrew](https://brew.sh/): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 1. install all brews:  `brew bundle install --file "src/macos/Brewfile"`
-1. run Ansible playbook: `ansible-playbook src/ansible/setup-macos.yml`
+1. run Ansible playbook: `ansible-playbook --ask-become-pass src/ansible/setup-macos.yml`
 1. install the dotfiles: `./bin/install.sh`
 
 ## Instructions

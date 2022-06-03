@@ -3,12 +3,14 @@
 - name: Welcome
   ansible.builtin.debug:
     msg: Setup developer mac!
+  become: no
 
 - name: Add PATH for brew cront
   ansible.builtin.cron:
     name: PATH
     env: yes
     job: /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
+  become: no
 
 - name: Cron to dump Brewfile
   ansible.builtin.cron:
@@ -16,6 +18,7 @@
     minute: 0
     hour: 22
     job: brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
+  become: no
 
 - name: Cron to wipe Maven repo
   ansible.builtin.cron:
@@ -23,6 +26,19 @@
     minute: 15
     hour: 22
     job: rm -rf $HOME/.m2/repository/
+  become: no
 
 - name: Setup FZF (https://github.com/junegunn/fzf)
   ansible.builtin.shell: /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc
+
+- name: Create resolver direcotry
+  ansible.builtin.file:
+    path: /etc/resolver
+    state: directory
+  become: yes
+
+- name: Create resolver file for local network in home office
+  ansible.builtin.copy:
+    src: kn5000.local
+    dest: /etc/resolver/kn5000.local
+  become: yes

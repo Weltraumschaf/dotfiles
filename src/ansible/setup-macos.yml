@@ -1,5 +1,6 @@
 - hosts: local_macos
   connection: local
+  gather_facts: yes
   pre_tasks: []
   tasks: []
   roles:
