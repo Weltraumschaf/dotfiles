@@ -54,9 +54,8 @@ set bell-style none
 
 # Append to the history file, don't overwrite it.
 shopt -s histappend
-# Save history immediatly after running command.
-# With "history -n" it's possible to read all new lines since last read.
-PROMPT_COMMAND="history -a"
+# After each command, save and reload history
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # Check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
