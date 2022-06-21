@@ -567,8 +567,6 @@ cask "android-sdk"
 cask "appcleaner"
 # Electronics prototyping platform
 cask "arduino"
-# Text editor
-cask "atom"
 # Two-factor authentication software
 cask "authy"
 # Tool to flash OS images to SD cards & USB drives
