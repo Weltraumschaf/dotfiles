@@ -701,6 +701,8 @@ cask "openzfs"
 cask "owasp-zap"
 # Markdown editor with pandoc integration and paginated preview
 cask "panwriter"
+# Desktop virtualization software
+cask "parallels"
 # Translation editor
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
