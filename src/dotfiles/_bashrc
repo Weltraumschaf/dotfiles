@@ -115,7 +115,7 @@ fi
 
 debug ">> Bash completion done."
 
-if [ -x "/usr/local/bin/brew" ]; then
+if [ -x "${HOMEBREW_PREFIX}/bin/brew" ]; then
     # RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
     RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
     export RUBY_CONFIGURE_OPTS

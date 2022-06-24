@@ -1,7 +1,13 @@
 # shellcheck disable=SC2148
 
+# https://apple.stackexchange.com/questions/437618/why-is-homebrew-installed-in-opt-homebrew-on-apple-silicon-macs
+# Pre Silicon
+#HOMEBREW_PREFIX=/usr/local
+# Silicon
+HOMEBREW_PREFIX=/opt/homebrew
+
 # Extend the PATH
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
+PATH="${HOMEBREW_PREFIX}/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin"
 
 # Haskell Plattform
 if [ -d "${HOME}/Library/Haskell/bin" ] ; then
