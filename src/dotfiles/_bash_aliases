@@ -39,10 +39,10 @@ alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
 alias mvndirs="mkdir -p src/{main,test}/{java,resources}"
 alias webserver="python -m http.server"
 alias now="date +'%Y-%m-%dT%H:%M:%S%z'"
-alias kali="(cd $HOME/src/private/vagrant/kali && vagrant up)"
+alias kali='(cd "$HOME/src/private/vagrant/kali" && vagrant up)'
 alias wd='echo -n $(pwd)'
 
-if [ -x /usr/local/bin/brew ] ; then
+if [ -x "${HOMEBREW_PREFIX}/bin/brew" ] ; then
     alias brew-update="brew update && brew upgrade && brew cleanup"
 fi
 
@@ -73,7 +73,7 @@ if [ -x /usr/local/bin/docker ] ; then
     alias d-juice-shop='docker run --rm -itd -p 3000:3000 bkimminich/juice-shop'
 fi
 
-if [ -x /usr/local/bin/ultralist ] ; then
+if [ -x "${HOMEBREW_PREFIX}/bin/ultralist" ] ; then
     alias todos='ultralist l group:project --notes'
     alias priv-todos='ultralist l project:Privat --notes'
     alias work-todos='ultralist l project:-Privat group:project --notes'

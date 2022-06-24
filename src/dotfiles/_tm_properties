@@ -1,7 +1,7 @@
 # https://macromates.com/blog/2011/git-style-configuration/
 
-TM_GIT = "/usr/local/bin/git"
-TM_HG = "/usr/local/bin/hg"
+TM_GIT = "/opt/homebrew/bin/git"
+TM_HG = "/opt/homebrew/local/bin/hg"
 
 fontName = "Source Code Pro"
 fontSize = 12

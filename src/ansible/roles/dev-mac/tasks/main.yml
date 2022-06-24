@@ -9,7 +9,7 @@
   ansible.builtin.cron:
     name: PATH
     env: yes
-    job: /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
+    job: /opt/homebrew:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
   become: no
 
 - name: Cron to dump Brewfile
@@ -28,8 +28,9 @@
     job: rm -rf $HOME/.m2/repository/
   become: no
 
+# TODO: Make it autodetect
 - name: Setup FZF (https://github.com/junegunn/fzf)
-  ansible.builtin.shell: /usr/local/opt/fzf/install --key-bindings --completion --no-update-rc
+  ansible.builtin.shell: /opt/homebrew/opt/fzf/install --key-bindings --completion --no-update-rc
 
 - name: Create resolver direcotry
   ansible.builtin.file:
