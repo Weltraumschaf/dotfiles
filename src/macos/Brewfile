@@ -772,10 +772,6 @@ cask "vagrant"
 cask "vagrant-manager"
 # GUI frontend for youtube-dl
 cask "vidl"
-# Virtualizer for x86 hardware
-cask "virtualbox"
-# Extend the functionality of VirtualBox
-cask "virtualbox-extension-pack"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
