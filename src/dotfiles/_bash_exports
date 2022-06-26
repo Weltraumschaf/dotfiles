@@ -6,8 +6,13 @@
 # Silicon
 HOMEBREW_PREFIX=/opt/homebrew
 
-# Extend the PATH
-PATH="${HOMEBREW_PREFIX}/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin"
+# Sane default for the PATH
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin"
+
+# Homebrew
+if [ -d "${HOMEBREW_PREFIX}" ] ; then
+    PATH="${HOMEBREW_PREFIX}/bin:${HOMEBREW_PREFIX}/sbin:${PATH}"
+fi
 
 # Haskell Plattform
 if [ -d "${HOME}/Library/Haskell/bin" ] ; then
