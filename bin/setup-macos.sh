@@ -37,8 +37,20 @@ step_home_brew_stuff() {
         --no-update-rc
 }
 
+step_install_python() {
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+
+    pyenv install 3.10.3
+    pyenv install 3.10.4
+    pyenv rehash
+    pyenv global 3.10.4
+}
+
 main() {
     step_home_brew_stuff
+    step_install_python
     ansible-playbook "${ANSIBLE_DIR}/setup-macos.yml"
     echo "Done :-)"
 }
