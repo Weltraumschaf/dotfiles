@@ -71,6 +71,8 @@ if [ -x /usr/local/bin/docker ] ; then
     alias d-swagger-editor='docker run --rm -d -p 80:8080 swaggerapi/swagger-editor && sleep 3 && open http://localhost'
     alias d-jenkins='docker run --rm -d -p 8080:8080 -p 50000:50000 jenkins/jenkins'
     alias d-juice-shop='docker run --rm -itd -p 3000:3000 bkimminich/juice-shop'
+    # https://www.linuxserver.io/blog/2021-05-05-meet-webtops-a-linux-desktop-environment-in-your-browser
+    alias d-webtop='docker run -d --name=webtop -e PUID=1000 -e PGID=1000 -e TZ=Europe/Berlin -p 3000:3000 -v $HOME/.webtop:/config --shm-size="8gb" --restart unless-stopped ghcr.io/linuxserver/webtop'
 fi
 
 if [ -x "${HOMEBREW_PREFIX}/bin/ultralist" ] ; then
