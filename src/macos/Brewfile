@@ -81,8 +81,6 @@ brew "autossh"
 brew "aws-iam-authenticator"
 # Integrated shell for working with the AWS CLI
 brew "aws-shell"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -103,6 +101,8 @@ brew "fontconfig"
 brew "libffi"
 # Perl compatible regular expressions library
 brew "pcre"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
@@ -156,7 +156,7 @@ brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Message bus system, providing inter-application communication
-brew "dbus"
+brew "dbus", restart_service: true
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
 # Ncurses based advanced hex editor featuring diff mode and more
@@ -174,9 +174,9 @@ brew "docbook-xsl"
 # Clean Docker containers, images, networks, and volumes
 brew "docker-clean"
 # Isolated development environments using Docker
-brew "docker-compose", link: false
+brew "docker-compose"
 # Completion script for docker-compose
-brew "docker-compose-completion", link: false
+brew "docker-compose-completion"
 # Command-line DNS client
 brew "dog"
 # Convert text between DOS, UNIX, and Mac formats
@@ -615,8 +615,6 @@ cask "firefox"
 cask "fork"
 # 3D parametric modeler
 cask "freecad"
-# Mind-mapping software written in Java
-cask "freemind"
 # Desktop client for GitHub repositories
 cask "github"
 # Web browser
