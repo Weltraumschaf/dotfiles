@@ -237,8 +237,6 @@ brew "fortune"
 brew "fzf"
 # Graphics library to dynamically manipulate images
 brew "gd"
-# GNU debugger
-brew "gdb"
 # This library is for the GeoIP Legacy format (dat)
 brew "geoip"
 # GitHub command-line tool
@@ -293,8 +291,6 @@ brew "httpie"
 brew "hub"
 # Configurable static site generator
 brew "hugo"
-# Toolkit for embedding hypervisor capabilities in your application
-brew "hyperkit"
 # Converts many CD-ROM image formats to ISO9660
 brew "iat"
 # Improved colored diff
@@ -339,8 +335,6 @@ brew "popt"
 brew "librsync"
 # C implementation of a Sass compiler
 brew "libsass"
-# City simulation game
-brew "lincity-ng"
 # Library for database change tracking
 brew "liquibase"
 # Python generator for the console
@@ -359,8 +353,6 @@ brew "mercurial"
 brew "micro"
 # Run a Kubernetes cluster locally
 brew "minikube"
-# MIT/GNU Scheme development tools and runtime library
-brew "mit-scheme"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Project documentation with Markdown
@@ -423,6 +415,8 @@ brew "peco"
 brew "pinentry-mac"
 # Draw UML diagrams
 brew "plantuml"
+# Object-relational database system
+brew "postgresql"
 # Password generator
 brew "pwgen"
 # Python version management
@@ -477,8 +471,6 @@ brew "sops"
 brew "speedtest-cli"
 # SQLite extension providing 256-bit AES encryption
 brew "sqlcipher"
-# SSL scanner
-brew "sslyze"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Crypto and x509 Swiss-Army-Knife
@@ -768,14 +760,16 @@ cask "typora"
 # Development environment
 cask "vagrant"
 cask "vagrant-manager"
-# GUI frontend for youtube-dl
-cask "vidl"
+# Gives Vagrant VMware plugin access to various VMware functionalities
+cask "vagrant-vmware-utility"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Create, manage, and run virtual machines
+cask "vmware-fusion"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # Network protocol analyzer
