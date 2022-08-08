@@ -101,14 +101,14 @@ brew "fontconfig"
 brew "libffi"
 # Perl compatible regular expressions library
 brew "pcre"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # Low-level library for pixel manipulation
 brew "pixman"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # GNU multiple precision arithmetic library
 brew "gmp"
 # Integer Set Library for the polyhedral model
@@ -156,9 +156,11 @@ brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Message bus system, providing inter-application communication
-brew "dbus", restart_service: true
+brew "dbus"
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
+# OWASP dependency-check
+brew "dependency-check"
 # Ncurses based advanced hex editor featuring diff mode and more
 brew "dhex"
 # Passphrases to remember
@@ -251,6 +253,8 @@ brew "utf8proc"
 brew "subversion"
 # Bidirectional operation between a Subversion repository and Git
 brew "git-svn"
+# Audit git repos for secrets
+brew "gitleaks"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # Common error values for all GnuPG components
@@ -369,6 +373,8 @@ brew "mpv"
 brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
+# General-purpose lossless data-compression library
+brew "zlib"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # Free (GNU) replacement for the Pico text editor
@@ -521,14 +527,10 @@ brew "yarn"
 brew "youtube-dl"
 # Process YAML documents from the CLI
 brew "yq"
-# General-purpose lossless data-compression library
-brew "zlib"
 # In-depth Attack Surface Mapping and Asset Discovery
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
-# Task runner / simpler Make alternative written in Go
-brew "go-task/tap/go-task"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
 # Automatically generate markdown documentation for helm charts
