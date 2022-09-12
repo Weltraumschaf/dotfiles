@@ -15,6 +15,7 @@ tap "petere/sgml"
 tap "rcmdnk/file"
 tap "remotemobprogramming/brew"
 tap "robotsandpencils/made"
+tap "rusty-ferris-club/tap"
 tap "theseal/ssh-askpass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
@@ -133,6 +134,8 @@ brew "broot"
 brew "ccache"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
+# Linter/analyzer for Makefiles
+brew "checkmake"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Statistics utility to count lines of code
@@ -385,14 +388,18 @@ brew "mysql", restart_service: true
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
+# Port scanning utility for large networks
+brew "nmap"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Text interface for Git repositories
+brew "tig"
 # NCurses Disk Usage
 brew "ncdu"
 # Network authentication cracking tool
 brew "ncrack"
 # Web server scanner
 brew "nikto"
-# Port scanning utility for large networks
-brew "nmap"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # HTTP/DNS scanner configurable via YAML templates
@@ -415,8 +422,6 @@ brew "openshift-cli"
 brew "openssl@3"
 # Tool for creating identical machine images for multiple platforms
 brew "packer"
-# Swiss-army knife of markup format conversion
-brew "pandoc"
 # Parallel bzip2
 brew "pbzip2"
 # Simplistic interactive filtering tool
@@ -495,8 +500,6 @@ brew "telnet"
 brew "terraform"
 # Linter for Terraform files
 brew "tflint"
-# Text interface for Git repositories
-brew "tig"
 # High-performance, platform-neutral implementation of VNC
 brew "tiger-vnc"
 # Simplified and community-driven man pages
@@ -547,6 +550,8 @@ brew "petere/sgml/openjade"
 brew "remotemobprogramming/brew/mob"
 # Install and switch between multiple versions of Xcode
 brew "robotsandpencils/made/xcodes"
+# Secure shell history commands
+brew "rusty-ferris-club/tap/shellclear"
 # The ssh-askpass util for MacOS
 brew "theseal/ssh-askpass/ssh-askpass"
 # A tool for exploring each layer in a docker image
@@ -628,8 +633,6 @@ cask "haroopad"
 cask "hex-fiend"
 # HTTP and GraphQL Client
 cask "insomnia"
-# Wireless discovery tool
-cask "istumbler"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # JetBrains tools manager
