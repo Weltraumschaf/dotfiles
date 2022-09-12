@@ -142,9 +142,6 @@ set punct "!.?"
 ##
 # set speller "aspell -x -c"
 
-## Allow nano to be suspended.
-set suspend
-
 ## Use this tab size instead of the default; it must be greater than 0.
 set tabsize 4
 
