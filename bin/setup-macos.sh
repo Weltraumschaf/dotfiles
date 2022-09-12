@@ -51,7 +51,7 @@ step_install_python() {
 main() {
     step_home_brew_stuff
     step_install_python
-    ansible-playbook "${ANSIBLE_DIR}/setup-macos.yml"
+    ansible-playbook -K "${ANSIBLE_DIR}/setup-macos.yml"
     echo "Done :-)"
 }
 
