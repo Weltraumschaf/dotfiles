@@ -108,8 +108,6 @@ brew "libffi"
 brew "pkg-config"
 # Low-level library for pixel manipulation
 brew "pixman"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # GNU multiple precision arithmetic library
 brew "gmp"
 # Integer Set Library for the polyhedral model
@@ -436,6 +434,8 @@ brew "postgresql@14"
 brew "pwgen"
 # Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Cross-platform application and UI framework
