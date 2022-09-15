@@ -102,8 +102,6 @@ brew "fontconfig"
 brew "pcre"
 # Core application library for C
 brew "glib"
-# Portable Foreign Function Interface library
-brew "libffi"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # Low-level library for pixel manipulation
@@ -332,6 +330,8 @@ brew "lazydocker"
 brew "leiningen"
 # Input filter for the pager less
 brew "lesspipe"
+# Portable Foreign Function Interface library
+brew "libffi"
 # Implementation of the file(1) command
 brew "libmagic"
 # Portable sound library
