@@ -742,8 +742,6 @@ cask "taskexplorer"
 cask "teamviewer"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin11"
-# LaTeX editor
-cask "texpad"
 # General-purpose text editor
 cask "textmate"
 # Unpacks archive files
