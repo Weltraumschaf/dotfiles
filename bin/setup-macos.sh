@@ -42,10 +42,10 @@ step_install_python() {
     export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
 
-    pyenv install 3.10.3
-    pyenv install 3.10.4
+    pyenv install 3.10.6
+    pyenv install 2.7.18
     pyenv rehash
-    pyenv global 3.10.4
+    pyenv global 3.10.6 2.7.18
 }
 
 main() {
