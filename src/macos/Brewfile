@@ -98,12 +98,12 @@ brew "bfg"
 brew "binutils"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
-# Perl compatible regular expressions library
-brew "pcre"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Perl compatible regular expressions library
+brew "pcre"
 # Low-level library for pixel manipulation
 brew "pixman"
 # GNU multiple precision arithmetic library
