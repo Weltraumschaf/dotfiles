@@ -9,7 +9,7 @@
   ansible.builtin.cron:
     name: PATH
     env: yes
-    job: /opt/homebrew:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
+    job: /opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin
   become: no
 
 - name: Cron to dump Brewfile
@@ -17,7 +17,7 @@
     name: Dump Brewfile
     minute: 0
     hour: 22
-    job: /opt/homebrew/bin/brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
+    job: brew bundle dump --describe --force --verbose --file {{ lookup('env','PROJECT') }}/src/macos/Brewfile 2>&1 >> $HOME/Library/Logs//auto-brew.log
   become: no
 
 - name: Cron to wipe Maven repo
