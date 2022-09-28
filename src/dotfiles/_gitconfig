@@ -2,7 +2,7 @@
   path = ~/.gitconfig_work
 [includeIf "gitdir:~/src/private/"]
   path = ~/.gitconfig_private
-[includeIf "gitdir:~/nb/"]
+[includeIf "gitdir:~/.nb/"]
   path = ~/.gitconfig_private
 
 [core]
