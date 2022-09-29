@@ -190,16 +190,6 @@ brew "docker-compose"
 brew "dog"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
-# Ogg Bitstream Library
-brew "libogg"
-# Vorbis General Audio Compression Codec
-brew "libvorbis"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
-# SDL 1.2 compatibility layer that uses SDL 2.0 behind the scenes
-brew "sdl12-compat"
-# DOS Emulator
-brew "dosbox"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Functional programming language for building browser-based GUIs
@@ -220,6 +210,8 @@ brew "fcrackzip"
 brew "fd"
 # Identify or delete duplicate files
 brew "fdupes"
+# Ogg Bitstream Library
+brew "libogg"
 # Free lossless audio codec
 brew "flac"
 # Asynchronous event library
@@ -228,6 +220,10 @@ brew "libevent"
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Vorbis General Audio Compression Codec
+brew "libvorbis"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
+brew "sdl2"
 # Open video compression format
 brew "theora"
 # Play, record, convert, and stream audio and video
@@ -338,6 +334,8 @@ brew "libffi"
 brew "libmagic"
 # Portable sound library
 brew "libmikmod"
+# Library to decode mpeg-2 and mpeg-1 video streams
+brew "libmpeg2"
 # Library like getopt(3) with a number of enhancements
 brew "popt"
 # Library that implements the rsync remote-delta algorithm
@@ -468,8 +466,6 @@ brew "rustup-init"
 brew "sassc"
 # Substitute for classic 'make' tool with autoconf/automake functionality
 brew "scons"
-# Graphic adventure game interpreter
-brew "scummvm"
 # Easily detect and prevent bugs and anti-patterns in your codebase
 brew "semgrep"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -602,6 +598,8 @@ cask "digikam"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Emulator for x86 with DOS
+cask "dosbox"
 # Draw.io is free online diagram software
 cask "drawio"
 # Finds duplicate files in a computer system
@@ -720,6 +718,8 @@ cask "rar"
 cask "raspberry-pi-imager"
 # Scans, detects, and monitors keyboard taps
 cask "reikey"
+# Run classic graphical adventure and role-playing games
+cask "scummvm"
 # Manage SSH tunnels
 cask "secure-pipes"
 # Tool for sending personal documents to Kindles from Macs
