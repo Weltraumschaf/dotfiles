@@ -202,6 +202,7 @@ if [[ "$(command -v pyenv)" ]]; then
 fi
 
 if [[ -s "${HOMEBREW_PREFIX}/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ]] ; then
+    # shellcheck disable=SC1091
     source "${HOMEBREW_PREFIX}/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
     debug ">> Google cloud SDK done."
 fi
@@ -214,4 +215,9 @@ if [[ "$(command -v ultralist)" ]]; then
     echo "Todos"
     echo "====="
     ultralist list group:project
+fi
+
+if [[ -s "${HOME}/Library/Application\ Support/org.dystroy.broot/launcher/bash/br" ]] ; then
+    # shellcheck disable=SC1091
+    source "${HOME}/Library/Application\ Support/org.dystroy.broot/launcher/bash/br"
 fi
