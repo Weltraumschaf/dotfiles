@@ -358,8 +358,6 @@ brew "md5deep"
 brew "mercurial"
 # Modern and intuitive terminal-based text editor
 brew "micro"
-# Run a Kubernetes cluster locally
-brew "minikube"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Project documentation with Markdown
