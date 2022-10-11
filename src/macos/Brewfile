@@ -390,6 +390,8 @@ brew "pandoc"
 brew "tig"
 # NCurses Disk Usage
 brew "ncdu"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Network authentication cracking tool
 brew "ncrack"
 # Web server scanner
@@ -412,8 +414,6 @@ brew "octant"
 brew "open-sp"
 # OpenShift command-line interface tools
 brew "openshift-cli"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Tool for creating identical machine images for multiple platforms
 brew "packer"
 # Parallel bzip2
