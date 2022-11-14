@@ -185,10 +185,8 @@ BROOT="${HOME}/Library/Preferences/org.dystroy.broot/launcher/bash/br"
 debug ">> Broot done."
 
 export NVM_DIR="${HOME}/.nvm"
-# This loads nvm:
-[ -s "/${HOMEBREW_PREFIX}/opt/nvm/nvm.sh" ] && source "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh"
-# This loads nvm bash_completion:
-[ -s "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm" ] && source "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm"
+[[ -s "${NVM_DIR}/nvm.sh" ]] && source "${NVM_DIR}/nvm.sh"  # This loads nvm
+[[ -s "${NVM_DIR}/bash_completion" ]] && source "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
 debug ">> Nvm done."
 
 # https://starship.rs/
