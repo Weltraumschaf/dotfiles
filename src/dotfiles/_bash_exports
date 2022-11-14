@@ -90,6 +90,7 @@ fi
 export MAVEN_OPTS="-Xmx1024m"
 export M2="${HOME}/.m2"
 export M2_REPO="${M2}/repository"
+export M2_HOME="/opt/homebrew/Cellar/maven/3.8.6/libexec"
 
 # Make nano the default editor
 export EDITOR="nano"
