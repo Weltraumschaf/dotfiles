@@ -128,6 +128,8 @@ brew "bitwarden-cli"
 brew "bnd"
 # New way to see and navigate directory trees
 brew "broot"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Object-file caching compiler wrapper
 brew "ccache"
 # Create and view interactive cheat sheets for *nix commands
@@ -180,6 +182,8 @@ brew "diff-so-fancy"
 brew "difftastic"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Lightweight DNS forwarder and DHCP server
+brew "dnsmasq"
 # XML vocabulary to create presentation-neutral documents
 brew "docbook-xsl"
 # Clean Docker containers, images, networks, and volumes
@@ -390,8 +394,6 @@ brew "pandoc"
 brew "tig"
 # NCurses Disk Usage
 brew "ncdu"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Network authentication cracking tool
 brew "ncrack"
 # Web server scanner
@@ -480,6 +482,8 @@ brew "sops"
 brew "speedtest-cli"
 # SQLite extension providing 256-bit AES encryption
 brew "sqlcipher"
+# SSH server & client auditing
+brew "ssh-audit"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Crypto and x509 Swiss-Army-Knife
@@ -532,6 +536,8 @@ brew "yq"
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# Task runner / simpler Make alternative written in Go
+brew "go-task/tap/go-task"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
 # Automatically generate markdown documentation for helm charts
@@ -653,6 +659,8 @@ cask "lens"
 cask "libreoffice"
 # Host-based application firewall
 cask "little-snitch"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Open-source Markdown editor
 cask "macdown"
 # Full TeX Live distribution with GUI applications
@@ -708,6 +716,8 @@ cask "powershell"
 cask "processing"
 # Microsoft Project in your browser
 cask "projectlibre"
+# Image viewer
+cask "qview"
 # Protect your personal files
 cask "ransomwhere"
 # Archive manager for data compression and backups
@@ -801,6 +811,7 @@ mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MeisterTask", id: 1051767777
+mas "MindNode", id: 1289197285
 mas "MindNode Lite", id: 402397683
 mas "MultiMarkdown Composer", id: 1275176220
 mas "Numbers", id: 409203825
