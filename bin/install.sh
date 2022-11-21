@@ -50,28 +50,33 @@ function link_file {
     ln -svf "${source}" "${target}"
 }
 
-BASE_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
-SOURCE_DIR="${BASE_DIR}/src/dotfiles"
-TARGET_DIR="${1:-}"
+main() {
+    local base_dir
+    base_dir="$(dirname "${SCRIPT_DIRECTORY}")"
+    local source_dir="${base_dir}/src/dotfiles"
+    local target_dir="${1:-}"
 
-if [[ -z "${TARGET_DIR}" ]]; then
-    echo "No target dir given! Using \$HOME instead."
-    TARGET_DIR="${HOME}"
-fi
+    if [[ -z "${target_dir}" ]]; then
+        echo "No target dir given! Using \$HOME instead."
+        target_dir="${HOME}"
+    fi
 
-echo "Will install dotfiles into: ${TARGET_DIR}"
+    echo "Will install dotfiles into: ${target_dir}"
 
-read -rep "Proceed? [y/N]" answer
+    read -rep "Proceed? [y/N]" answer
 
-if [[ "y" != "${answer}" ]] && [[ "Y" != "${answer}" ]]; then
-    echo "Aborted!"
-    exit 0
-fi
+    if [[ "y" != "${answer}" ]] && [[ "Y" != "${answer}" ]]; then
+        echo "Aborted!"
+        exit 0
+    fi
 
-echo "Installing dotfiles ..."
+    echo "Installing dotfiles ..."
 
-for file in "${SOURCE_DIR}/_"*; do
-    link_file "${file}" "${HOME}"
-done
+    for file in "${source_dir}/_"*; do
+        link_file "${file}" "${HOME}"
+    done
 
-echo "Finished :)"
+    echo "Finished :)"
+}
+
+main "${1:-}"
