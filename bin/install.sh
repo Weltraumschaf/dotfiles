@@ -22,8 +22,8 @@ SOURCE_DIR="${BASE_DIR}/src/dotfiles"
 ## @param $2 target directory
 ##
 function link_file {
-    source="${1}"
-    target="${source##*/}"
+    local source="${1}"
+    local target="${source##*/}"
     target="${target/_/.}"
     target="${2}/${target}"
 
