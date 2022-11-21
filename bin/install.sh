@@ -18,7 +18,7 @@ set -euo pipefail
 ## @param $1 source script
 ## @param $2 target directory
 ##
-function link_file {
+function link_file() {
     local source="${1:-}"
 
     if [[ -z "${source}" ]]; then
