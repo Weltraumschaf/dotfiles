@@ -22,10 +22,23 @@ SOURCE_DIR="${BASE_DIR}/src/dotfiles"
 ## @param $2 target directory
 ##
 function link_file {
-    local source="${1}"
+    local source="${1:-}"
+
+    if [[ -z "${source}" ]]; then
+        ehco "First argument of link_file must ot be empty!"
+        exit 1
+    fi
+
+    local target_directory="${2:-}"
+
+    if [[ -z "${target_directory}" ]]; then
+        ehco "Second argument of link_file must ot be empty!"
+        exit 1
+    fi
+
     local target="${source##*/}"
     target="${target/_/.}"
-    target="${2}/${target}"
+    target="${target_directory}/${target}"
 
     echo "Install ${source} to ${target} ..."
 
