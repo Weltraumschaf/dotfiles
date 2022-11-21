@@ -34,7 +34,6 @@
 
 [merge]
   tool = opendiff
-  conflictstyle = diff3
 
 [color]
   diff   = auto
