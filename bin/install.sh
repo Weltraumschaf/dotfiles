@@ -40,7 +40,7 @@ function link_file {
     target="${target/_/.}"
     target="${target_directory}/${target}"
 
-    echo "Install ${source} to ${target} ..."
+    echo "${source} --> ${target}"
 
     # Only create backup if target is a file or directory
     if [ -f "${target}" ] || [ -d "${target}" ]; then
@@ -52,6 +52,8 @@ function link_file {
 
     ln -svf "${source}" "${target}"
 }
+
+echo "Installing dotfiles ..."
 
 for file in "${SOURCE_DIR}/_"*; do
     link_file "${file}" "${HOME}"
