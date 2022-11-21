@@ -3,8 +3,8 @@
 set -euo pipefail
 
 ##
-## Intsalls the dotfiles into $HOME by softlinking them.
-## Existing files are backupped.
+## Installs the dotfiles into $HOME by making soft linking to them.
+## Existing files are backed up.
 ##
 
 # @see: http://wiki.bash-hackers.org/syntax/shellvars
