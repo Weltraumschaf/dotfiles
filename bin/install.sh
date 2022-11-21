@@ -12,14 +12,14 @@ set -euo pipefail
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 BASE_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
-sourceDir="${BASE_DIR}/src/dotfiles"
+SOURCE_DIR="${BASE_DIR}/src/dotfiles"
 
 ##
 ## Links source file into target directory.
 ## Makes backup if target link already exists.
 ##
 ## @param $1 source script
-## @param $2 target direcotry
+## @param $2 target directory
 ##
 function link_file {
     source="${1}"
@@ -40,7 +40,7 @@ function link_file {
     ln -svf "${source}" "${target}"
 }
 
-for file in "${sourceDir}/_"*; do
+for file in "${SOURCE_DIR}/_"*; do
     link_file "${file}" "${HOME}"
 done
 
