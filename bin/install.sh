@@ -11,9 +11,6 @@ set -euo pipefail
 [ -z "${SCRIPT_DIRECTORY:-}" ] \
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-BASE_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
-SOURCE_DIR="${BASE_DIR}/src/dotfiles"
-
 ##
 ## Links source file into target directory.
 ## Makes backup if target link already exists.
@@ -29,16 +26,16 @@ function link_file {
         exit 1
     fi
 
-    local target_directory="${2:-}"
+    local target_dir="${2:-}"
 
-    if [[ -z "${target_directory}" ]]; then
+    if [[ -z "${target_dir}" ]]; then
         ehco "Second argument of link_file must ot be empty!"
         exit 1
     fi
 
     local target="${source##*/}"
     target="${target/_/.}"
-    target="${target_directory}/${target}"
+    target="${target_dir}/${target}"
 
     echo "${source} --> ${target}"
 
@@ -52,6 +49,24 @@ function link_file {
 
     ln -svf "${source}" "${target}"
 }
+
+BASE_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
+SOURCE_DIR="${BASE_DIR}/src/dotfiles"
+TARGET_DIR="${1:-}"
+
+if [[ -z "${TARGET_DIR}" ]]; then
+    echo "No target dir given! Using \$HOME instead."
+    TARGET_DIR="${HOME}"
+fi
+
+echo "Will install dotfiles into: ${TARGET_DIR}"
+
+read -rep "Proceed? [y/N]" answer
+
+if [[ "y" != "${answer}" ]] && [[ "Y" != "${answer}" ]]; then
+    echo "Aborted!"
+    exit 0
+fi
 
 echo "Installing dotfiles ..."
 
