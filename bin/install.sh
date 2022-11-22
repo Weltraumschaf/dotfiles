@@ -37,7 +37,7 @@ function link_file() {
     target="${target/_/.}"
     target="${target_dir}/${target}"
 
-    echo "${source} --> ${target}"
+    echo "  ${source} -> ${target}"
 
     # Only create backup if target is a file or directory
     if [ -f "${target}" ] || [ -d "${target}" ]; then
@@ -47,7 +47,7 @@ function link_file() {
         fi
     fi
 
-    ln -svf "${source}" "${target}"
+    ln -sf "${source}" "${target}"
 }
 
 main() {
