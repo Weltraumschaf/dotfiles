@@ -73,7 +73,7 @@ main() {
     echo "Installing dotfiles ..."
 
     for file in "${source_dir}/_"*; do
-        link_file "${file}" "${HOME}"
+        link_file "${file}" "${target_dir}"
     done
 
     echo "Finished :)"
