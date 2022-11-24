@@ -1,3 +1,4 @@
+tap "akirakyle/qemu-virgl"
 tap "caffix/amass"
 tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
@@ -182,6 +183,8 @@ brew "diff-so-fancy"
 brew "difftastic"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Passive DNS network mapper (a.k.a. subdomains bruteforcer)
+brew "dnsmap"
 # Lightweight DNS forwarder and DHCP server
 brew "dnsmasq"
 # XML vocabulary to create presentation-neutral documents
@@ -258,6 +261,8 @@ brew "subversion"
 brew "git-svn"
 # Audit git repos for secrets
 brew "gitleaks"
+# Render markdown on the CLI
+brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # Common error values for all GnuPG components
@@ -276,6 +281,8 @@ brew "go"
 brew "goaccess"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
+# Google Search and News from the command-line
+brew "googler"
 # Manage your GnuPG keys with ease! 🔐
 brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -392,6 +399,8 @@ brew "nmap"
 brew "pandoc"
 # Text interface for Git repositories
 brew "tig"
+# Command-line and local web note‑taking, bookmarking, and archiving
+brew "nb"
 # NCurses Disk Usage
 brew "ncdu"
 # Network authentication cracking tool
@@ -458,6 +467,8 @@ brew "rename"
 brew "rhash"
 # JavaScript engine
 brew "rhino"
+# Extremely fast tool to remove dupes and other lint from your filesystem
+brew "rmlint"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Rust toolchain installer
@@ -484,6 +495,8 @@ brew "speedtest-cli"
 brew "sqlcipher"
 # SSH server & client auditing
 brew "ssh-audit"
+# Test SSL/TLS enabled services to discover supported cipher suites
+brew "sslscan"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Crypto and x509 Swiss-Army-Knife
@@ -528,10 +541,14 @@ brew "wget"
 brew "xorriso"
 # JavaScript package manager
 brew "yarn"
+# CLI to convert between YAML, TOML, JSON and HCL
+brew "yj"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Process YAML documents from the CLI
 brew "yq"
+# Emulator for x86 and PowerPC
+brew "akirakyle/qemu-virgl/qemu-virgl", link: false
 # In-depth Attack Surface Mapping and Asset Discovery
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -576,6 +593,8 @@ cask "authy"
 cask "balenaetcher"
 # Compare files and folders
 cask "beyond-compare"
+# Reverse engineering platform
+cask "binary-ninja"
 # Desktop password and login vault
 cask "bitwarden"
 # Web security testing toolkit
@@ -628,6 +647,8 @@ cask "google-chrome"
 cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
+# Teach object orientation with Java
+cask "greenfoot"
 # Open-source video transcoder
 cask "handbrake"
 cask "haroopad"
@@ -716,6 +737,8 @@ cask "powershell"
 cask "processing"
 # Microsoft Project in your browser
 cask "projectlibre"
+# Scientific and technical publishing system built on Pandoc
+cask "quarto"
 # Image viewer
 cask "qview"
 # Protect your personal files
@@ -772,11 +795,11 @@ cask "transmission"
 cask "tunnelblick"
 # Configurable document editor that supports Markdown
 cask "typora"
+# Virtual machines UI using QEMU
+cask "utm"
 # Development environment
 cask "vagrant"
 cask "vagrant-manager"
-# Gives Vagrant VMware plugin access to various VMware functionalities
-cask "vagrant-vmware-utility"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
@@ -787,6 +810,8 @@ cask "vlc"
 cask "vmware-fusion"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
+# Rust-based terminal
+cask "warp"
 # Network protocol analyzer
 cask "wireshark"
 # X Certificate and Key management
