@@ -12,11 +12,22 @@ set -euo pipefail
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 ##
-## Links source file into target directory.
-## Makes backup if target link already exists.
+## Extracts the base name from given path and replaces _ with .
+##
+## @param $1 file path
+##
+function convert_to_target() {
+    local source="${1:-}"
+    local sub_dir="${source##*/}"
+    echo "${sub_dir/_/.}"
+}
+
+##
+## Links source file into sub_dir directory.
+## Makes backup if sub_dir link already exists.
 ##
 ## @param $1 source script
-## @param $2 target directory
+## @param $2 sub_dir directory
 ##
 function link_file() {
     local source="${1:-}"
@@ -33,21 +44,19 @@ function link_file() {
         exit 1
     fi
 
-    local target="${source##*/}"
-    target="${target/_/.}"
-    target="${target_dir}/${target}"
+    local sub_dir
+    sub_dir="$(convert_to_target "${source}")"
+    sub_dir="${target_dir}/${sub_dir}"
 
-    echo "  ${source} -> ${target}"
-
-    # Only create backup if target is a file or directory
-    if [ -f "${target}" ] || [ -d "${target}" ]; then
-        if [ ! -L "${target}" ]; then
-            echo "Backing up ${target}"
-            mv -v "${target}" "${target}.bak"
+    # Only create backup if sub_dir is a file or directory
+    if [ -f "${sub_dir}" ] || [ -d "${sub_dir}" ]; then
+        if [ ! -L "${sub_dir}" ]; then
+            echo "Backing up ${sub_dir}"
+            mv -v "${sub_dir}" "${sub_dir}.bak"
         fi
     fi
 
-    ln -sf "${source}" "${target}"
+    ln -svf "${source}" "${sub_dir}"
 }
 
 main() {
@@ -57,7 +66,7 @@ main() {
     local target_dir="${1:-}"
 
     if [[ -z "${target_dir}" ]]; then
-        echo "No target dir given! Using \$HOME instead."
+        echo "No sub_dir dir given! Using \$HOME instead."
         target_dir="${HOME}"
     fi
 
@@ -73,7 +82,17 @@ main() {
     echo "Installing dotfiles ..."
 
     for file in "${source_dir}/_"*; do
-        link_file "${file}" "${target_dir}"
+        if [[ -d "${file}" ]]; then
+            local sub_dir
+            sub_dir="$(convert_to_target "${file}")"
+            mkdir -pv "${target_dir}/${sub_dir}"
+
+            for sub_file in "${file}/"*; do
+                link_file "${sub_file}" "${target_dir}/${sub_dir}"
+            done
+        else
+            link_file "${file}" "${target_dir}"
+        fi
     done
 
     echo "Finished :)"
