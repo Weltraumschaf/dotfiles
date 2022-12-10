@@ -175,3 +175,6 @@ stash/
 # Draw.io
 .$*.bkp
 .$*.dtmp
+
+# https://taskfile.dev/
+.task/
