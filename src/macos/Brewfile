@@ -545,7 +545,7 @@ brew "yarn"
 brew "yj"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-# Process YAML documents from the CLI
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Emulator for x86 and PowerPC
 brew "akirakyle/qemu-virgl/qemu-virgl", link: false
@@ -613,6 +613,8 @@ cask "daisydisk"
 cask "db-browser-for-sqlite"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
+# Trains AIs to understand and translate texts
+cask "deepl"
 # Draw structured diagrams
 cask "dia"
 # Digital photo manager
