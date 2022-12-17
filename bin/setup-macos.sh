@@ -48,7 +48,7 @@ step_system_settings_stuff() {
     sudo scutil --set LocalHostName "${HOST_NAME}"
 
     sudo systemsetup -settimezone "Europe/Berlin"
-    sudo systemsetup -getnetworktimeserver "ptbtime1.ptb.de"
+    sudo systemsetup -setnetworktimeserver "ptbtime1.ptb.de"
 
     # Require password immediately after sleep or screen saver begins.
     sudo defaults write com.apple.screensaver askForPassword -int 1
