@@ -46,7 +46,7 @@ step_home_brew_stuff() {
     echo "Install basics with homebrew..."
     # https://thoughtbot.com/blog/brewfile-a-gemfile-but-for-homebrew
     # Write the Brewfile: brew bundle dump --describe --force --verbose --file "${PROJECT}/src/macos/Brewfile"
-    brew bundle install --file "${MACOS_DIR}/Brewfile"
+    "${HOMEBREW_PREFIX}/bin/brew" bundle install --file "${MACOS_DIR}/Brewfile"
     "${HOMEBREW_PREFIX}/opt/fzf/install" \
         --key-bindings \
         --completion \
