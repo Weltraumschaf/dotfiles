@@ -3,13 +3,24 @@
 set -euo pipefail
 
 # @see: http://wiki.bash-hackers.org/syntax/shellvars
-[ -z "${SCRIPT_DIRECTORY:-}" ] \
-    && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+[ -z "${SCRIPT_DIRECTORY:-}" ] &&
+    SCRIPT_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
 
-# Pre Silicon
-#HOMEBREW_PREFIX=/usr/local
-# Silicon
-HOMEBREW_PREFIX="/opt/homebrew"
+# TODO: Determine which platform automatically.
+
+PROCESSOR_ARCH=$(uname -p)
+HOMEBREW_PREFIX=''
+
+if [[ "${PROCESSOR_ARCH}" == 'i386' ]]; then
+    # Pre Silicon Homebrew installs into /usr/local.
+    HOMEBREW_PREFIX=/usr/local
+elif [[ "${PROCESSOR_ARCH}" == 'arm' ]]; then
+    # Since Silicon Homebrew installs into /usr/local.
+    HOMEBREW_PREFIX="/opt/homebrew"
+else
+    >&2 echo "Unsupported processor architecture: ${PROCESSOR_ARCH}"
+    exit 1
+fi
 
 PROJECT_DIR="$(dirname "${SCRIPT_DIRECTORY}")"
 SRC_DIR="${PROJECT_DIR}/src"
