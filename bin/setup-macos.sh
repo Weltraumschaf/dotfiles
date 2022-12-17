@@ -19,11 +19,16 @@ ANSIBLE_DIR="${SRC_DIR}/ansible"
 step_home_brew_stuff() {
     echo "Setup home brew stuff..."
 
-    if [ -x "${HOMEBREW_PREFIX}/bin/brew" ] ; then
+    if [ -x "${HOMEBREW_PREFIX}/bin/brew" ]; then
         echo "Homebrew already installed!"
-        brew update && brew update && brew upgrade && brew upgrade --cask && brew cleanup
+        # Since the env is not reloaded brew is not in the path yet.
+        "${HOMEBREW_PREFIX}/bin/brew" update
+        "${HOMEBREW_PREFIX}/bin/brew" update
+        "${HOMEBREW_PREFIX}/bin/brew" upgrade
+        "${HOMEBREW_PREFIX}/bin/brew" upgrade --cask
+        "${HOMEBREW_PREFIX}/bin/brew" cleanup
     else
-        echo "Install homebrew..."
+        echo "Install Homebrew..."
         (curl -sSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash)
     fi
 
