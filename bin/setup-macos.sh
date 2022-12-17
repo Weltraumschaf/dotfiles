@@ -108,6 +108,16 @@ step_install_python() {
     pyenv global "${python3_version}" "${python2_version}"
 }
 
+step_install_ruby() {
+    # see https://medium.com/@jules2689/homebrew-ruby-and-gems-78d6c26b89e
+    # List available versions: rbenv install --list
+    RUBY_VERSION="3.1.3"
+    eval "$(rbenv init -)"
+    rbenv install -f "${RUBY_VERSION}"
+    rbenv rehash
+    rbenv global "${RUBY_VERSION}"
+}
+
 step_ansible_playbook() {
     ansible-playbook -K "${ANSIBLE_DIR}/setup-macos.yml"
 }
@@ -116,6 +126,7 @@ main() {
     step_system_settings_stuff
     step_home_brew_stuff
     step_install_python
+    step_install_ruby
     step_ansible_playbook
     echo "Done :-)"
 }
