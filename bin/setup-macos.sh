@@ -43,12 +43,10 @@ MACOS_DIR="${SRC_DIR}/macos"
 ANSIBLE_DIR="${SRC_DIR}/ansible"
 
 step_system_settings_stuff() {
-    log "Set hostname..."
     sudo scutil --set ComputerName "${HOST_NAME}"
     sudo scutil --set HostName "${HOST_NAME}.${DOMAIN_NAME}"
     sudo scutil --set LocalHostName "${HOST_NAME}"
 
-    log "System Settings..."
     sudo systemsetup -settimezone "Europe/Berlin"
     sudo systemsetup -getnetworktimeserver "ptbtime1.ptb.de"
 
@@ -63,7 +61,7 @@ step_system_settings_stuff() {
     # Disable game center. Who uses that thing?
     sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.gamed.plist 2> /dev/null
 
-    log "Enable automatic software updates..."
+    # Enable automatic software updates.
     sudo softwareupdate --schedule on
 }
 
