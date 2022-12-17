@@ -5,7 +5,7 @@
     msg: Setup developer mac!
   become: no
 
-- name: Add PATH for brew cront
+- name: Add PATH for brew cron
   ansible.builtin.cron:
     name: PATH
     env: yes
@@ -32,7 +32,7 @@
 - name: Setup FZF (https://github.com/junegunn/fzf)
   ansible.builtin.shell: /opt/homebrew/opt/fzf/install --key-bindings --completion --no-update-rc
 
-- name: Create resolver direcotry
+- name: Create resolver directory
   ansible.builtin.file:
     path: /etc/resolver
     state: directory
