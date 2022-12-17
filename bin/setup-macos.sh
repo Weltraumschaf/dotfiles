@@ -54,14 +54,18 @@ step_home_brew_stuff() {
 }
 
 step_install_python() {
+    local python2_version='2.7.18'
+    local python3_version='3.11.1'
+
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
+
     eval "$(pyenv init -)"
 
-    pyenv install 3.10.6
-    pyenv install 2.7.18
+    pyenv install "${python2_version}" || true
+    pyenv install "${python3_version}" || true
     pyenv rehash
-    pyenv global 3.10.6 2.7.18
+    pyenv global "${python3_version}" "${python2_version}"
 }
 
 main() {
