@@ -727,8 +727,6 @@ cask "openzfs"
 cask "owasp-zap"
 # Markdown editor with pandoc integration and paginated preview
 cask "panwriter"
-# Desktop virtualization software
-cask "parallels"
 # Translation editor
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
@@ -808,8 +806,6 @@ cask "visual-studio"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Create, manage, and run virtual machines
-cask "vmware-fusion"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # Rust-based terminal
@@ -831,7 +827,6 @@ mas "Apple Configurator", id: 1037126344
 mas "Caffeinated", id: 1362171212
 mas "Cuppa", id: 1297865739
 mas "GarageBand", id: 682658836
-mas "GIF Brewery 3", id: 1081413713
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
@@ -846,4 +841,3 @@ mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
-mas "XChat Azure", id: 447521961
