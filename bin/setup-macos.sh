@@ -108,11 +108,15 @@ step_install_python() {
     pyenv global "${python3_version}" "${python2_version}"
 }
 
+step_ansible_playbook() {
+    ansible-playbook -K "${ANSIBLE_DIR}/setup-macos.yml"
+}
+
 main() {
     step_system_settings_stuff
     step_home_brew_stuff
     step_install_python
-    ansible-playbook -K "${ANSIBLE_DIR}/setup-macos.yml"
+    step_ansible_playbook
     echo "Done :-)"
 }
 
