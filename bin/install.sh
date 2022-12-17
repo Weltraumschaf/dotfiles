@@ -33,14 +33,14 @@ function link_file() {
     local source="${1:-}"
 
     if [[ -z "${source}" ]]; then
-        ehco "First argument of link_file must ot be empty!"
+        >&2 ehco "First argument of link_file must ot be empty!"
         exit 1
     fi
 
     local target_dir="${2:-}"
 
     if [[ -z "${target_dir}" ]]; then
-        ehco "Second argument of link_file must ot be empty!"
+        >&2 ehco "Second argument of link_file must ot be empty!"
         exit 1
     fi
 
