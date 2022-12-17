@@ -42,7 +42,7 @@ SRC_DIR="${PROJECT_DIR}/src"
 MACOS_DIR="${SRC_DIR}/macos"
 ANSIBLE_DIR="${SRC_DIR}/ansible"
 
-system_settings_stuff() {
+step_system_settings_stuff() {
     log "Set hostname..."
     sudo scutil --set ComputerName "${HOST_NAME}"
     sudo scutil --set HostName "${HOST_NAME}.${DOMAIN_NAME}"
@@ -109,7 +109,7 @@ step_install_python() {
 }
 
 main() {
-    system_settings_stuff
+    step_system_settings_stuff
     step_home_brew_stuff
     step_install_python
     ansible-playbook -K "${ANSIBLE_DIR}/setup-macos.yml"
