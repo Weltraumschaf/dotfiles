@@ -6,8 +6,6 @@ set -euo pipefail
 [ -z "${SCRIPT_DIRECTORY:-}" ] &&
     SCRIPT_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
 
-# TODO: Determine which platform automatically.
-
 PROCESSOR_ARCH=$(uname -p)
 HOMEBREW_PREFIX=''
 
