@@ -28,10 +28,6 @@
     job: rm -rf $HOME/.m2/repository/
   become: no
 
-# TODO: Make it autodetect
-- name: Setup FZF (https://github.com/junegunn/fzf)
-  ansible.builtin.shell: /opt/homebrew/opt/fzf/install --key-bindings --completion --no-update-rc
-
 - name: Create resolver directory
   ansible.builtin.file:
     path: /etc/resolver
