@@ -51,8 +51,6 @@ brew "gettext"
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# Perl compatible regular expressions library
-brew "pcre"
 # Low-level library for pixel manipulation
 brew "pixman"
 # Java build tool
@@ -393,6 +391,8 @@ brew "mysql", restart_service: true
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
+# Perl compatible regular expressions library
+brew "pcre"
 # Port scanning utility for large networks
 brew "nmap"
 # Swiss-army knife of markup format conversion
