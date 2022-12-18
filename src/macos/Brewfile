@@ -672,6 +672,8 @@ cask "keystore-explorer"
 cask "knockknock"
 # Free and open-source painting and sketching program
 cask "krita"
+# Open source code editor written in Rust
+cask "lapce"
 # Create, manage and debug system- and user services
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
