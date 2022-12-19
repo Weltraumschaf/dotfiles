@@ -2,7 +2,7 @@
 assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["containers", "vagrant", "gem"]
+disable = ["containers", "vagrant", "gem", "system"]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
