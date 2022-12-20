@@ -299,6 +299,8 @@ brew "html2text"
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Fast and multi-purpose HTTP toolkit
+brew "httpx"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Configurable static site generator
@@ -503,6 +505,8 @@ brew "starship"
 brew "step"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Subdomain discovery tool
+brew "subfinder"
 # Generate scripting interfaces to C/C++ code
 brew "swig"
 # User interface to the TELNET protocol
@@ -777,6 +781,8 @@ cask "taskexplorer"
 cask "teamviewer"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin11"
+# LaTeX editor
+cask "texifier"
 # General-purpose text editor
 cask "textmate"
 # Unpacks archive files
