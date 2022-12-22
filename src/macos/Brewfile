@@ -389,6 +389,8 @@ brew "mtr"
 brew "zlib"
 # Open source relational database management system
 brew "mysql", restart_service: true
+# Fast port scanner
+brew "naabu"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
@@ -487,6 +489,8 @@ brew "shellcheck"
 brew "sloccount"
 # S/MIME signing utility for use with Git
 brew "smimesign"
+# Daemon to provide vmnet.framework support for rootless QEMU
+brew "socket_vmnet"
 # Launcher to analyze a project with SonarQube
 brew "sonar-scanner"
 # Editor of encrypted files
