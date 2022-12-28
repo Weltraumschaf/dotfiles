@@ -429,6 +429,8 @@ brew "octant"
 brew "open-sp"
 # OpenShift command-line interface tools
 brew "openshift-cli"
+# Vulnerability scanner which uses the OSV database
+brew "osv-scanner"
 # Tool for creating identical machine images for multiple platforms
 brew "packer"
 # Parallel bzip2
@@ -714,6 +716,8 @@ cask "moneymoney"
 cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
 # Development environment, tooling platform and application framework
 cask "netbeans"
 # Free and open-source RSS reader
