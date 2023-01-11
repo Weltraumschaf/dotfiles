@@ -601,10 +601,6 @@ cask "arduino"
 cask "authy"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Compare files and folders
-cask "beyond-compare"
-# Reverse engineering platform
-cask "binary-ninja"
 # Desktop password and login vault
 cask "bitwarden"
 # Web security testing toolkit
@@ -641,8 +637,6 @@ cask "drawio"
 cask "dupeguru"
 # Find files, folders, or contents in any file
 cask "easyfind"
-# Sci-fi themed terminal emulator and system monitor
-cask "edex-ui"
 # Collaborative team software
 cask "figma"
 # Web browser
@@ -688,8 +682,6 @@ cask "lapce"
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
 cask "lbry"
-# Kubernetes IDE
-cask "lens"
 # Office suite
 cask "libreoffice"
 # Host-based application firewall
@@ -813,9 +805,6 @@ cask "tunnelblick"
 cask "typora"
 # Virtual machines UI using QEMU
 cask "utm"
-# Development environment
-cask "vagrant"
-cask "vagrant-manager"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
@@ -824,8 +813,6 @@ cask "visual-studio-code"
 cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
-# Rust-based terminal
-cask "warp"
 # Network protocol analyzer
 cask "wireshark"
 # X Certificate and Key management
