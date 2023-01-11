@@ -116,7 +116,7 @@ step_install_ruby() {
     rbenv global "${RUBY_VERSION}"
 }
 
-step_install_nvm)() {
+step_install_nvm() {
     # https://github.com/nvm-sh/nvm#installing-and-updating
     (curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash)
 }
