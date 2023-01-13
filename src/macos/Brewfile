@@ -49,8 +49,6 @@ brew "fontconfig"
 brew "gettext"
 # Core application library for C
 brew "glib"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Low-level library for pixel manipulation
 brew "pixman"
 # Java build tool
@@ -219,6 +217,8 @@ brew "fdupes"
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Asynchronous event library
 brew "libevent"
 # Low-level cryptographic library
