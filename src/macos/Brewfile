@@ -279,8 +279,6 @@ brew "go"
 brew "goaccess"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
-# Google Search and News from the command-line
-brew "googler"
 # Manage your GnuPG keys with ease! 🔐
 brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -557,8 +555,6 @@ brew "yj"
 brew "youtube-dl"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
-# Emulator for x86 and PowerPC
-brew "akirakyle/qemu-virgl/qemu-virgl", link: false
 # In-depth Attack Surface Mapping and Asset Discovery
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -835,7 +831,6 @@ mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
-mas "MeisterTask", id: 1051767777
 mas "MindNode", id: 1289197285
 mas "MindNode Lite", id: 402397683
 mas "MultiMarkdown Composer", id: 1275176220
