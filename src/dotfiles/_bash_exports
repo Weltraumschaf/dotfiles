@@ -61,6 +61,10 @@ if [ -d "${HOME}/Library/Python/3.9/bin" ] ; then
     PATH="${HOME}/Library/Python/3.9/bin:${PATH}"
 fi
 
+if [ -d "/usr/local/share/dotnet" ] ; then
+    PATH="/usr/local/share/dotnet:${PATH}"
+fi
+
 export PATH
 
 if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
