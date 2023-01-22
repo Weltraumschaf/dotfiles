@@ -801,6 +801,8 @@ cask "tunnelblick"
 cask "typora"
 # Virtual machines UI using QEMU
 cask "utm"
+# Virtualizer for x86 and arm64 hardware
+cask "virtualbox-beta"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
