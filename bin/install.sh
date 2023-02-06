@@ -11,6 +11,26 @@ set -euo pipefail
 [ -z "${SCRIPT_DIRECTORY:-}" ] \
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
+USAGE="Usage: $(basename "$0") [--t <DIRECTORY>] [--n] [-h|--help]"
+HELP=$(cat <<- EOT
+This script installs the dotfiles.
+
+Optional options:
+
+    -t|--target-dir <DIRECTORY>     Specifies the directory where to install the dotfiles.
+    -n|--non-interactive            Suppress all user interaction.
+
+    -h|--help                       Show this help.
+EOT
+)
+
+print_help() {
+    echo "${USAGE}"
+    echo
+    echo "${HELP}"
+    echo
+}
+
 ##
 ## Extracts the base name from given path and replaces _ with .
 ##
@@ -63,7 +83,36 @@ main() {
     local base_dir
     base_dir="$(dirname "${SCRIPT_DIRECTORY}")"
     local source_dir="${base_dir}/src/dotfiles"
-    local target_dir="${1:-}"
+    local target_dir="${HOME}"
+    local non_interactive=""
+
+    while (( "$#" )); do
+        case "${1}" in
+            -t|--target-dir)
+                if [ -n "${2}" ] && [ "${2:0:1}" != "-" ]; then
+                    target_dir="${2}"
+                    shift 2
+                else
+                    error "Argument for ${1} is missing"
+                    echo_err "${USAGE}"
+                    exit 1
+                fi
+                ;;
+            -n|--non-interactive)
+                non_interactive="true"
+                shift 1
+                ;;
+            -h|--help)
+                print_help
+                exit 0
+                ;;
+            *)
+                >&2 echo "Unsupported options: '$1'!"
+                >&2 echo "${USAGE}"
+                exit 1
+                ;;
+        esac
+    done
 
     if [[ -z "${target_dir}" ]]; then
         echo "No sub_dir dir given! Using \$HOME instead."
@@ -72,11 +121,14 @@ main() {
 
     echo "Will install dotfiles into: ${target_dir}"
 
-    read -rep "Proceed? [y/N]" answer
+    # If we are non-interactive, we go ahead w/o further prompting.
+    if [[ -z "${non_interactive}" ]]; then
+        read -rep "Proceed? [y/N]" answer
 
-    if [[ "y" != "${answer}" ]] && [[ "Y" != "${answer}" ]]; then
-        echo "Aborted!"
-        exit 0
+        if [[ "y" != "${answer}" ]] && [[ "Y" != "${answer}" ]]; then
+            echo "Aborted!"
+            exit 0
+        fi
     fi
 
     echo "Installing dotfiles ..."
@@ -98,4 +150,4 @@ main() {
     echo "Finished :)"
 }
 
-main "${1:-}"
+main "$@"
