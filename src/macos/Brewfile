@@ -543,8 +543,6 @@ brew "vagrant-completion"
 brew "watch"
 # Display word differences between text files
 brew "wdiff"
-# Bundler for JavaScript and friends
-brew "webpack"
 # Internet file retriever
 brew "wget"
 # ISO9660+RR manipulation tool
