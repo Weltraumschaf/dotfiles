@@ -65,6 +65,11 @@ if [ -d "/usr/local/share/dotnet" ] ; then
     PATH="/usr/local/share/dotnet:${PATH}"
 fi
 
+if [ -d "/Users/sst/Library/pnpm" ]; then
+    export PNPM_HOME="/Users/sst/Library/pnpm"
+    export PATH="$PNPM_HOME:$PATH"
+fi
+
 export PATH
 
 if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
