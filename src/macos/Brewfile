@@ -75,12 +75,20 @@ brew "asciidoc"
 brew "asciidoctor"
 # Record and share terminal sessions
 brew "asciinema"
-# Automatically exclude development dependencies from Time Machine backups
-brew "asimov", restart_service: true
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Generic library support script
+brew "libtool"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
+# Automatically exclude development dependencies from Time Machine backups
+brew "asimov", restart_service: true
 # Fast, efficient and secure backup program
 brew "restic"
 # High level CLI utility for restic
@@ -105,8 +113,6 @@ brew "bazel"
 brew "bfg"
 # GNU binary tools for native development
 brew "binutils"
-# GNU multiple precision arithmetic library
-brew "gmp"
 # Integer Set Library for the polyhedral model
 brew "isl"
 # C library for multiple-precision floating-point computations
@@ -149,16 +155,12 @@ brew "colordiff"
 brew "libunistring"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Generic library support script
-brew "libtool"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # General-purpose scripting language
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # Securely send things from one computer to another
