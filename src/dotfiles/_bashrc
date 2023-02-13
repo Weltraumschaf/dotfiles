@@ -160,7 +160,6 @@ debug ">> Eksctl done."
 if [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] ; then
     # shellcheck disable=SC1091
     source "${HOME}/.sdkman/bin/sdkman-init.sh"
-    source <(sdk completion bash)
 fi
 
 debug ">> SDKMAN done."
