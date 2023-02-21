@@ -89,7 +89,7 @@ brew "libtool"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatically exclude development dependencies from Time Machine backups
-brew "asimov", restart_service: true
+brew "asimov"
 # Fast, efficient and secure backup program
 brew "restic"
 # High level CLI utility for restic
@@ -218,8 +218,6 @@ brew "fdupes"
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Asynchronous event library
 brew "libevent"
 # Low-level cryptographic library
@@ -264,6 +262,8 @@ brew "gitleaks"
 brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
