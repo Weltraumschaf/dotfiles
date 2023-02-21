@@ -5,6 +5,7 @@ tap "filippo.io/age", "https://filippo.io/age"
 tap "go-task/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -637,6 +638,8 @@ cask "easyfind"
 cask "figma"
 # Web browser
 cask "firefox"
+# Sans-serif, slab-serif, monospace and quasi‑proportional typeface family
+cask "font-iosevka"
 # GIT client
 cask "fork"
 # 3D parametric modeler
