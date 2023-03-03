@@ -14,7 +14,6 @@ tap "jesseduffield/lazygit"
 tap "mas-cli/tap"
 tap "norwoodj/tap"
 tap "petere/sgml"
-tap "rcmdnk/file"
 tap "remotemobprogramming/brew"
 tap "robotsandpencils/made"
 tap "rusty-ferris-club/tap"
@@ -232,6 +231,8 @@ brew "sdl2"
 brew "theora"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Fast web fuzzer written in Go
+brew "ffuf"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
 # Real-time software synthesizer based on the SoundFont 2 specs
