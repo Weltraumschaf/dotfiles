@@ -441,6 +441,8 @@ brew "peco"
 brew "pinentry-mac"
 # Draw UML diagrams
 brew "plantuml"
+# Python package management tool
+brew "poetry"
 # Object-relational database system
 brew "postgresql@14"
 # Password generator
@@ -605,6 +607,8 @@ cask "bitwarden"
 cask "burp-suite"
 # Calendar software focusing on flexibility and reliability
 cask "busycal"
+# Remove junk and unused files
+cask "ccleaner"
 # Clipboard extension app
 cask "clipy"
 # Tool to show live information about the batteries in various devices
@@ -712,6 +716,8 @@ cask "mono-mdk-for-visual-studio"
 cask "multifirefox"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
+# Visual tool to design, develop and administer MySQL servers
+cask "mysqlworkbench"
 # Development environment, tooling platform and application framework
 cask "netbeans"
 # Free and open-source RSS reader
