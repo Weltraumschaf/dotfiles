@@ -191,6 +191,8 @@ brew "docbook-xsl"
 brew "docker-clean"
 # Command-line DNS client
 brew "dog"
+# Command-line DNS Client for Humans
+brew "doggo"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
 # Functional metaprogramming aware language built on Erlang VM
@@ -535,6 +537,8 @@ brew "tmux"
 brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Vulnerability scanner for container images, file systems, and Git repos
+brew "trivy"
 # Language for application scale JavaScript development
 brew "typescript"
 # Simple GTD-style task management for the command-line
