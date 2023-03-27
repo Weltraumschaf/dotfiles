@@ -81,3 +81,6 @@ if [ -x "${HOMEBREW_PREFIX}/bin/ultralist" ] ; then
     alias priv-todos='ultralist l project:Privat --notes'
     alias work-todos='ultralist l project:-Privat group:project --notes'
 fi
+
+alias signal-private='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Private" &'
+alias signal-work='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Work" &'
