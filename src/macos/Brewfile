@@ -88,7 +88,7 @@ brew "libtool"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatically exclude development dependencies from Time Machine backups
-brew "asimov"
+brew "asimov", restart_service: true
 # Fast, efficient and secure backup program
 brew "restic"
 # High level CLI utility for restic
@@ -594,8 +594,11 @@ brew "weaveworks/tap/eksctl"
 brew "weltraumschaf/tap/sshpass"
 # Instant messaging application
 cask "adium"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
 # Application launcher and productivity software
 cask "alfred"
+# Tools for the Android SDK
 cask "android-sdk"
 # Application uninstaller
 cask "appcleaner"
@@ -706,7 +709,7 @@ cask "mactex"
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
 cask "maltego"
-# Simple and elegant markdown editor
+# Markdown editor
 cask "mark-text"
 # Penetration testing framework
 cask "metasploit"
