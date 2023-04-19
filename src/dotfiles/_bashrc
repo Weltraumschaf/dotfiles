@@ -210,9 +210,11 @@ if [[ -s "${HOME}/Library/Application\ Support/org.dystroy.broot/launcher/bash/b
 fi
 
 # https://asdf-vm.com/guide/getting-started.html#_3-install-asdf
-ASDF_PREFIX="$(brew --prefix asdf)"
-[[ -f "${ASDF_PREFIX}/libexec/asdf.sh" ]] && source "${ASDF_PREFIX}/libexec/asdf.sh"
-[[ -f "${ASDF_PREFIX}/etc/bash_completion.d/asdf.bash" ]] && source "${ASDF_PREFIX}/etc/bash_completion.d/asdf.bash"
+if [[ "$(command -v brew)" ]]; then
+    ASDF_PREFIX="$(brew --prefix asdf)"
+    [[ -f "${ASDF_PREFIX}/libexec/asdf.sh" ]] && source "${ASDF_PREFIX}/libexec/asdf.sh"
+    [[ -f "${ASDF_PREFIX}/etc/bash_completion.d/asdf.bash" ]] && source "${ASDF_PREFIX}/etc/bash_completion.d/asdf.bash"
+fi
 
 echo ".bashrc loaded :-)"
 echo
