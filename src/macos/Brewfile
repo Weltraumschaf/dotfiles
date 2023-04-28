@@ -614,8 +614,6 @@ cask "bitwarden"
 cask "burp-suite"
 # Calendar software focusing on flexibility and reliability
 cask "busycal"
-# Remove junk and unused files
-cask "ccleaner"
 # Clipboard extension app
 cask "clipy"
 # Tool to show live information about the batteries in various devices
@@ -640,7 +638,7 @@ cask "discord"
 cask "docker"
 # Emulator for x86 with DOS
 cask "dosbox"
-# Draw.io is free online diagram software
+# Online diagram software
 cask "drawio"
 # Finds duplicate files in a computer system
 cask "dupeguru"
@@ -861,3 +859,4 @@ mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
+mas "VMware Remote Console", id: 1230249825
