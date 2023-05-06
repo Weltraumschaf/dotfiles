@@ -99,8 +99,6 @@ brew "autossh"
 brew "aws-iam-authenticator"
 # Integrated shell for working with the AWS CLI
 brew "aws-shell"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 3.2
@@ -265,8 +263,6 @@ brew "gitleaks"
 brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -289,6 +285,8 @@ brew "gpg-tui"
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Command-line interface for Hetzner Cloud
 brew "hcloud"
 # Kubernetes package manager
@@ -425,8 +423,6 @@ brew "oath-toolkit"
 brew "ocaml"
 # Generic build tool for OCaml
 brew "ocamlbuild"
-# Kubernetes introspection tool for developers
-brew "octant"
 # SGML parser
 brew "open-sp"
 # OpenShift command-line interface tools
