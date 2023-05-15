@@ -1,13 +1,30 @@
 # shellcheck disable=SC2148
 
-# https://apple.stackexchange.com/questions/437618/why-is-homebrew-installed-in-opt-homebrew-on-apple-silicon-macs
-# Pre Silicon
-#HOMEBREW_PREFIX=/usr/local
-# Silicon
-HOMEBREW_PREFIX=/opt/homebrew
+# The systems defaults are (from /etc/paths):
+# /usr/local/bin
+# /usr/bin
+# /bin
+# /usr/sbin
+# /sbin
 
 # Sane default for the PATH
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin"
+
+# https://apple.stackexchange.com/questions/437618/why-is-homebrew-installed-in-opt-homebrew-on-apple-silicon-macs
+# Pre Silicon
+HOMEBREW_PREFIX_INTEL=/usr/local
+# Silicon
+HOMEBREW_PREFIX_SILICON=/opt/homebrew
+HOMEBREW_PREFIX=""
+CPU_ARCH="$(uname -m)"
+
+if [[ "${CPU_ARCH}" == 'x86_64' ]]; then
+  HOMEBREW_PREFIX="${#HOMEBREW_PREFIX_INTEL}"
+elif [[ "${CPU_ARCH}" == 'arm64' ]]; then
+  HOMEBREW_PREFIX="${HOMEBREW_PREFIX_SILICON}"
+else
+    echo "WARNING: Unsupported CPU architecture ${CPU_ARCH}!"
+fi
 
 # Homebrew
 if [ -d "${HOMEBREW_PREFIX}" ] ; then
