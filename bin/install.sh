@@ -11,7 +11,7 @@ set -euo pipefail
 [ -z "${SCRIPT_DIRECTORY:-}" ] \
     && SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-USAGE="Usage: $(basename "$0") [--t <DIRECTORY>] [--n] [-h|--help]"
+USAGE="Usage: $(basename "$0") [-t <DIRECTORY>] [-n] [-h|--help]"
 HELP=$(cat <<- EOT
 This script installs the dotfiles.
 
