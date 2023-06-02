@@ -33,14 +33,14 @@ brew "c-ares"
 brew "node"
 # CLI tool for Angular
 brew "angular-cli"
-# YAML Parser
-brew "libyaml"
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# YAML Parser
+brew "libyaml"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # XML-based font configuration API for X Windows
@@ -193,6 +193,8 @@ brew "dog"
 brew "doggo"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Programming language for highly scalable real-time systems
+brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Functional programming language for building browser-based GUIs
@@ -409,8 +411,6 @@ brew "nb"
 brew "ncdu"
 # Network authentication cracking tool
 brew "ncrack"
-# Web server scanner
-brew "nikto"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # HTTP/DNS scanner configurable via YAML templates
@@ -844,6 +844,7 @@ mas "Caffeinated", id: 1362171212
 mas "Cuppa", id: 1297865739
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
