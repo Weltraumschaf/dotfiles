@@ -2,6 +2,12 @@
 
 set -euo pipefail
 
+# Python versions we use w/ Pyenv:
+PYTHON2_VERSION='2.7.18'
+PYTHON3_VERSION='3.11.4'
+# Ruby version we use w/ rbenv:
+RUBY_VERSION="3.2.2"
+
 # @see: http://wiki.bash-hackers.org/syntax/shellvars
 [ -z "${SCRIPT_DIRECTORY:-}" ] &&
     SCRIPT_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
@@ -94,24 +100,23 @@ step_home_brew_stuff() {
 }
 
 step_install_python() {
-    local python2_version='2.7.18'
-    local python3_version='3.11.1'
+    local PYTHON2_VERSION='2.7.18'
+    local PYTHON3_VERSION='3.11.1'
 
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
 
     eval "$(pyenv init -)"
 
-    pyenv install "${python2_version}" || true
-    pyenv install "${python3_version}" || true
+    pyenv install "${PYTHON2_VERSION}" || true
+    pyenv install "${PYTHON3_VERSION}" || true
     pyenv rehash
-    pyenv global "${python3_version}" "${python2_version}"
+    pyenv global "${PYTHON3_VERSION}" "${PYTHON2_VERSION}"
 }
 
 step_install_ruby() {
     # see https://medium.com/@jules2689/homebrew-ruby-and-gems-78d6c26b89e
     # List available versions: rbenv install --list
-    RUBY_VERSION="3.1.3"
     eval "$(rbenv init -)"
     rbenv install -f "${RUBY_VERSION}"
     rbenv rehash
