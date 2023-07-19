@@ -25,7 +25,7 @@ tap "weltraumschaf/tap"
 brew "aalib"
 # Search tool like grep, but optimized for programmers
 brew "ack"
-# Run your GitHub Actions locally 🚀
+# Run your GitHub Actions locally
 brew "act"
 # Asynchronous DNS library
 brew "c-ares"
@@ -281,7 +281,7 @@ brew "go"
 brew "goaccess"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
-# Manage your GnuPG keys with ease! 🔐
+# Manage your GnuPG keys with ease!
 brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
@@ -439,6 +439,8 @@ brew "peco"
 brew "pinentry-mac"
 # Draw UML diagrams
 brew "plantuml"
+# Emulator for x86 and PowerPC
+brew "qemu"
 # Python package management tool
 brew "poetry"
 # Object-relational database system
@@ -449,8 +451,6 @@ brew "pwgen"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# Emulator for x86 and PowerPC
-brew "qemu"
 # Cross-platform application and UI framework
 brew "qt"
 # File browser
@@ -517,6 +517,8 @@ brew "stow"
 brew "subfinder"
 # Generate scripting interfaces to C/C++ code
 brew "swig"
+# CLI for generating a Software Bill of Materials from container images
+brew "syft"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
@@ -581,13 +583,17 @@ brew "robotsandpencils/made/xcodes"
 brew "rusty-ferris-club/tap/shellclear"
 # The ssh-askpass util for MacOS
 brew "theseal/ssh-askpass/ssh-askpass"
-# A tool for exploring each layer in a docker image
+# A tool for exploring layers in a docker image
 brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called "interactive keyboard password authentication".
 # Most user should use SSH's more secure public key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Command-line helper for the 1Password password manager
+cask "1password-cli"
 # Instant messaging application
 cask "adium"
 # View, print, and comment on PDF documents
@@ -689,7 +695,7 @@ cask "lastpass"
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
 cask "lbry"
-# Office suite
+# Free cross-platform office suite, fresh version
 cask "libreoffice"
 # Host-based application firewall
 cask "little-snitch"
@@ -742,6 +748,8 @@ cask "openzfs"
 cask "owasp-zap"
 # Markdown editor with pandoc integration and paginated preview
 cask "panwriter"
+# Browse, manage, inspect containers and images
+cask "podman-desktop"
 # Translation editor
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
