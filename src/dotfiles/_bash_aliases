@@ -39,7 +39,6 @@ alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
 alias mvndirs="mkdir -p src/{main,test}/{java,resources}"
 alias webserver="python -m http.server"
 alias now="date +'%Y-%m-%dT%H:%M:%S%z'"
-alias kali='(cd "$HOME/src/private/vagrant/kali" && vagrant up)'
 alias wd='echo -n $(pwd)'
 
 if [ -x "${HOMEBREW_PREFIX}/bin/brew" ] ; then
