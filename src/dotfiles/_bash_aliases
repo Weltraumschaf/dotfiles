@@ -56,11 +56,6 @@ svn() {
     fi
 }
 
-if [ -f "${HOME}/.local_aliases" ] ; then
-    # shellcheck disable=SC1090
-    source "${HOME}/.local_aliases"
-fi
-
 if [ -x /usr/local/bin/docker ] ; then
     alias docker-prune="docker image prune -a && docker system prune"
     alias d-bb='docker run --rm -it weltraumschaf/debian-bb:1.0.0 /usr/games/bb -loop'
@@ -83,3 +78,8 @@ fi
 
 alias signal-private='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Private" &'
 alias signal-work='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Work" &'
+
+if [ -f "${HOME}/.local_aliases" ] ; then
+    # shellcheck disable=SC1090
+    source "${HOME}/.local_aliases"
+fi

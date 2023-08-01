@@ -89,11 +89,6 @@ if [ -f "${HOME}/.ssh_aliases" ] ; then
     source "${HOME}/.ssh_aliases"
 fi
 
-if [ -f "${HOME}/.local_aliases" ] ; then
-    # shellcheck disable=SC1091
-    source "${HOME}/.local_aliases"
-fi
-
 # Source additional information, which applies to the current host only.
 if [ -f "${HOME}/.bash_local" ]; then
     # shellcheck disable=SC1091
