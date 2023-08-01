@@ -25,6 +25,7 @@
     name: Wipe Maven Repo
     minute: 15
     hour: 22
+    day: 1
     job: rm -rf $HOME/.m2/repository/
   become: no
 
