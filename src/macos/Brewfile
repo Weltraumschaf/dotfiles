@@ -145,10 +145,22 @@ brew "clojure"
 brew "cmake"
 # Interactive terminal based UI application for tracking cryptocurrencies
 brew "cointop"
-# Color-highlighted diff(1) output
-brew "colordiff"
+# Asynchronous event library
+brew "libevent"
 # C string library for manipulating Unicode strings
 brew "libunistring"
+# Low-level cryptographic library
+brew "nettle"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Library for USB device access
+brew "libusb"
+# Emulator for x86 and PowerPC
+brew "qemu"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Color-highlighted diff(1) output
+brew "colordiff"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Graphics library to dynamically manipulate images
@@ -183,8 +195,8 @@ brew "dnsmap"
 brew "dnsmasq"
 # XML vocabulary to create presentation-neutral documents
 brew "docbook-xsl"
-# Clean Docker containers, images, networks, and volumes
-brew "docker-clean"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Command-line DNS client
 brew "dog"
 # Command-line DNS Client for Humans
@@ -217,12 +229,6 @@ brew "fdupes"
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
-# Asynchronous event library
-brew "libevent"
-# Low-level cryptographic library
-brew "nettle"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
 # Vorbis General Audio Compression Codec
 brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
@@ -267,8 +273,6 @@ brew "gnu-sed"
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
 brew "libgcrypt"
-# Library for USB device access
-brew "libusb"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Command-driven, interactive function plotting
@@ -437,8 +441,6 @@ brew "peco"
 brew "pinentry-mac"
 # Draw UML diagrams
 brew "plantuml"
-# Emulator for x86 and PowerPC
-brew "qemu"
 # Python package management tool
 brew "poetry"
 # Object-relational database system
@@ -634,8 +636,6 @@ cask "dia"
 cask "digikam"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
-cask "docker"
 # Emulator for x86 with DOS
 cask "dosbox"
 # Online diagram software
@@ -746,8 +746,6 @@ cask "openzfs"
 cask "owasp-zap"
 # Markdown editor with pandoc integration and paginated preview
 cask "panwriter"
-# Browse, manage, inspect containers and images
-cask "podman-desktop"
 # Translation editor
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
