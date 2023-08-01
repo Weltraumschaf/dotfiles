@@ -56,7 +56,7 @@ svn() {
     fi
 }
 
-if [ -x /usr/local/bin/docker ] ; then
+if [ "$(command -v docker)" ] ; then
     alias docker-prune="docker image prune -a && docker system prune"
     alias d-bb='docker run --rm -it weltraumschaf/debian-bb:1.0.0 /usr/games/bb -loop'
     # https://medium.com/@airman604/kali-linux-in-a-docker-container-5a06311624eb
