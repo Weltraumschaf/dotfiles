@@ -275,6 +275,8 @@ brew "libgpg-error"
 brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Cross-platform application and UI framework
+brew "qt"
 # Command-driven, interactive function plotting
 brew "gnuplot"
 # Open source programming language to build simple/reliable/efficient software
@@ -291,6 +293,8 @@ brew "gradle"
 brew "graphviz"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# World's fastest and most advanced password recovery utility
+brew "hashcat"
 # Command-line interface for Hetzner Cloud
 brew "hcloud"
 # Kubernetes package manager
@@ -451,8 +455,6 @@ brew "pwgen"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# Cross-platform application and UI framework
-brew "qt"
 # File browser
 brew "ranger"
 # Install various Ruby versions and implementations
@@ -905,6 +907,7 @@ vscode "ms-azuretools.vscode-docker"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.dotnet-interactive-vscode"
 vscode "ms-dotnettools.vscode-dotnet-pack"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -942,6 +945,7 @@ vscode "steoates.autoimport"
 vscode "stringham.move-ts"
 vscode "sumneko.lua"
 vscode "Swellaby.rust-pack"
+vscode "tamasfe.even-better-toml"
 vscode "tenninebt.vscode-koverage"
 vscode "timonwong.shellcheck"
 vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
