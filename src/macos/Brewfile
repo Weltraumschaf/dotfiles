@@ -339,8 +339,6 @@ brew "jq"
 brew "jython"
 # Run local Kubernetes cluster in Docker
 brew "kind"
-# LastPass command-line interface tool
-brew "lastpass-cli"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Build tool for Clojure
@@ -689,8 +687,6 @@ cask "knockknock"
 cask "krita"
 # Open source code editor written in Rust
 cask "lapce"
-# Password manager
-cask "lastpass"
 # Create, manage and debug system- and user services
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
