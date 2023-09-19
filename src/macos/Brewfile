@@ -385,6 +385,8 @@ brew "molecule"
 brew "moreutils"
 # Remote terminal application
 brew "mosh"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
 # SMTP client that can be used as an SMTP plugin for Mutt
@@ -557,8 +559,6 @@ brew "xorriso"
 brew "yarn"
 # CLI to convert between YAML, TOML, JSON and HCL
 brew "yj"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # In-depth Attack Surface Mapping and Asset Discovery
@@ -581,7 +581,7 @@ brew "remotemobprogramming/brew/mob"
 brew "robotsandpencils/made/xcodes"
 # Secure shell history commands
 brew "rusty-ferris-club/tap/shellclear"
-# The ssh-askpass util for MacOS
+# Passphrase dialog for use with OpenSSH in macOS
 brew "theseal/ssh-askpass/ssh-askpass"
 # A tool for exploring layers in a docker image
 brew "wagoodman/dive/dive"
@@ -592,7 +592,7 @@ brew "weaveworks/tap/eksctl"
 brew "weltraumschaf/tap/sshpass"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Command-line helper for the 1Password password manager
+# Command-line interface for 1Password
 cask "1password-cli"
 # Instant messaging application
 cask "adium"
