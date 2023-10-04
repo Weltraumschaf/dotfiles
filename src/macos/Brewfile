@@ -491,6 +491,8 @@ brew "semgrep"
 brew "shellcheck"
 # Count lines of code in many languages
 brew "sloccount"
+# SMART hard drive monitoring
+brew "smartmontools"
 # S/MIME signing utility for use with Git
 brew "smimesign"
 # Daemon to provide vmnet.framework support for rootless QEMU
@@ -713,6 +715,8 @@ cask "metasploit"
 cask "miro"
 # German banking and financial management software
 cask "moneymoney"
+# Interactive tool for analyzing MongoDB data
+cask "mongodb-compass"
 # Open source implementation of Microsoft's .NET Framework
 cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
@@ -865,7 +869,6 @@ vscode "alexiv.vscode-angular2-files"
 vscode "Angular.ng-template"
 vscode "asciidoctor.asciidoctor-vscode"
 vscode "batisteo.vscode-django"
-vscode "bungcip.better-toml"
 vscode "christian-kohler.npm-intellisense"
 vscode "christian-kohler.path-intellisense"
 vscode "codezombiech.gitignore"
