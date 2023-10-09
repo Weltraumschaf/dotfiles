@@ -15,6 +15,7 @@ tap "petere/sgml"
 tap "remotemobprogramming/brew"
 tap "robotsandpencils/made"
 tap "rusty-ferris-club/tap"
+tap "snyk/tap"
 tap "theseal/ssh-askpass"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
@@ -197,8 +198,8 @@ brew "dnsmasq"
 brew "docbook-xsl"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
-# Command-line DNS client
-brew "dog"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
 # Command-line DNS Client for Humans
 brew "doggo"
 # Convert text between DOS, UNIX, and Mac formats
@@ -207,12 +208,8 @@ brew "dos2unix"
 brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
-# Functional programming language for building browser-based GUIs
-brew "elm"
 # Charset analyzer and converter
 brew "enca"
-# Modern replacement for 'ls'
-brew "exa"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Test various flash cards
@@ -583,6 +580,8 @@ brew "remotemobprogramming/brew/mob"
 brew "robotsandpencils/made/xcodes"
 # Secure shell history commands
 brew "rusty-ferris-club/tap/shellclear"
+# Find & fix known vulnerabilities in open-source dependencies
+brew "snyk/tap/snyk"
 # Passphrase dialog for use with OpenSSH in macOS
 brew "theseal/ssh-askpass/ssh-askpass"
 # A tool for exploring layers in a docker image
