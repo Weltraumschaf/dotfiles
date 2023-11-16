@@ -32,16 +32,16 @@ brew "c-ares"
 brew "node"
 # CLI tool for Angular
 brew "angular-cli"
+# YAML Parser
+brew "libyaml"
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# YAML Parser
-brew "libyaml"
-# Automate deployment, configuration, and upgrading
-brew "ansible"
+# Checks ansible playbooks for practices and behaviour
+brew "ansible-lint"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # GNU internationalization (i18n) and localization (l10n) library
@@ -159,7 +159,7 @@ brew "libusb"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima"
+brew "colima", restart_service: true
 # Color-highlighted diff(1) output
 brew "colordiff"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -326,6 +326,8 @@ brew "ivy"
 brew "s-lang"
 # Powerful editor for programmers
 brew "jed"
+# Extendable open source continuous integration server
+brew "jenkins", restart_service: true
 # CLI for the Jinja2 templating language
 brew "jinja2-cli"
 # Featureful UNIX password cracker
@@ -374,10 +376,6 @@ brew "mercurial"
 brew "micro"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
-# Project documentation with Markdown
-brew "mkdocs"
-# Automated testing for Ansible roles
-brew "molecule"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Remote terminal application
@@ -408,7 +406,7 @@ brew "nmap"
 brew "pandoc"
 # Text interface for Git repositories
 brew "tig"
-# Command-line and local web note‑taking, bookmarking, and archiving
+# Command-line and local web note-taking, bookmarking, and archiving
 brew "nb"
 # NCurses Disk Usage
 brew "ncdu"
@@ -432,8 +430,6 @@ brew "open-sp"
 brew "openshift-cli"
 # Vulnerability scanner which uses the OSV database
 brew "osv-scanner"
-# Tool for creating identical machine images for multiple platforms
-brew "packer"
 # Parallel bzip2
 brew "pbzip2"
 # Simplistic interactive filtering tool
@@ -496,6 +492,8 @@ brew "smimesign"
 brew "socket_vmnet"
 # Launcher to analyze a project with SonarQube
 brew "sonar-scanner"
+# Manage code quality
+brew "sonarqube", restart_service: true
 # Editor of encrypted files
 brew "sops"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -544,8 +542,8 @@ brew "typescript"
 brew "ultralist"
 # This UML tool aimed at providing a fast way of creating UML diagrams
 brew "umlet"
-# Bash completion for Vagrant
-brew "vagrant-completion"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Display word differences between text files
