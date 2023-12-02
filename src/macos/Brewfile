@@ -200,6 +200,8 @@ brew "docbook-xsl"
 brew "docker"
 # Docker CLI plugin for extended build capabilities with BuildKit
 brew "docker-buildx"
+# Isolated development environments using Docker
+brew "docker-compose"
 # Command-line DNS Client for Humans
 brew "doggo"
 # Convert text between DOS, UNIX, and Mac formats
