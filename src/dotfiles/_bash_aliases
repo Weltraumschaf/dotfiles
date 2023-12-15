@@ -78,6 +78,7 @@ fi
 
 alias signal-private='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Private" &'
 alias signal-work='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Work" &'
+alias flush-dns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 if [ -f "${HOME}/.local_aliases" ] ; then
     # shellcheck disable=SC1090
