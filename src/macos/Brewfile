@@ -156,7 +156,7 @@ brew "nettle"
 brew "gnutls"
 # Library for USB device access
 brew "libusb"
-# Emulator for x86 and PowerPC
+# Generic machine emulator and virtualizer
 brew "qemu"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima", restart_service: true
@@ -174,8 +174,6 @@ brew "composer"
 brew "cowsay"
 # Securely send things from one computer to another
 brew "croc"
-# Message bus system, providing inter-application communication
-brew "dbus"
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
 # OWASP dependency-check
@@ -274,10 +272,6 @@ brew "libgpg-error"
 brew "libgcrypt"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Cross-platform application and UI framework
-brew "qt"
-# Command-driven, interactive function plotting
-brew "gnuplot"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Log analyzer and interactive viewer for the Apache Webserver
@@ -329,7 +323,7 @@ brew "s-lang"
 # Powerful editor for programmers
 brew "jed"
 # Extendable open source continuous integration server
-brew "jenkins", restart_service: true
+brew "jenkins"
 # CLI for the Jinja2 templating language
 brew "jinja2-cli"
 # Featureful UNIX password cracker
@@ -495,7 +489,7 @@ brew "socket_vmnet"
 # Launcher to analyze a project with SonarQube
 brew "sonar-scanner"
 # Manage code quality
-brew "sonarqube", restart_service: true
+brew "sonarqube"
 # Editor of encrypted files
 brew "sops"
 # Command-line interface for https://speedtest.net bandwidth tests
