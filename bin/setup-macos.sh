@@ -100,9 +100,6 @@ step_home_brew_stuff() {
 }
 
 step_install_python() {
-    local PYTHON2_VERSION='2.7.18'
-    local PYTHON3_VERSION='3.11.1'
-
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
 
