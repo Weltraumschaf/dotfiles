@@ -384,8 +384,6 @@ brew "mpv"
 brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
-# Open source relational database management system
-brew "mysql", restart_service: true
 # Fast port scanner
 brew "naabu"
 # Free (GNU) replacement for the Pico text editor
