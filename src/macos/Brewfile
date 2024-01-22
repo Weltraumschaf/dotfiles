@@ -384,8 +384,6 @@ brew "mpv"
 brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
-# General-purpose lossless data-compression library
-brew "zlib"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # Fast port scanner
@@ -554,6 +552,8 @@ brew "yarn"
 brew "yj"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# General-purpose lossless data-compression library
+brew "zlib"
 # In-depth Attack Surface Mapping and Asset Discovery
 brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
