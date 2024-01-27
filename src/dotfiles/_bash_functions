@@ -1,1 +1,8 @@
 # shellcheck disable=SC2148
+
+dev() {
+    local working_dir="$(pwd)"
+    echo "Developing in ${working_dir}..."
+
+    idea "${working_dir}" && fork "${working_dir}"
+}
