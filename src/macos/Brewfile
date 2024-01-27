@@ -323,7 +323,7 @@ brew "s-lang"
 # Powerful editor for programmers
 brew "jed"
 # Extendable open source continuous integration server
-brew "jenkins"
+brew "jenkins", restart_service: true
 # CLI for the Jinja2 templating language
 brew "jinja2-cli"
 # Featureful UNIX password cracker
@@ -485,7 +485,7 @@ brew "socket_vmnet"
 # Launcher to analyze a project with SonarQube
 brew "sonar-scanner"
 # Manage code quality
-brew "sonarqube"
+brew "sonarqube", restart_service: true
 # Editor of encrypted files
 brew "sops"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -580,8 +580,9 @@ brew "theseal/ssh-askpass/ssh-askpass"
 brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called "interactive keyboard password authentication".
-# Most user should use SSH's more secure public key authentiaction instead.
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
+# "interactive keyboard password authentication". Most user should use SSH's more secure public 
+# key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
@@ -838,8 +839,10 @@ cask "zotero"
 mas "Annotate", id: 918207447
 mas "Apple Configurator", id: 1037126344
 mas "Caffeinated", id: 1362171212
+mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "GarageBand", id: 682658836
+mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
@@ -866,10 +869,15 @@ vscode "codezombiech.gitignore"
 vscode "cyrilletuzi.angular-schematics"
 vscode "DavidAnson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
+vscode "DEVSENSE.composer-php-vscode"
+vscode "DEVSENSE.intelli-php-vscode"
+vscode "DEVSENSE.phptools-vscode"
+vscode "DEVSENSE.profiler-php-vscode"
 vscode "donjayamanne.git-extension-pack"
 vscode "donjayamanne.githistory"
 vscode "donjayamanne.python-environment-manager"
 vscode "donjayamanne.python-extension-pack"
+vscode "DotJoshJohnson.xml"
 vscode "eamodio.gitlens"
 vscode "EditorConfig.EditorConfig"
 vscode "esbenp.prettier-vscode"
@@ -924,12 +932,12 @@ vscode "quarto.quarto"
 vscode "quicktype.quicktype"
 vscode "rbbit.typescript-hero"
 vscode "rctay.karma-problem-matcher"
-vscode "rebornix.ruby"
 vscode "redhat.java"
 vscode "Rubymaniac.vscode-direnv"
 vscode "rust-lang.rust-analyzer"
 vscode "segerdekort.angular-cli"
 vscode "serayuzgur.crates"
+vscode "Shopify.ruby-lsp"
 vscode "SimonTest.simontest"
 vscode "steoates.autoimport"
 vscode "stringham.move-ts"
@@ -950,7 +958,6 @@ vscode "vscjava.vscode-maven"
 vscode "vscjava.vscode-spring-boot-dashboard"
 vscode "vscjava.vscode-spring-initializr"
 vscode "wholroyd.jinja"
-vscode "wingrunr21.vscode-ruby"
 vscode "xabikos.JavaScriptSnippets"
 vscode "xabikos.ReactSnippets"
 vscode "ziyasal.vscode-open-in-github"
