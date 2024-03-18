@@ -188,6 +188,8 @@ brew "diff-so-fancy"
 brew "difftastic"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Tool for exploring each layer in a docker image
+brew "dive"
 # Passive DNS network mapper (a.k.a. subdomains bruteforcer)
 brew "dnsmap"
 # Lightweight DNS forwarder and DHCP server
@@ -600,8 +602,6 @@ cask "android-sdk"
 cask "appcleaner"
 # Electronics prototyping platform
 cask "arduino"
-# Two-factor authentication software
-cask "authy"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Desktop password and login vault
@@ -616,7 +616,7 @@ cask "clipy"
 cask "coconutbattery"
 # Server and cloud storage browser
 cask "cyberduck"
-# Disk space visualizer
+# Disk space visualiser
 cask "daisydisk"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
@@ -646,7 +646,7 @@ cask "firefox"
 cask "font-iosevka"
 # GIT client
 cask "fork"
-# 3D parametric modeler
+# 3D parametric modeller
 cask "freecad"
 # Desktop client for GitHub repositories
 cask "github"
@@ -671,7 +671,7 @@ cask "iterm2"
 cask "jetbrains-toolbox"
 # Secure video conferencing app
 cask "jitsi-meet"
-# Note taking and to-do application with synchronization capabilities
+# Note taking and to-do application with synchronisation capabilities
 cask "joplin"
 # GUI replacement for the Java command-line utilities keytool and jarsigner
 cask "keystore-explorer"
@@ -701,6 +701,8 @@ cask "maintenance"
 cask "maltego"
 # Markdown editor
 cask "mark-text"
+# Manages online multimedia libs of German, Austrian and Swiss public broadcasters
+cask "mediathekview"
 # Penetration testing framework
 cask "metasploit"
 # Online collaborative whiteboard platform
@@ -834,7 +836,7 @@ cask "zenmap"
 cask "zettlr"
 # Video communication and virtual meeting platform
 cask "zoom"
-# Collect, organize, cite, and share research sources
+# Collect, organise, cite, and share research sources
 cask "zotero"
 mas "Annotate", id: 918207447
 mas "Apple Configurator", id: 1037126344
