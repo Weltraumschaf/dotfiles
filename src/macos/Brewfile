@@ -1,5 +1,4 @@
 tap "akirakyle/qemu-virgl"
-tap "caffix/amass"
 tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
 tap "go-task/tap"
@@ -11,6 +10,7 @@ tap "jenkins-x/jx"
 tap "jesseduffield/lazygit"
 tap "mas-cli/tap"
 tap "norwoodj/tap"
+tap "owasp-amass/amass"
 tap "petere/sgml"
 tap "remotemobprogramming/brew"
 tap "robotsandpencils/made"
@@ -26,6 +26,8 @@ brew "aalib"
 brew "ack"
 # Run your GitHub Actions locally
 brew "act"
+# In-depth attack surface mapping and asset discovery
+brew "amass"
 # Asynchronous DNS library
 brew "c-ares"
 # Platform built on V8 to build network applications
@@ -86,8 +88,6 @@ brew "coreutils"
 brew "libtool"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# Automatically exclude development dependencies from Time Machine backups
-brew "asimov", restart_service: true
 # Fast, efficient and secure backup program
 brew "restic"
 # High level CLI utility for restic
@@ -378,7 +378,7 @@ brew "mkcert"
 brew "moreutils"
 # Remote terminal application
 brew "mosh"
-# Fork of youtube-dl with additional features and fixes
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
@@ -554,8 +554,6 @@ brew "yj"
 brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
-# In-depth Attack Surface Mapping and Asset Discovery
-brew "caffix/amass/amass"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
 # Task runner / simpler Make alternative written in Go
@@ -578,8 +576,6 @@ brew "rusty-ferris-club/tap/shellclear"
 brew "snyk/tap/snyk"
 # Passphrase dialog for use with OpenSSH in macOS
 brew "theseal/ssh-askpass/ssh-askpass"
-# A tool for exploring layers in a docker image
-brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
@@ -642,8 +638,6 @@ cask "easyfind"
 cask "figma"
 # Web browser
 cask "firefox"
-# Sans-serif, slab-serif, monospace and quasi‑proportional typeface family
-cask "font-iosevka"
 # GIT client
 cask "fork"
 # 3D parametric modeller
@@ -715,8 +709,6 @@ cask "mongodb-compass"
 cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
-# Orchestrates virtual Ubuntu instances
-cask "multipass"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
 # Development environment, tooling platform and application framework
@@ -725,7 +717,7 @@ cask "netbeans"
 cask "netnewswire"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
-# App to write, plan, collaborate, and get organized
+# App to write, plan, collaborate, and get organised
 cask "notion"
 # Open-source software for live streaming and screen recording
 cask "obs"
