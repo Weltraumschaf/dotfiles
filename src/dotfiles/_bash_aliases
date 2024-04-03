@@ -57,7 +57,7 @@ svn() {
 }
 
 if [ "$(command -v docker)" ] ; then
-    alias docker-prune="docker image prune -a && docker system prune"
+    alias docker-prune="docker image prune --all --force --volumes"
     alias d-bb='docker run --rm -it weltraumschaf/debian-bb:1.0.0 /usr/games/bb -loop'
     # https://medium.com/@airman604/kali-linux-in-a-docker-container-5a06311624eb
     alias d-kali='docker run -ti --rm --mount type=bind,src=${HOME}/dkali-root,dst=/root/host --mount src=kali-postgres,dst=/var/lib/postgresql weltraumschaf/kali:1.0.0 /bin/bash'
