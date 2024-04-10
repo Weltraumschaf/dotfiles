@@ -325,7 +325,7 @@ brew "s-lang"
 # Powerful editor for programmers
 brew "jed"
 # Extendable open source continuous integration server
-brew "jenkins", restart_service: true
+brew "jenkins"
 # CLI for the Jinja2 templating language
 brew "jinja2-cli"
 # Featureful UNIX password cracker
