@@ -68,7 +68,7 @@ brew "libnet"
 brew "arping"
 # List ASCII idiomatic names and octal/decimal code-point forms
 brew "ascii"
-# Standard SGML representation system for technical documents
+# Standard XML representation system for technical documents
 brew "docbook"
 # Formatter/translator for text files to numerous formats
 brew "asciidoc"
@@ -242,6 +242,8 @@ brew "ffuf"
 brew "figlet"
 # Real-time software synthesizer based on the SoundFont 2 specs
 brew "fluid-synth"
+# Apt for fonts, the missing font manager for macOS/linux
+brew "fnt"
 # XSL-FO print formatter for making PDF or PS documents
 brew "fop"
 # Infamous electronic fortune-cookie generator
@@ -392,8 +394,6 @@ brew "naabu"
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
-# Perl compatible regular expressions library
-brew "pcre"
 # Port scanning utility for large networks
 brew "nmap"
 # Swiss-army knife of markup format conversion
@@ -426,6 +426,8 @@ brew "openshift-cli"
 brew "osv-scanner"
 # Parallel bzip2
 brew "pbzip2"
+# Perl compatible regular expressions library
+brew "pcre"
 # Simplistic interactive filtering tool
 brew "peco"
 # Pinentry for GPG on Mac
@@ -657,6 +659,8 @@ cask "handbrake"
 cask "haroopad"
 # Hex editor focussing on speed
 cask "hex-fiend"
+# Vector graphics editor
+cask "inkscape"
 # HTTP and GraphQL Client
 cask "insomnia"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -881,6 +885,7 @@ vscode "formulahendry.auto-rename-tag"
 vscode "formulahendry.docker-explorer"
 vscode "formulahendry.docker-extension-pack"
 vscode "foxundermoon.shell-format"
+vscode "golang.go"
 vscode "gregorbiswanger.json2ts"
 vscode "infinity1207.angular2-switcher"
 vscode "ionide.ionide-fsharp"
@@ -901,6 +906,7 @@ vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.dotnet-interactive-vscode"
 vscode "ms-dotnettools.vscode-dotnet-pack"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
