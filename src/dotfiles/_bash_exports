@@ -58,10 +58,6 @@ if [ -d "${HOME}/perl5/bin" ] ; then
     PATH="${HOME}/perl5/bin:${PATH}"
 fi
 
-if [ -d "${HOME}/.cargo/bin" ] ; then
-    PATH="${HOME}/.cargo/bin:${PATH}"
-fi
-
 if [ -d "${HOME}/.fastlane/bin" ] ; then
     PATH="${HOME}/.fastlane/bin:${PATH}"
 fi
