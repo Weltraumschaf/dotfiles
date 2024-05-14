@@ -70,6 +70,11 @@ if [ -d "/usr/local/share/dotnet" ] ; then
     PATH="/usr/local/share/dotnet:${PATH}"
 fi
 
+if [[ "$(command -v go)" ]]; then
+    export GOPATH="${HOME}/.go"
+    export PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
+fi
+
 export PATH
 
 if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
