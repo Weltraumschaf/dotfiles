@@ -42,6 +42,8 @@ brew "readline"
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
 # Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
 # XML-based font configuration API for X Windows
@@ -288,8 +290,6 @@ brew "gpg-tui"
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # World's fastest and most advanced password recovery utility
 brew "hashcat"
 # Command-line interface for Hetzner Cloud
@@ -432,6 +432,8 @@ brew "pcre"
 brew "peco"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Draw UML diagrams
 brew "plantuml"
 # Python package management tool
