@@ -75,6 +75,11 @@ if [[ "$(command -v go)" ]]; then
     export PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
 fi
 
+export KREW_ROOT="${HOME}/.krew"
+if [ -d "${KREW_ROOT}/bin" ] ; then
+    PATH="${KREW_ROOT}/bin:$PATH"
+fi
+
 export PATH
 
 if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
