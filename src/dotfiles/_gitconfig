@@ -13,6 +13,7 @@
   packedGitLimit = 64m
   commentchar = %
   quotepath = false
+  fileMode = true
 
 [init]
   defaultBranch = main
