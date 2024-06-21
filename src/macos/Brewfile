@@ -338,6 +338,8 @@ brew "jq"
 brew "jython"
 # Run local Kubernetes cluster in Docker
 brew "kind"
+# Package manager for kubectl plugins
+brew "krew"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Build tool for Clojure
@@ -681,7 +683,7 @@ cask "knockknock"
 cask "krita"
 # Open source code editor written in Rust
 cask "lapce"
-# Create, manage and debug system- and user services
+# Create, manage and debug system and user services
 cask "launchcontrol"
 # Official client for LBRY, a decentralised file-sharing and payment network
 cask "lbry"
@@ -689,8 +691,6 @@ cask "lbry"
 cask "libreoffice"
 # Host-based application firewall
 cask "little-snitch"
-# Privacy-first, open-source platform for knowledge sharing and management
-cask "logseq"
 # Open-source Markdown editor
 cask "macdown"
 # Full TeX Live distribution with GUI applications
@@ -889,6 +889,7 @@ vscode "formulahendry.docker-extension-pack"
 vscode "foxundermoon.shell-format"
 vscode "golang.go"
 vscode "gregorbiswanger.json2ts"
+vscode "humao.rest-client"
 vscode "infinity1207.angular2-switcher"
 vscode "ionide.ionide-fsharp"
 vscode "jakebecker.elixir-ls"
