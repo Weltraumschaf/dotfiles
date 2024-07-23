@@ -473,7 +473,7 @@ brew "rmlint"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Rust toolchain installer
-brew "rustup-init"
+brew "rustup"
 # Wrapper around libsass that helps to create command-line apps
 brew "sassc"
 # Substitute for classic 'make' tool with autoconf/automake functionality
@@ -564,6 +564,8 @@ brew "zlib"
 brew "derailed/k9s/k9s"
 # Task runner / simpler Make alternative written in Go
 brew "go-task/tap/go-task"
+# δyƒƒ /ˈdʏf/ - A diff tool for YAML files, and sometimes JSON
+brew "homeport/tap/dyff"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
 # Automatically generate markdown documentation for helm charts
@@ -608,6 +610,8 @@ cask "arduino"
 cask "balenaetcher"
 # Desktop password and login vault
 cask "bitwarden"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
 # Web security testing toolkit
 cask "burp-suite"
 # Calendar software focusing on flexibility and reliability
@@ -785,7 +789,7 @@ cask "taskexplorer"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
 # JDK from the Eclipse Foundation (Adoptium)
-cask "temurin11"
+cask "temurin@11"
 # LaTeX editor
 cask "texifier"
 # General-purpose text editor
@@ -811,7 +815,7 @@ cask "typora"
 # Virtual machines UI using QEMU
 cask "utm"
 # Virtualizer for x86 and arm64 hardware
-cask "virtualbox-beta"
+cask "virtualbox@beta"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
