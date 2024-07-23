@@ -211,5 +211,14 @@ if [[ "$(command -v brew)" ]]; then
     [[ -f "${ASDF_PREFIX}/etc/bash_completion.d/asdf.bash" ]] && source "${ASDF_PREFIX}/etc/bash_completion.d/asdf.bash"
 fi
 
+if [[ "$(command -v op)" ]]; then
+    source <(op completion bash)
+fi
+
+# https://github.com/ajeetdsouza/zoxide
+if [[ "$(command -v zoxide)" ]]; then
+    eval "$(zoxide init bash)"
+fi
+
 echo ".bashrc loaded :-)"
 echo
