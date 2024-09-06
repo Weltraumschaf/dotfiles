@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Python versions we use w/ Pyenv:
-PYTHON3_VERSION='3.12.4'
+PYTHON3_VERSION='3.12.5'
 # Ruby version we use w/ rbenv:
 RUBY_VERSION="3.3.2"
 
