@@ -3,9 +3,8 @@ tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
 tap "go-task/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "homeport/tap"
 tap "jenkins-x/jx"
 tap "jesseduffield/lazygit"
 tap "mas-cli/tap"
@@ -17,6 +16,7 @@ tap "robotsandpencils/made"
 tap "rusty-ferris-club/tap"
 tap "snyk/tap"
 tap "theseal/ssh-askpass"
+tap "trufflesecurity/trufflehog"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
 tap "weltraumschaf/tap"
@@ -104,6 +104,8 @@ brew "aws-shell"
 brew "bash"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2@1.7"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Google's own build tool
@@ -112,6 +114,12 @@ brew "bazel"
 brew "bfg"
 # GNU binary tools for native development
 brew "binutils"
+# Secure and free password manager for all of your devices
+brew "bitwarden-cli"
+# Swiss Army Knife for OSGi bundles
+brew "bnd"
+# New way to see and navigate directory trees
+brew "broot"
 # Integer Set Library for the polyhedral model
 brew "isl"
 # C library for multiple-precision floating-point computations
@@ -120,16 +128,6 @@ brew "mpfr"
 brew "libmpc"
 # GNU compiler collection
 brew "gcc"
-# 7-Zip (high compression file archiver) implementation
-brew "p7zip"
-# Searches a binary image for embedded files and executable code
-brew "binwalk"
-# Secure and free password manager for all of your devices
-brew "bitwarden-cli"
-# Swiss Army Knife for OSGi bundles
-brew "bnd"
-# New way to see and navigate directory trees
-brew "broot"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Object-file caching compiler wrapper
@@ -146,8 +144,6 @@ brew "cloc"
 brew "clojure"
 # Cross-platform make
 brew "cmake"
-# Interactive terminal based UI application for tracking cryptocurrencies
-brew "cointop"
 # Asynchronous event library
 brew "libevent"
 # C string library for manipulating Unicode strings
@@ -172,8 +168,6 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
-# Configurable talking characters in ASCII art
-brew "cowsay"
 # Securely send things from one computer to another
 brew "croc"
 # Converts boring normal dates to fun Discordian Date
@@ -252,8 +246,6 @@ brew "fop"
 brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# This library is for the GeoIP Legacy format (dat)
-brew "geoip"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -426,6 +418,8 @@ brew "open-sp"
 brew "openshift-cli"
 # Vulnerability scanner which uses the OSV database
 brew "osv-scanner"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
 # Parallel bzip2
 brew "pbzip2"
 # Perl compatible regular expressions library
@@ -438,6 +432,8 @@ brew "pinentry-mac"
 brew "pkg-config"
 # Draw UML diagrams
 brew "plantuml"
+# Your Gateway to Embedded Software Development Excellence
+brew "platformio"
 # Python package management tool
 brew "poetry"
 # Object-relational database system
@@ -584,6 +580,8 @@ brew "rusty-ferris-club/tap/shellclear"
 brew "snyk/tap/snyk"
 # Passphrase dialog for use with OpenSSH in macOS
 brew "theseal/ssh-askpass/ssh-askpass"
+# Find credentials all over the place
+brew "trufflesecurity/trufflehog/trufflehog"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
@@ -600,12 +598,10 @@ cask "adium"
 cask "adobe-acrobat-reader"
 # Application launcher and productivity software
 cask "alfred"
-# Tools for the Android SDK
-cask "android-sdk"
+# Local-first and end-to-end encrypted notes app
+cask "anytype"
 # Application uninstaller
 cask "appcleaner"
-# Electronics prototyping platform
-cask "arduino"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Desktop password and login vault
@@ -630,8 +626,6 @@ cask "db-browser-for-sqlite"
 cask "deeper"
 # Trains AIs to understand and translate texts
 cask "deepl"
-# Draw structured diagrams
-cask "dia"
 # Digital photo manager
 cask "digikam"
 # Voice and text chat software
@@ -727,11 +721,8 @@ cask "netbeans"
 cask "netnewswire"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
-# App to write, plan, collaborate, and get organised
-cask "notion"
 # Open-source software for live streaming and screen recording
 cask "obs"
-cask "obs-virtualcam"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Cloud storage client
@@ -958,6 +949,7 @@ vscode "visualstudioexptteam.intellicode-api-usage-examples"
 vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vmware.vscode-boot-dev-pack"
 vscode "vmware.vscode-spring-boot"
+vscode "vscjava.vscode-gradle"
 vscode "vscjava.vscode-java-debug"
 vscode "vscjava.vscode-java-dependency"
 vscode "vscjava.vscode-java-pack"
