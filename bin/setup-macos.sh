@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Python versions we use w/ Pyenv:
-PYTHON3_VERSION='3.12.5'
+PYTHON3_VERSION='3.12.6'
 # Ruby version we use w/ rbenv:
 RUBY_VERSION="3.3.5"
 
@@ -106,7 +106,7 @@ step_install_python() {
 
     pyenv install "${PYTHON3_VERSION}" || true
     pyenv rehash
-    pyenv global "${PYTHON3_VERSION}" 
+    pyenv global "${PYTHON3_VERSION}"
 }
 
 step_install_ruby() {
