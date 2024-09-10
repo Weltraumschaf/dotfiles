@@ -438,6 +438,8 @@ brew "platformio"
 brew "poetry"
 # Object-relational database system
 brew "postgresql@14"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
 # Password generator
 brew "pwgen"
 # Python version management
@@ -791,6 +793,8 @@ cask "the-unarchiver"
 cask "thonny"
 # End-to-end encrypted instant messaging application
 cask "threema"
+# End-to-end encrypted instant messaging application
+cask "threema@beta"
 # Customizable email client
 cask "thunderbird"
 # Flexible level editor
