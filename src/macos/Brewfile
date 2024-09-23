@@ -368,6 +368,8 @@ brew "md5deep"
 brew "mercurial"
 # Modern and intuitive terminal-based text editor
 brew "micro"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Collection of tools that nobody wrote when UNIX was young
@@ -464,8 +466,6 @@ brew "recon-ng"
 brew "rename"
 # Utility for computing and verifying hash sums of files
 brew "rhash"
-# JavaScript engine
-brew "rhino"
 # Extremely fast tool to remove dupes and other lint from your filesystem
 brew "rmlint"
 # Utility that provides fast incremental file transfer
@@ -691,6 +691,8 @@ cask "lbry"
 cask "libreoffice"
 # Host-based application firewall
 cask "little-snitch"
+# Discover, download, and run local LLMs
+cask "lm-studio"
 # Open-source Markdown editor
 cask "macdown"
 # Full TeX Live distribution with GUI applications
@@ -727,6 +729,8 @@ cask "nextcloud"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Get up and running with large language models locally
+cask "ollama"
 # Cloud storage client
 cask "onedrive"
 # Verify system files structure, run miscellaneous maintenance and more
@@ -741,6 +745,8 @@ cask "poedit"
 cask "portfolioperformance"
 # Command-line shell and scripting language
 cask "powershell"
+# Trash, backup, lock and restore video editor preferences
+cask "preference-manager"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
 # Microsoft Project in your browser
@@ -881,6 +887,7 @@ vscode "dotjoshjohnson.xml"
 vscode "eamodio.gitlens"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
+vscode "fill-labs.dependi"
 vscode "formulahendry.auto-close-tag"
 vscode "formulahendry.auto-rename-tag"
 vscode "formulahendry.docker-explorer"
@@ -939,7 +946,6 @@ vscode "redhat.java"
 vscode "rubymaniac.vscode-direnv"
 vscode "rust-lang.rust-analyzer"
 vscode "segerdekort.angular-cli"
-vscode "serayuzgur.crates"
 vscode "shopify.ruby-lsp"
 vscode "simontest.simontest"
 vscode "steoates.autoimport"
