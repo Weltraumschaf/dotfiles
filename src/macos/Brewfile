@@ -120,14 +120,6 @@ brew "bitwarden-cli"
 brew "bnd"
 # New way to see and navigate directory trees
 brew "broot"
-# Integer Set Library for the polyhedral model
-brew "isl"
-# C library for multiple-precision floating-point computations
-brew "mpfr"
-# C library for the arithmetic of high precision complex numbers
-brew "libmpc"
-# GNU compiler collection
-brew "gcc"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Object-file caching compiler wrapper
@@ -246,6 +238,14 @@ brew "fop"
 brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Integer Set Library for the polyhedral model
+brew "isl"
+# C library for multiple-precision floating-point computations
+brew "mpfr"
+# C library for the arithmetic of high precision complex numbers
+brew "libmpc"
+# GNU compiler collection
+brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -418,6 +418,8 @@ brew "ocamlbuild"
 brew "open-sp"
 # OpenShift command-line interface tools
 brew "openshift-cli"
+# Drop-in replacement for Terraform. Infrastructure as Code Tool
+brew "opentofu"
 # Vulnerability scanner which uses the OSV database
 brew "osv-scanner"
 # 7-Zip (high compression file archiver) implementation
@@ -448,8 +450,6 @@ brew "pwgen"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# File browser
-brew "ranger"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -490,12 +490,8 @@ brew "smimesign"
 brew "socket_vmnet"
 # Launcher to analyze a project with SonarQube
 brew "sonar-scanner"
-# Manage code quality
-brew "sonarqube", restart_service: true
 # Editor of encrypted files
 brew "sops"
-# Command-line interface for https://speedtest.net bandwidth tests
-brew "speedtest-cli"
 # SQLite extension providing 256-bit AES encryption
 brew "sqlcipher"
 # Penetration testing for SQL injection and database servers
@@ -713,8 +709,6 @@ cask "miro"
 cask "moneymoney"
 # Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
-# Open source implementation of Microsoft's .NET Framework
-cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
 # Visual tool to design, develop and administer MySQL servers
