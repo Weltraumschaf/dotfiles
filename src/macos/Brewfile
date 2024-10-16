@@ -671,6 +671,8 @@ cask "jetbrains-toolbox"
 cask "jitsi-meet"
 # Note taking and to-do application with synchronisation capabilities
 cask "joplin"
+# Menu bar manager
+cask "jordanbaird-ice"
 # GUI replacement for the Java command-line utilities keytool and jarsigner
 cask "keystore-explorer"
 # Tool to show what is persistently installed on the computer
