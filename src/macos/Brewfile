@@ -54,6 +54,8 @@ brew "gettext"
 brew "glib"
 # Low-level library for pixel manipulation
 brew "pixman"
+# C string library for manipulating Unicode strings
+brew "libunistring"
 # Java build tool
 brew "ant"
 # ANother Tool for Language Recognition
@@ -138,8 +140,6 @@ brew "clojure"
 brew "cmake"
 # Asynchronous event library
 brew "libevent"
-# C string library for manipulating Unicode strings
-brew "libunistring"
 # Low-level cryptographic library
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
@@ -149,7 +149,7 @@ brew "libusb"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima", restart_service: true
+brew "colima"
 # Color-highlighted diff(1) output
 brew "colordiff"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -368,8 +368,6 @@ brew "md5deep"
 brew "mercurial"
 # Modern and intuitive terminal-based text editor
 brew "micro"
-# Run a Kubernetes cluster locally
-brew "minikube"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Collection of tools that nobody wrote when UNIX was young
@@ -711,6 +709,8 @@ cask "miro"
 cask "moneymoney"
 # Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
+# Open source implementation of Microsoft's .NET Framework
+cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
 # Visual tool to design, develop and administer MySQL servers
@@ -811,8 +811,6 @@ cask "tunnelblick"
 cask "typora"
 # Virtual machines UI using QEMU
 cask "utm"
-# Virtualizer for x86 and arm64 hardware
-cask "virtualbox@beta"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
