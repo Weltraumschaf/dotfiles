@@ -220,5 +220,10 @@ if [[ "$(command -v zoxide)" ]]; then
     eval "$(zoxide init bash)"
 fi
 
+if [[ -d "${HOME}/.cache/lm-studio/bin" ]]; then
+    export PATH="$PATH:${HOME}/.cache/lm-studio/bin"
+fi
+
 echo ".bashrc loaded :-)"
 echo
+
