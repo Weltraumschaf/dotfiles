@@ -138,16 +138,6 @@ brew "cloc"
 brew "clojure"
 # Cross-platform make
 brew "cmake"
-# Asynchronous event library
-brew "libevent"
-# Low-level cryptographic library
-brew "nettle"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Library for USB device access
-brew "libusb"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Color-highlighted diff(1) output
@@ -216,6 +206,12 @@ brew "fdupes"
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
+# Asynchronous event library
+brew "libevent"
+# Low-level cryptographic library
+brew "nettle"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Vorbis General Audio Compression Codec
 brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
@@ -268,6 +264,8 @@ brew "gnu-sed"
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
 brew "libgcrypt"
+# Library for USB device access
+brew "libusb"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
@@ -448,6 +446,8 @@ brew "pwgen"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
