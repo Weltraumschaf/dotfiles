@@ -30,6 +30,8 @@ brew "act"
 brew "amass"
 # Asynchronous DNS library
 brew "c-ares"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Platform built on V8 to build network applications
 brew "node"
 # CLI tool for Angular
@@ -356,6 +358,8 @@ brew "liquibase"
 brew "lorem"
 # MPEG audio decoder
 brew "mad"
+# Mac App Store command-line interface
+brew "mas"
 # Java-based project management
 brew "maven"
 # Bash completion for Maven
@@ -428,8 +432,8 @@ brew "pcre"
 brew "peco"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Manage compile and link flags for libraries
-brew "pkg-config"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Draw UML diagrams
 brew "plantuml"
 # Your Gateway to Embedded Software Development Excellence
@@ -542,6 +546,8 @@ brew "watch"
 brew "wdiff"
 # Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
 # ISO9660+RR manipulation tool
 brew "xorriso"
 # JavaScript package manager
@@ -558,8 +564,6 @@ brew "derailed/k9s/k9s"
 brew "go-task/tap/go-task"
 # δyƒƒ /ˈdʏf/ - A diff tool for YAML files, and sometimes JSON
 brew "homeport/tap/dyff"
-# Mac App Store command-line interface
-brew "mas-cli/tap/mas"
 # Automatically generate markdown documentation for helm charts
 brew "norwoodj/tap/helm-docs"
 # Modular DocBook DSSSL stylesheets
@@ -794,8 +798,6 @@ cask "the-unarchiver"
 # Python IDE for beginners
 cask "thonny"
 # End-to-end encrypted instant messaging application
-cask "threema"
-# End-to-end encrypted instant messaging application
 cask "threema@beta"
 # Customizable email client
 cask "thunderbird"
@@ -857,6 +859,7 @@ mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
 mas "VMware Remote Console", id: 1230249825
+mas "WireGuard", id: 1451685025
 vscode "1tontech.angular-material"
 vscode "alefragnani.project-manager"
 vscode "alexiv.vscode-angular2-files"
