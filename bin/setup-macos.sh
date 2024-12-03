@@ -118,11 +118,6 @@ step_install_ruby() {
     rbenv global "${RUBY_VERSION}"
 }
 
-step_install_nvm() {
-    # https://github.com/nvm-sh/nvm#installing-and-updating
-    (curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash)
-}
-
 step_ansible_playbook() {
     ansible-playbook -K "${ANSIBLE_DIR}/setup-macos.yml"
 }
@@ -132,7 +127,6 @@ main() {
     step_home_brew_stuff
     step_install_python
     step_install_ruby
-    step_install_nvm
     step_ansible_playbook
     echo "Done :-)"
 }
