@@ -2,6 +2,7 @@ tap "akirakyle/qemu-virgl"
 tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
 tap "go-task/tap"
+tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "homeport/tap"
@@ -562,6 +563,8 @@ brew "zlib"
 brew "derailed/k9s/k9s"
 # Task runner / simpler Make alternative written in Go
 brew "go-task/tap/go-task"
+# Packer
+brew "hashicorp/tap/packer"
 # δyƒƒ /ˈdʏf/ - A diff tool for YAML files, and sometimes JSON
 brew "homeport/tap/dyff"
 # Automatically generate markdown documentation for helm charts
@@ -656,6 +659,8 @@ cask "google-cloud-sdk"
 cask "google-drive"
 # Teach object orientation with Java
 cask "greenfoot"
+# Desktop automation application
+cask "hammerspoon"
 # Open-source video transcoder
 cask "handbrake"
 cask "haroopad"
@@ -735,6 +740,8 @@ cask "ollama"
 cask "onedrive"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Open-source transport simulation game
+cask "openttd"
 # ZFS driver and utilities
 cask "openzfs"
 # Markdown editor with pandoc integration and paginated preview
@@ -761,6 +768,8 @@ cask "ransomwhere"
 cask "rar"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
+# WinAMP clone written in SwiftUI
+cask "reamp"
 # Scans, detects, and monitors keyboard taps
 cask "reikey"
 # Run classic graphical adventure and role-playing games
@@ -813,6 +822,10 @@ cask "tunnelblick"
 cask "typora"
 # Virtual machines UI using QEMU
 cask "utm"
+# Development environment
+cask "vagrant"
+# Virtualiser for x86 hardware
+cask "virtualbox"
 # Integrated development environment
 cask "visual-studio"
 # Open-source code editor
@@ -829,6 +842,8 @@ cask "xca"
 cask "xquartz"
 # Free and open source web app scanner
 cask "zap"
+# Multiplayer code editor
+cask "zed"
 # Multi-platform graphical interface for official Nmap Security Scanner
 cask "zenmap"
 # Open-source markdown editor
@@ -843,6 +858,7 @@ mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "GarageBand", id: 682658836
+mas "Draw Things", id: 6444050820
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
@@ -851,7 +867,6 @@ mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
 mas "MindNode", id: 1289197285
 mas "MindNode Lite", id: 402397683
-mas "MultiMarkdown Composer", id: 1275176220
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
