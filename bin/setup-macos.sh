@@ -123,6 +123,7 @@ step_ansible_playbook() {
 }
 
 main() {
+    chsh -s /bin/bash
     step_system_settings_stuff
     step_home_brew_stuff
     step_install_python
