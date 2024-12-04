@@ -28,17 +28,3 @@
     day: 1
     job: rm -rf $HOME/.m2/repository/
   become: no
-
-- name: Create resolver directory
-  ansible.builtin.file:
-    path: /etc/resolver
-    state: directory
-  become: yes
-  when: work
-
-- name: Create resolver file for local network in home office
-  ansible.builtin.copy:
-    src: kn5000.local
-    dest: /etc/resolver/kn5000.local
-  become: yes
-  when: work
