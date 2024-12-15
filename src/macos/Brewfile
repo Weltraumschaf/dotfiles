@@ -51,14 +51,14 @@ brew "ansible"
 brew "ansible-lint"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
+# C string library for manipulating Unicode strings
+brew "libunistring"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
 # Core application library for C
 brew "glib"
 # Low-level library for pixel manipulation
 brew "pixman"
-# C string library for manipulating Unicode strings
-brew "libunistring"
 # Java build tool
 brew "ant"
 # ANother Tool for Language Recognition
@@ -109,8 +109,6 @@ brew "aws-shell"
 brew "bash"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2@1.7"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Google's own build tool
@@ -341,6 +339,8 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2@1.7"
 # Implementation of the file(1) command
 brew "libmagic"
 # Portable sound library
@@ -615,6 +615,8 @@ cask "bruno"
 cask "burp-suite"
 # Calendar software focusing on flexibility and reliability
 cask "busycal"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Clipboard extension app
 cask "clipy"
 # Tool to show live information about the batteries in various devices
@@ -942,7 +944,6 @@ vscode "ms-vscode.cpptools"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vsliveshare.vsliveshare"
-vscode "ms-vsliveshare.vsliveshare-pack"
 vscode "njpwerner.autodocstring"
 vscode "obenjiro.arrr"
 vscode "platformio.platformio-ide"
