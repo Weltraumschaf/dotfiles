@@ -80,8 +80,11 @@ if [ -d "${KREW_ROOT}/bin" ]; then
     PATH="${KREW_ROOT}/bin:$PATH"
 fi
 
+if [ -d "${HOMEBREW_PREFIX}/opt/tcl-tk" ]; then
+    PATH="${HOMEBREW_PREFIX}/opt/tcl-tk/bin:$PATH"
+fi
+
 if [ -d "${HOMEBREW_PREFIX}/anaconda3" ]; then
-    PATH="${HOMEBREW_PREFIX}/anaconda3/bin:$PATH"
 fi
 
 export PATH
