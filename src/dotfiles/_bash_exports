@@ -85,6 +85,7 @@ if [ -d "${HOMEBREW_PREFIX}/opt/tcl-tk" ]; then
 fi
 
 if [ -d "${HOMEBREW_PREFIX}/anaconda3" ]; then
+    PATH="${HOMEBREW_PREFIX}/anaconda3/bin:$PATH"
 fi
 
 export PATH
