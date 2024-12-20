@@ -3,7 +3,16 @@
 assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["containers", "vagrant", "gem", "node", "pnpm", "poetry", "ruby_gems", "system"]
+disable = [
+    "containers",
+    "vagrant",
+    "gem",
+    "node",
+    "pnpm",
+    "poetry",
+    "ruby_gems",
+    "system"
+]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
