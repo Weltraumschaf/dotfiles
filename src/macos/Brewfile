@@ -109,6 +109,8 @@ brew "aws-shell"
 brew "bash"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2@1.7"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Google's own build tool
@@ -339,8 +341,6 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2@1.7"
 # Implementation of the file(1) command
 brew "libmagic"
 # Portable sound library
