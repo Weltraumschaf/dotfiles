@@ -4,6 +4,7 @@ assume_yes = true
 
 # Disable specific steps - same options as the command line flag
 disable = [
+    "asdf", # Upgrading asdf via asdf update is no longer supported. Please use your OS package manager (Homebrew, APT, etc...) to upgrade.
     "containers",
     "gem",
     "node",
