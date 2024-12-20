@@ -82,6 +82,11 @@ fi
 
 if [ -d "${HOMEBREW_PREFIX}/opt/tcl-tk" ]; then
     PATH="${HOMEBREW_PREFIX}/opt/tcl-tk/bin:$PATH"
+    # To compile python w/ pyenv export:
+    # brew install tcl-tk
+    # export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/tcl-tk/lib"
+    # export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/tcl-tk/include"
+    # export PKG_CONFIG_PATH="${HOMEBREW_PREFIX}/opt/tcl-tk/lib/pkgconfig"
 fi
 
 if [ -d "${HOMEBREW_PREFIX}/anaconda3" ]; then
