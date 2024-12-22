@@ -854,7 +854,6 @@ cask "zettlr"
 cask "zoom"
 # Collect, organise, cite, and share research sources
 cask "zotero"
-mas "Annotate", id: 918207447
 mas "Apple Configurator", id: 1037126344
 mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
@@ -864,9 +863,7 @@ mas "Ice Cubes", id: 6444915884
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
-mas "Marked", id: 448925439
 mas "MindNode", id: 1289197285
-mas "MindNode Lite", id: 402397683
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
