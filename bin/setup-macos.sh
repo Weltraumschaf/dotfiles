@@ -5,7 +5,7 @@ set -euo pipefail
 # Python versions we use w/ Pyenv:
 PYTHON3_VERSION='3.13.1'
 # Ruby version we use w/ rbenv:
-RUBY_VERSION="3.3.6"
+RUBY_VERSION="3.4.1"
 
 # @see: http://wiki.bash-hackers.org/syntax/shellvars
 [ -z "${SCRIPT_DIRECTORY:-}" ] &&
