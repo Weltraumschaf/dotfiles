@@ -109,8 +109,6 @@ brew "aws-shell"
 brew "bash"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2@1.7"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Google's own build tool
@@ -341,6 +339,8 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2@1.7"
 # Implementation of the file(1) command
 brew "libmagic"
 # Portable sound library
@@ -515,6 +515,8 @@ brew "subfinder"
 brew "swig"
 # CLI for generating a Software Bill of Materials from container images
 brew "syft"
+# Tool Command Language
+brew "tcl-tk"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
@@ -605,6 +607,8 @@ cask "alfred"
 cask "anytype"
 # Application uninstaller
 cask "appcleaner"
+# Multi-cloud backup application
+cask "arq"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Desktop password and login vault
@@ -621,6 +625,10 @@ cask "chatgpt"
 cask "clipy"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
+# Multi-platform client-side cloud file encryption tool
+cask "cryptomator"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Disk space visualiser
@@ -637,6 +645,8 @@ cask "digikam"
 cask "discord"
 # Emulator for x86 with DOS
 cask "dosbox"
+# Developer platform
+cask "dotnet-sdk"
 # Online diagram software
 cask "drawio"
 # Finds duplicate files in a computer system
@@ -682,6 +692,8 @@ cask "jitsi-meet"
 cask "joplin"
 # Menu bar manager
 cask "jordanbaird-ice"
+# Password manager app
+cask "keepassxc"
 # GUI replacement for the Java command-line utilities keytool and jarsigner
 cask "keystore-explorer"
 # Tool to show what is persistently installed on the computer
@@ -859,15 +871,17 @@ mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "Draw Things", id: 6444050820
+mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
+mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Pocket", id: 568494494
 mas "QReate", id: 6446048195
+mas "Save to Pocket", id: 1477385213
 mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
@@ -955,6 +969,7 @@ vscode "redhat.java"
 vscode "rubymaniac.vscode-direnv"
 vscode "rust-lang.rust-analyzer"
 vscode "segerdekort.angular-cli"
+vscode "serayuzgur.crates"
 vscode "shopify.ruby-lsp"
 vscode "simontest.simontest"
 vscode "steoates.autoimport"
