@@ -1,0 +1,7 @@
+[user]
+  name = Sven Strittmatter
+  email = ich@weltraumschaf.de
+  signingkey = 4A4BBFCE8E7020B4
+
+[commit]
+  gpgsign = true
