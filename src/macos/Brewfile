@@ -675,6 +675,7 @@ cask "greenfoot"
 cask "hammerspoon"
 # Open-source video transcoder
 cask "handbrake"
+# Markdown editor
 cask "haroopad"
 # Hex editor focussing on speed
 cask "hex-fiend"
