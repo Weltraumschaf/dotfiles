@@ -621,8 +621,6 @@ cask "burp-suite"
 cask "busycal"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
-# Clipboard extension app
-cask "clipy"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Multi-platform client-side cloud file encryption tool
@@ -713,6 +711,8 @@ cask "libreoffice"
 cask "little-snitch"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# Clipboard manager
+cask "maccy"
 # Open-source Markdown editor
 cask "macdown"
 # Full TeX Live distribution with GUI applications
