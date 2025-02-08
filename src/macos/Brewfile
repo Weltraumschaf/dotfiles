@@ -18,6 +18,7 @@ tap "rusty-ferris-club/tap"
 tap "snyk/tap"
 tap "theseal/ssh-askpass"
 tap "trufflesecurity/trufflehog"
+tap "updatecli/updatecli"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
 tap "weltraumschaf/tap"
@@ -83,18 +84,12 @@ brew "asciidoc"
 brew "asciidoctor"
 # Record and share terminal sessions
 brew "asciinema"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# GNU multiple precision arithmetic library
-brew "gmp"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
-# Generic library support script
-brew "libtool"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
-brew "asdf"
 # Fast, efficient and secure backup program
 brew "restic"
 # High level CLI utility for restic
@@ -145,12 +140,18 @@ brew "colima"
 brew "colordiff"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Generic library support script
+brew "libtool"
 # Graphics library to dynamically manipulate images
 brew "gd"
+# GNU multiple precision arithmetic library
+brew "gmp"
 # General-purpose scripting language
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Securely send things from one computer to another
 brew "croc"
 # Converts boring normal dates to fun Discordian Date
@@ -587,6 +588,8 @@ brew "snyk/tap/snyk"
 brew "theseal/ssh-askpass/ssh-askpass"
 # Find credentials all over the place
 brew "trufflesecurity/trufflehog/trufflehog"
+# Updatecli is a declarative dependency management command line tool.
+brew "updatecli/updatecli/updatecli"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
@@ -625,6 +628,8 @@ cask "chatgpt"
 cask "coconutbattery"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
+# UI for creating Windows installer ISO from UUPDump
+cask "crystalfetch"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Server and cloud storage browser
@@ -729,6 +734,8 @@ cask "mediathekview"
 cask "metasploit"
 # Online collaborative whiteboard platform
 cask "miro"
+# Intercept, modify, replay, save HTTP/S traffic
+cask "mitmproxy"
 # German banking and financial management software
 cask "moneymoney"
 # Interactive tool for analyzing MongoDB data
