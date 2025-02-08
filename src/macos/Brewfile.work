@@ -22,14 +22,10 @@ tap "updatecli/updatecli"
 tap "wagoodman/dive"
 tap "weaveworks/tap"
 tap "weltraumschaf/tap"
-# Portable ASCII art graphics library
-brew "aalib"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Run your GitHub Actions locally
 brew "act"
-# In-depth attack surface mapping and asset discovery
-brew "amass"
 # Asynchronous DNS library
 brew "c-ares"
 # Cryptography and SSL/TLS Toolkit
@@ -120,8 +116,6 @@ brew "bnd"
 brew "broot"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
-# Object-file caching compiler wrapper
-brew "ccache"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
 # Linter/analyzer for Makefiles
@@ -226,8 +220,6 @@ brew "ffmpeg"
 brew "ffuf"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
-# Real-time software synthesizer based on the SoundFont 2 specs
-brew "fluid-synth"
 # Apt for fonts, the missing font manager for macOS/linux
 brew "fnt"
 # XSL-FO print formatter for making PDF or PS documents
@@ -318,18 +310,12 @@ brew "ivy"
 brew "s-lang"
 # Powerful editor for programmers
 brew "jed"
-# Extendable open source continuous integration server
-brew "jenkins"
 # CLI for the Jinja2 templating language
 brew "jinja2-cli"
 # Featureful UNIX password cracker
 brew "john"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Python implementation written in Java (successor to JPython)
-brew "jython"
-# Run local Kubernetes cluster in Docker
-brew "kind"
 # Package manager for kubectl plugins
 brew "krew"
 # Lazier way to manage everything docker
@@ -340,18 +326,8 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2@1.7"
-# Implementation of the file(1) command
-brew "libmagic"
-# Portable sound library
-brew "libmikmod"
 # Library to decode mpeg-2 and mpeg-1 video streams
-brew "libmpeg2"
-# Library like getopt(3) with a number of enhancements
 brew "popt"
-# Library that implements the rsync remote-delta algorithm
-brew "librsync"
 # C implementation of a Sass compiler
 brew "libsass"
 # Library for database change tracking
@@ -370,8 +346,6 @@ brew "maven-completion"
 brew "md5deep"
 # Scalable distributed version control system
 brew "mercurial"
-# Modern and intuitive terminal-based text editor
-brew "micro"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Collection of tools that nobody wrote when UNIX was young
@@ -398,8 +372,6 @@ brew "nmap"
 brew "pandoc"
 # Text interface for Git repositories
 brew "tig"
-# Command-line and local web note-taking, bookmarking, and archiving
-brew "nb"
 # NCurses Disk Usage
 brew "ncdu"
 # Network authentication cracking tool
@@ -442,8 +414,6 @@ brew "plantuml"
 brew "platformio"
 # Python package management tool
 brew "poetry"
-# Object-relational database system
-brew "postgresql@14"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Password generator
@@ -492,8 +462,6 @@ brew "smartmontools"
 brew "smimesign"
 # Daemon to provide vmnet.framework support for rootless QEMU
 brew "socket_vmnet"
-# Launcher to analyze a project with SonarQube
-brew "sonar-scanner"
 # Editor of encrypted files
 brew "sops"
 # SQLite extension providing 256-bit AES encryption
@@ -508,8 +476,6 @@ brew "sslscan"
 brew "starship"
 # Crypto and x509 Swiss-Army-Knife
 brew "step"
-# Organize software neatly under a single directory tree (e.g. /usr/local)
-brew "stow"
 # Subdomain discovery tool
 brew "subfinder"
 # Generate scripting interfaces to C/C++ code
@@ -524,8 +490,6 @@ brew "telnet"
 brew "terraform"
 # Linter for Terraform files
 brew "tflint"
-# High-performance, platform-neutral implementation of VNC
-brew "tiger-vnc"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -538,8 +502,6 @@ brew "tree"
 brew "trivy"
 # Language for application scale JavaScript development
 brew "typescript"
-# Simple GTD-style task management for the command-line
-brew "ultralist"
 # This UML tool aimed at providing a fast way of creating UML diagrams
 brew "umlet"
 # Sends magic packets to wake up network-devices
@@ -592,8 +554,8 @@ brew "trufflesecurity/trufflehog/trufflehog"
 brew "updatecli/updatecli/updatecli"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
-# "interactive keyboard password authentication". Most user should use SSH's more secure public 
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called
+# "interactive keyboard password authentication". Most user should use SSH's more secure public
 # key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
 # Password manager that keeps all passwords secure behind one password
@@ -602,8 +564,6 @@ cask "1password"
 cask "1password-cli"
 # Instant messaging application
 cask "adium"
-# View, print, and comment on PDF documents
-cask "adobe-acrobat-reader"
 # Application launcher and productivity software
 cask "alfred"
 # Local-first and end-to-end encrypted notes app
@@ -684,8 +644,6 @@ cask "haroopad"
 cask "hex-fiend"
 # Vector graphics editor
 cask "inkscape"
-# HTTP and GraphQL Client
-cask "insomnia"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # JetBrains tools manager
@@ -720,8 +678,6 @@ cask "lm-studio"
 cask "maccy"
 # Open-source Markdown editor
 cask "macdown"
-# Full TeX Live distribution with GUI applications
-cask "mactex"
 # Operating system maintenance and cleaning utility
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
@@ -746,20 +702,14 @@ cask "mono-mdk-for-visual-studio"
 cask "multifirefox"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
-# Development environment, tooling platform and application framework
-cask "netbeans"
 # Free and open-source RSS reader
 cask "netnewswire"
 # Desktop sync client for Nextcloud software products
 cask "nextcloud"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
 # Get up and running with large language models locally
 cask "ollama"
-# Cloud storage client
-cask "onedrive"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # Open-source transport simulation game
@@ -778,8 +728,6 @@ cask "powershell"
 cask "preference-manager"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
-# Microsoft Project in your browser
-cask "projectlibre"
 # Scientific and technical publishing system built on Pandoc
 cask "quarto"
 # Image viewer
@@ -802,8 +750,6 @@ cask "secure-pipes"
 cask "send-to-kindle"
 # Instant messaging application focusing on security
 cask "signal"
-# Video chat, voice call and instant messaging application
-cask "skype"
 # Team communication and collaboration software
 cask "slack"
 # Sets a minimum speed for built-in fans
@@ -838,8 +784,6 @@ cask "tiled"
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
-# Free and open-source OpenVPN client
-cask "tunnelblick"
 # Configurable document editor that supports Markdown
 cask "typora"
 # Virtual machines UI using QEMU
@@ -893,7 +837,6 @@ mas "Save to Pocket", id: 1477385213
 mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
-mas "VMware Remote Console", id: 1230249825
 mas "WireGuard", id: 1451685025
 vscode "1tontech.angular-material"
 vscode "alefragnani.project-manager"
