@@ -122,12 +122,22 @@ step_ansible_playbook() {
     ansible-playbook -K "${ANSIBLE_DIR}/setup-macos.yml"
 }
 
+step_install_sdkman() {
+    curl -s "https://get.sdkman.io" | bash
+    local bash_profile="${HOME}/.bash_profile"
+
+    if [[ -e "${bash_profile}" ]]; then
+        rm -rf "${bash_profile}"
+    fi
+}
+
 main() {
     chsh -s /bin/bash
     step_system_settings_stuff
     step_home_brew_stuff
     step_install_python
     step_install_ruby
+    step_install_sdkman
     step_ansible_playbook
     echo "Done :-)"
 }
