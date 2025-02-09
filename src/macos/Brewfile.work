@@ -548,8 +548,8 @@ brew "trufflesecurity/trufflehog/trufflehog"
 brew "updatecli/updatecli/updatecli"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called
-# "interactive keyboard password authentication". Most user should use SSH's more secure public
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
+# "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
 # Password manager that keeps all passwords secure behind one password
@@ -774,20 +774,24 @@ cask "zed"
 cask "zenmap"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "Annotate", id: 918207447
 mas "Apple Configurator", id: 1037126344
 mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "Draw Things", id: 6444050820
 mas "Ice Cubes", id: 6444915884
-mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Magnet", id: 441258766
+mas "Marked", id: 448925439
 mas "MindNode", id: 1289197285
+mas "MindNode Lite", id: 402397683
+mas "Pocket", id: 568494494
 mas "QReate", id: 6446048195
 mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
+mas "VMware Remote Console", id: 1230249825
 mas "WireGuard", id: 1451685025
 whalebrew "whalebrew/whalesay"
 vscode "1tontech.angular-material"
@@ -857,7 +861,6 @@ vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vscode.remote-explorer"
-vscode "ms-vsliveshare.vsliveshare"
 vscode "njpwerner.autodocstring"
 vscode "obenjiro.arrr"
 vscode "platformio.platformio-ide"
