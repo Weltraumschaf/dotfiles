@@ -506,6 +506,8 @@ brew "watch"
 brew "wdiff"
 # Internet file retriever
 brew "wget"
+# Homebrew, but with Docker images
+brew "whalebrew"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
 # ISO9660+RR manipulation tool
@@ -824,6 +826,7 @@ mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
 mas "WireGuard", id: 1451685025
+whalebrew "whalebrew/whalesay"
 vscode "1tontech.angular-material"
 vscode "alefragnani.project-manager"
 vscode "alexiv.vscode-angular2-files"
