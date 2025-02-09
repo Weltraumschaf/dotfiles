@@ -78,8 +78,6 @@ brew "docbook"
 brew "asciidoc"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
-# Record and share terminal sessions
-brew "asciinema"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
@@ -224,8 +222,6 @@ brew "figlet"
 brew "fnt"
 # XSL-FO print formatter for making PDF or PS documents
 brew "fop"
-# Infamous electronic fortune-cookie generator
-brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Integer Set Library for the polyhedral model
@@ -268,6 +264,8 @@ brew "go"
 brew "goaccess"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
+# Fast linters runner for Go
+brew "golangci-lint"
 # Manage your GnuPG keys with ease!
 brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -326,8 +324,6 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
-# Library to decode mpeg-2 and mpeg-1 video streams
-brew "popt"
 # C implementation of a Sass compiler
 brew "libsass"
 # Library for database change tracking
@@ -366,16 +362,12 @@ brew "naabu"
 brew "nano"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
-# Port scanning utility for large networks
-brew "nmap"
-# Swiss-army knife of markup format conversion
-brew "pandoc"
-# Text interface for Git repositories
-brew "tig"
 # NCurses Disk Usage
 brew "ncdu"
 # Network authentication cracking tool
 brew "ncrack"
+# Port scanning utility for large networks
+brew "nmap"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # HTTP/DNS scanner configurable via YAML templates
@@ -398,6 +390,8 @@ brew "opentofu"
 brew "osv-scanner"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Parallel bzip2
 brew "pbzip2"
 # Perl compatible regular expressions library
@@ -414,14 +408,14 @@ brew "plantuml"
 brew "platformio"
 # Python package management tool
 brew "poetry"
+# Library like getopt(3) with a number of enhancements
+brew "popt"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Password generator
 brew "pwgen"
 # Python version management
 brew "pyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Install various Ruby versions and implementations
@@ -478,8 +472,6 @@ brew "starship"
 brew "step"
 # Subdomain discovery tool
 brew "subfinder"
-# Generate scripting interfaces to C/C++ code
-brew "swig"
 # CLI for generating a Software Bill of Materials from container images
 brew "syft"
 # Tool Command Language
@@ -490,6 +482,8 @@ brew "telnet"
 brew "terraform"
 # Linter for Terraform files
 brew "tflint"
+# Text interface for Git repositories
+brew "tig"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -554,8 +548,8 @@ brew "trufflesecurity/trufflehog/trufflehog"
 brew "updatecli/updatecli/updatecli"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called
-# "interactive keyboard password authentication". Most user should use SSH's more secure public
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
+# "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
 # Password manager that keeps all passwords secure behind one password
@@ -602,8 +596,6 @@ cask "db-browser-for-sqlite"
 cask "deeper"
 # Trains AIs to understand and translate texts
 cask "deepl"
-# Digital photo manager
-cask "digikam"
 # Voice and text chat software
 cask "discord"
 # Emulator for x86 with DOS
@@ -638,8 +630,6 @@ cask "greenfoot"
 cask "hammerspoon"
 # Open-source video transcoder
 cask "handbrake"
-# Markdown editor
-cask "haroopad"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # Vector graphics editor
@@ -764,8 +754,6 @@ cask "suspicious-package"
 cask "taskexplorer"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
-# JDK from the Eclipse Foundation (Adoptium)
-cask "temurin@11"
 # LaTeX editor
 cask "texifier"
 # General-purpose text editor
@@ -784,8 +772,6 @@ cask "tiled"
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
-# Configurable document editor that supports Markdown
-cask "typora"
 # Virtual machines UI using QEMU
 cask "utm"
 # Development environment
