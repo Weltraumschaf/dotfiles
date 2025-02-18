@@ -606,6 +606,8 @@ cask "drawio"
 cask "dupeguru"
 # Find files, folders, or contents in any file
 cask "easyfind"
+# Matrix collaboration client
+cask "element"
 # Collaborative team software
 cask "figma"
 # Web browser
