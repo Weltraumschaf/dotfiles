@@ -1,16 +1,11 @@
 tap "akirakyle/qemu-virgl"
-tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
-tap "go-task/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "homeport/tap"
 tap "jenkins-x/jx"
-tap "jesseduffield/lazygit"
-tap "mas-cli/tap"
 tap "norwoodj/tap"
-tap "owasp-amass/amass"
 tap "petere/sgml"
 tap "remotemobprogramming/brew"
 tap "robotsandpencils/made"
@@ -19,7 +14,6 @@ tap "snyk/tap"
 tap "theseal/ssh-askpass"
 tap "trufflesecurity/trufflehog"
 tap "updatecli/updatecli"
-tap "wagoodman/dive"
 tap "weaveworks/tap"
 tap "weltraumschaf/tap"
 # Search tool like grep, but optimized for programmers
@@ -204,7 +198,7 @@ brew "libevent"
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Vorbis General Audio Compression Codec
+# Vorbis general audio compression codec
 brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
@@ -258,6 +252,8 @@ brew "libusb"
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Task is a task runner/build tool that aims to be simpler and easier to use
+brew "go-task"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
 # Directory/file & DNS busting tool written in Go
@@ -312,6 +308,8 @@ brew "jinja2-cli"
 brew "john"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
 # Package manager for kubectl plugins
 brew "krew"
 # Lazier way to manage everything docker
@@ -482,8 +480,6 @@ brew "terraform"
 brew "tflint"
 # Text interface for Git repositories
 brew "tig"
-# Simplified and community-driven man pages
-brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # Upgrade all the things
@@ -518,10 +514,6 @@ brew "yj"
 brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
-# Kubernetes CLI To Manage Your Clusters In Style!
-brew "derailed/k9s/k9s"
-# Task runner / simpler Make alternative written in Go
-brew "go-task/tap/go-task"
 # Packer
 brew "hashicorp/tap/packer"
 # δyƒƒ /ˈdʏf/ - A diff tool for YAML files, and sometimes JSON
@@ -564,6 +556,8 @@ cask "alfred"
 cask "anytype"
 # Application uninstaller
 cask "appcleaner"
+# Alternative GUI for Time Machine
+cask "backuploupe"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Desktop password and login vault
