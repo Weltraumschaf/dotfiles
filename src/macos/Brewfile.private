@@ -1,26 +1,14 @@
 tap "akirakyle/qemu-virgl"
-tap "derailed/k9s"
 tap "filippo.io/age", "https://filippo.io/age"
-tap "go-task/tap"
-tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "homeport/tap"
 tap "jenkins-x/jx"
-tap "jesseduffield/lazygit"
-tap "mas-cli/tap"
-tap "norwoodj/tap"
-tap "owasp-amass/amass"
 tap "petere/sgml"
 tap "remotemobprogramming/brew"
-tap "robotsandpencils/made"
 tap "rusty-ferris-club/tap"
 tap "snyk/tap"
 tap "theseal/ssh-askpass"
-tap "trufflesecurity/trufflehog"
 tap "updatecli/updatecli"
-tap "wagoodman/dive"
-tap "weaveworks/tap"
 tap "weltraumschaf/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
@@ -178,6 +166,8 @@ brew "docker-compose"
 brew "doggo"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Diff tool for YAML files, and sometimes JSON
+brew "dyff"
 # Programming language for highly scalable real-time systems
 brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
@@ -206,7 +196,7 @@ brew "libevent"
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-# Vorbis General Audio Compression Codec
+# Vorbis general audio compression codec
 brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
@@ -260,6 +250,8 @@ brew "libusb"
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Task is a task runner/build tool that aims to be simpler and easier to use
+brew "go-task"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
 # Directory/file & DNS busting tool written in Go
@@ -278,6 +270,8 @@ brew "hashcat"
 brew "hcloud"
 # Kubernetes package manager
 brew "helm"
+# Tool for automatically generating markdown documentation for helm charts
+brew "helm-docs"
 # Library for communicating with USB and Bluetooth HID devices
 brew "hidapi"
 # Advanced HTML-to-text converter
@@ -314,6 +308,8 @@ brew "jinja2-cli"
 brew "john"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
 # Package manager for kubectl plugins
 brew "krew"
 # Lazier way to manage everything docker
@@ -484,8 +480,6 @@ brew "terraform"
 brew "tflint"
 # Text interface for Git repositories
 brew "tig"
-# Simplified and community-driven man pages
-brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # Upgrade all the things
@@ -494,6 +488,8 @@ brew "topgrade"
 brew "tree"
 # Vulnerability scanner for container images, file systems, and Git repos
 brew "trivy"
+# Find and verify credentials
+brew "trufflehog"
 # Language for application scale JavaScript development
 brew "typescript"
 # This UML tool aimed at providing a fast way of creating UML diagrams
@@ -510,6 +506,8 @@ brew "wget"
 brew "whalebrew"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Best command-line tool to install and switch between multiple versions of Xcode
+brew "xcodes"
 # ISO9660+RR manipulation tool
 brew "xorriso"
 # JavaScript package manager
@@ -520,36 +518,20 @@ brew "yj"
 brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
-# Kubernetes CLI To Manage Your Clusters In Style!
-brew "derailed/k9s/k9s"
-# Task runner / simpler Make alternative written in Go
-brew "go-task/tap/go-task"
-# Packer
-brew "hashicorp/tap/packer"
-# δyƒƒ /ˈdʏf/ - A diff tool for YAML files, and sometimes JSON
-brew "homeport/tap/dyff"
-# Automatically generate markdown documentation for helm charts
-brew "norwoodj/tap/helm-docs"
 # Modular DocBook DSSSL stylesheets
 brew "petere/sgml/docbook-dsssl"
 # Implementation of the DSSSL language
 brew "petere/sgml/openjade"
 # Swift handover for remote mobs using git. mob is a CLI tool written in GO. It keeps your master branch clean and creates WIP commits on mob-session branch.
 brew "remotemobprogramming/brew/mob"
-# Install and switch between multiple versions of Xcode
-brew "robotsandpencils/made/xcodes"
 # Secure shell history commands
 brew "rusty-ferris-club/tap/shellclear"
 # Find & fix known vulnerabilities in open-source dependencies
 brew "snyk/tap/snyk"
 # Passphrase dialog for use with OpenSSH in macOS
 brew "theseal/ssh-askpass/ssh-askpass"
-# Find credentials all over the place
-brew "trufflesecurity/trufflehog/trufflehog"
 # Updatecli is a declarative dependency management command line tool.
 brew "updatecli/updatecli/updatecli"
-# The official CLI for Amazon EKS
-brew "weaveworks/tap/eksctl"
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
 # "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
@@ -568,6 +550,8 @@ cask "anytype"
 cask "appcleaner"
 # Multi-cloud backup application
 cask "arq"
+# Alternative GUI for Time Machine
+cask "backuploupe"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Desktop password and login vault
@@ -578,6 +562,8 @@ cask "bruno"
 cask "burp-suite"
 # Calendar software focusing on flexibility and reliability
 cask "busycal"
+# E-books management software
+cask "calibre"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Tool to show live information about the batteries in various devices
@@ -794,6 +780,8 @@ cask "vscodium"
 cask "wireshark"
 # X Certificate and Key management
 cask "xca"
+# Install and switch between multiple versions of Xcode
+cask "xcodes"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # Free and open source web app scanner
