@@ -376,6 +376,8 @@ brew "oath-toolkit"
 brew "ocaml"
 # Generic build tool for OCaml
 brew "ocamlbuild"
+# Create, run, and share large language models (LLMs)
+brew "ollama", link: false
 # SGML parser
 brew "open-sp"
 # OpenShift command-line interface tools
@@ -566,6 +568,8 @@ cask "busycal"
 cask "calibre"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Multi-platform client-side cloud file encryption tool
