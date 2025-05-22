@@ -14,26 +14,6 @@ tap "weltraumschaf/tap"
 brew "ack"
 # Run your GitHub Actions locally
 brew "act"
-# Asynchronous DNS library
-brew "c-ares"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# Platform built on V8 to build network applications
-brew "node"
-# CLI tool for Angular
-brew "angular-cli"
-# YAML Parser
-brew "libyaml"
-# Library for command-line editing
-brew "readline"
-# Command-line interface for SQLite
-brew "sqlite"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Automate deployment, configuration, and upgrading
-brew "ansible"
-# Checks ansible playbooks for practices and behaviour
-brew "ansible-lint"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # C string library for manipulating Unicode strings
@@ -44,6 +24,38 @@ brew "gettext"
 brew "glib"
 # Low-level library for pixel manipulation
 brew "pixman"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# Integer Set Library for the polyhedral model
+brew "isl"
+# C library for multiple-precision floating-point computations
+brew "mpfr"
+# C library for the arithmetic of high precision complex numbers
+brew "libmpc"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# GNU compiler collection
+brew "gcc"
+# YAML Parser
+brew "libyaml"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Library for command-line editing
+brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
+# AI pair programming in your terminal
+brew "aider"
+# Asynchronous DNS library
+brew "c-ares"
+# Platform built on V8 to build network applications
+brew "node"
+# CLI tool for Angular
+brew "angular-cli"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Checks ansible playbooks for practices and behaviour
+brew "ansible-lint"
 # Java build tool
 brew "ant"
 # ANother Tool for Language Recognition
@@ -124,8 +136,6 @@ brew "curl"
 brew "libtool"
 # Graphics library to dynamically manipulate images
 brew "gd"
-# GNU multiple precision arithmetic library
-brew "gmp"
 # General-purpose scripting language
 brew "php"
 # Dependency Manager for PHP
@@ -214,14 +224,6 @@ brew "fnt"
 brew "fop"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Integer Set Library for the polyhedral model
-brew "isl"
-# C library for multiple-precision floating-point computations
-brew "mpfr"
-# C library for the arithmetic of high precision complex numbers
-brew "libmpc"
-# GNU compiler collection
-brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
