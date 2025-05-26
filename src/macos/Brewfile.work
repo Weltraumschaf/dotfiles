@@ -352,6 +352,8 @@ brew "mpv"
 brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
+# Lightweight PDF and XPS viewer
+brew "mupdf-tools"
 # Fast port scanner
 brew "naabu"
 # Free (GNU) replacement for the Pico text editor
