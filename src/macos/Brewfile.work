@@ -322,6 +322,10 @@ brew "lesspipe"
 brew "libffi"
 # C implementation of a Sass compiler
 brew "libsass"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Additional guest agents for Lima
+brew "lima-additional-guestagents"
 # Library for database change tracking
 brew "liquibase"
 # Python generator for the console
@@ -414,8 +418,6 @@ brew "pre-commit"
 brew "pwgen"
 # Python version management
 brew "pyenv"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -838,6 +840,7 @@ vscode "loiane.angular-extension-pack"
 vscode "loiane.ts-extension-pack"
 vscode "mads-hartmann.bash-ide-vscode"
 vscode "misogi.ruby-rubocop"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.dotnet-interactive-vscode"
