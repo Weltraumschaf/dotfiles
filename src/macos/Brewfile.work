@@ -78,6 +78,8 @@ brew "docbook"
 brew "asciidoc"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
+# Distributed revision control system
+brew "git"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
@@ -224,8 +226,6 @@ brew "fop"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
-# Distributed revision control system
-brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # Clean C library for processing UTF-8 Unicode data
@@ -769,26 +769,26 @@ cask "zenmap"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Annotate", id: 918207447
-mas "Apple Configurator", id: 1037126344
 mas "Bitwarden", id: 1352778147
 mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "Draw Things", id: 6444050820
+mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
+mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
-mas "MindNode", id: 1289197285
 mas "MindNode Lite", id: 402397683
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Perplexity", id: 6714467650
 mas "Pocket", id: 568494494
-mas "QReate", id: 6446048195
 mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
-mas "VMware Remote Console", id: 1230249825
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
 whalebrew "whalebrew/whalesay"
