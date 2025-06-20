@@ -254,6 +254,8 @@ brew "go"
 brew "go-task"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
 # Fast linters runner for Go
@@ -402,8 +404,6 @@ brew "pcre"
 brew "peco"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
 # Draw UML diagrams
 brew "plantuml"
 # Your Gateway to Embedded Software Development Excellence
