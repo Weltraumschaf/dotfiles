@@ -78,6 +78,8 @@ brew "docbook"
 brew "asciidoc"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
+# Distributed revision control system
+brew "git"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
@@ -226,8 +228,6 @@ brew "fop"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
-# Distributed revision control system
-brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # Clean C library for processing UTF-8 Unicode data
@@ -324,6 +324,10 @@ brew "lesspipe"
 brew "libffi"
 # C implementation of a Sass compiler
 brew "libsass"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Additional guest agents for Lima
+brew "lima-additional-guestagents"
 # Library for database change tracking
 brew "liquibase"
 # Python generator for the console
@@ -416,8 +420,6 @@ brew "pre-commit"
 brew "pwgen"
 # Python version management
 brew "pyenv"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -588,7 +590,7 @@ cask "daisydisk"
 cask "db-browser-for-sqlite"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
-# Trains AIs to understand and translate texts
+# AI-powered translator
 cask "deepl"
 # Voice and text chat software
 cask "discord"
@@ -625,7 +627,7 @@ cask "greenfoot"
 # Desktop automation application
 cask "hammerspoon"
 # Open-source video transcoder
-cask "handbrake"
+cask "handbrake-app"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # Vector graphics editor
@@ -695,7 +697,7 @@ cask "nextcloud"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Get up and running with large language models locally
-cask "ollama"
+cask "ollama-app"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # Open-source transport simulation game
@@ -729,7 +731,7 @@ cask "reamp"
 # Scans, detects, and monitors keyboard taps
 cask "reikey"
 # Run classic graphical adventure and role-playing games
-cask "scummvm"
+cask "scummvm-app"
 # Manage SSH tunnels
 cask "secure-pipes"
 # Tool for sending personal documents to Kindles from Macs
@@ -783,11 +785,11 @@ cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark-app"
 # X Certificate and Key management
 cask "xca"
 # Install and switch between multiple versions of Xcode
-cask "xcodes"
+cask "xcodes-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # Free and open source web app scanner
@@ -873,6 +875,7 @@ vscode "loiane.angular-extension-pack"
 vscode "loiane.ts-extension-pack"
 vscode "mads-hartmann.bash-ide-vscode"
 vscode "misogi.ruby-rubocop"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.dotnet-interactive-vscode"
