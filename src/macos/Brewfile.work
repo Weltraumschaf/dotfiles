@@ -254,8 +254,6 @@ brew "go"
 brew "go-task"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
 # Fast linters runner for Go
@@ -404,6 +402,8 @@ brew "pcre"
 brew "peco"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Draw UML diagrams
 brew "plantuml"
 # Your Gateway to Embedded Software Development Excellence
@@ -584,7 +584,7 @@ cask "daisydisk"
 cask "db-browser-for-sqlite"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
-# Trains AIs to understand and translate texts
+# AI-powered translator
 cask "deepl"
 # Voice and text chat software
 cask "discord"
@@ -621,7 +621,7 @@ cask "greenfoot"
 # Desktop automation application
 cask "hammerspoon"
 # Open-source video transcoder
-cask "handbrake"
+cask "handbrake-app"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # Vector graphics editor
@@ -687,7 +687,7 @@ cask "nextcloud"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Get up and running with large language models locally
-cask "ollama"
+cask "ollama-app"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # ZFS driver and utilities
@@ -755,7 +755,7 @@ cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark-app"
 # X Certificate and Key management
 cask "xca"
 # Open-source version of the X.Org X Window System
