@@ -382,7 +382,7 @@ brew "ocaml"
 # Generic build tool for OCaml
 brew "ocamlbuild"
 # Create, run, and share large language models (LLMs)
-brew "ollama", link: false
+brew "ollama"
 # SGML parser
 brew "open-sp"
 # OpenShift command-line interface tools
@@ -801,7 +801,6 @@ cask "zettlr"
 cask "zoom"
 # Collect, organise, cite, and share research sources
 cask "zotero"
-mas "Apple Configurator", id: 1037126344
 mas "Bitwarden", id: 1352778147
 mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
