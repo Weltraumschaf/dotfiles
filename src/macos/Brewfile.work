@@ -8,6 +8,7 @@ tap "snyk/tap"
 tap "theseal/ssh-askpass"
 tap "updatecli/updatecli"
 tap "weltraumschaf/tap"
+tap "xcodesorg/made"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Run your GitHub Actions locally
@@ -510,8 +511,6 @@ brew "wget"
 brew "whalebrew"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
-# Best command-line tool to install and switch between multiple versions of Xcode
-brew "xcodes"
 # ISO9660+RR manipulation tool
 brew "xorriso"
 # JavaScript package manager
@@ -538,6 +537,8 @@ brew "updatecli/updatecli/updatecli"
 # "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
+# Install and switch between multiple versions of Xcode
+brew "xcodesorg/made/xcodes"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -742,7 +743,7 @@ cask "transmission"
 cask "utm"
 # Development environment
 cask "vagrant"
-# Virtualiser for x86 hardware
+# Virtualiser for arm64 hardware
 cask "virtualbox"
 # Integrated development environment
 cask "visual-studio"
