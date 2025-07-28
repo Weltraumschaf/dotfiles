@@ -607,12 +607,12 @@ cask "firefox"
 cask "fork"
 # 3D parametric modeller
 cask "freecad"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Desktop client for GitHub repositories
 cask "github"
 # Web browser
 cask "google-chrome"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
 # Teach object orientation with Java
@@ -849,6 +849,7 @@ vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-toolsai.jupyter"
 vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
