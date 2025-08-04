@@ -507,8 +507,6 @@ brew "watch"
 brew "wdiff"
 # Internet file retriever
 brew "wget"
-# Homebrew, but with Docker images
-brew "whalebrew"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
 # ISO9660+RR manipulation tool
@@ -533,8 +531,8 @@ brew "snyk/tap/snyk"
 brew "theseal/ssh-askpass/ssh-askpass"
 # Updatecli is a declarative dependency management command line tool.
 brew "updatecli/updatecli/updatecli"
-# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called
-# "interactive keyboard password authentication". Most user should use SSH's more secure public
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
+# "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
 # Install and switch between multiple versions of Xcode
@@ -675,6 +673,8 @@ cask "moneymoney"
 cask "mongodb-compass"
 # Open source implementation of Microsoft's .NET Framework
 cask "mono-mdk-for-visual-studio"
+# Run LLMs locally
+cask "msty"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
 # Visual tool to design, develop and administer MySQL servers
