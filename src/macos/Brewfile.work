@@ -533,8 +533,8 @@ brew "snyk/tap/snyk"
 brew "theseal/ssh-askpass/ssh-askpass"
 # Updatecli is a declarative dependency management command line tool.
 brew "updatecli/updatecli/updatecli"
-# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
-# "interactive keyboard password authentication". Most user should use SSH's more secure public 
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called
+# "interactive keyboard password authentication". Most user should use SSH's more secure public
 # key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
 # Install and switch between multiple versions of Xcode
@@ -790,7 +790,6 @@ mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
-whalebrew "whalebrew/whalesay"
 vscode "1tontech.angular-material"
 vscode "alefragnani.project-manager"
 vscode "alexiv.vscode-angular2-files"
