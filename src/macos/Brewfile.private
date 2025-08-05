@@ -507,8 +507,6 @@ brew "watch"
 brew "wdiff"
 # Internet file retriever
 brew "wget"
-# Homebrew, but with Docker images
-brew "whalebrew"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
 # Best command-line tool to install and switch between multiple versions of Xcode
@@ -535,8 +533,8 @@ brew "snyk/tap/snyk"
 brew "theseal/ssh-askpass/ssh-askpass"
 # Updatecli is a declarative dependency management command line tool.
 brew "updatecli/updatecli/updatecli"
-# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called
-# "interactive keyboard password authentication". Most user should use SSH's more secure public
+# Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
+# "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
 brew "weltraumschaf/tap/sshpass"
 # Password manager that keeps all passwords secure behind one password
@@ -611,12 +609,12 @@ cask "firefox"
 cask "fork"
 # 3D parametric modeller
 cask "freecad"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Desktop client for GitHub repositories
 cask "github"
 # Web browser
 cask "google-chrome"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
 # Teach object orientation with Java
@@ -771,7 +769,7 @@ cask "transmission"
 cask "utm"
 # Development environment
 cask "vagrant"
-# Virtualiser for x86 hardware
+# Virtualiser for arm64 hardware
 cask "virtualbox"
 # Integrated development environment
 cask "visual-studio"
@@ -880,6 +878,7 @@ vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-toolsai.jupyter"
 vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
