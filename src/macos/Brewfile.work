@@ -13,6 +13,8 @@ tap "xcodesorg/made"
 brew "ack"
 # Run your GitHub Actions locally
 brew "act"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # C string library for manipulating Unicode strings
@@ -31,8 +33,6 @@ brew "isl"
 brew "mpfr"
 # C library for the arithmetic of high precision complex numbers
 brew "libmpc"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # GNU compiler collection
 brew "gcc"
 # YAML Parser
