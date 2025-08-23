@@ -11,6 +11,8 @@ tap "weltraumschaf/tap"
 brew "ack"
 # Run your GitHub Actions locally
 brew "act"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # C string library for manipulating Unicode strings
@@ -29,8 +31,6 @@ brew "isl"
 brew "mpfr"
 # C library for the arithmetic of high precision complex numbers
 brew "libmpc"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # GNU compiler collection
 brew "gcc"
 # YAML Parser
@@ -699,6 +699,8 @@ cask "onyx"
 cask "openttd"
 # ZFS driver and utilities
 cask "openzfs"
+# Web browser
+cask "opera"
 # Markdown editor with pandoc integration and paginated preview
 cask "panwriter"
 # Translation editor
@@ -727,8 +729,6 @@ cask "reamp"
 cask "reikey"
 # Run classic graphical adventure and role-playing games
 cask "scummvm-app"
-# Manage SSH tunnels
-cask "secure-pipes"
 # Tool for sending personal documents to Kindles from Macs
 cask "send-to-kindle"
 # Instant messaging application focusing on security
@@ -741,6 +741,8 @@ cask "smcfancontrol"
 cask "sonic-pi"
 # Create, edit, browse SQLite databases
 cask "sqlitestudio"
+# Video game digital distribution service
+cask "steam"
 # Application for inspecting installer packages
 cask "suspicious-package"
 # Tool to explore all the running tasks (processes)
