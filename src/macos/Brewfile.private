@@ -789,8 +789,6 @@ cask "xquartz"
 cask "zap"
 # Multiplayer code editor
 cask "zed"
-# Multi-platform graphical interface for official Nmap Security Scanner
-cask "zenmap"
 # Open-source markdown editor
 cask "zettlr"
 # Video communication and virtual meeting platform
