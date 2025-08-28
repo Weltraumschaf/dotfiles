@@ -667,8 +667,6 @@ cask "metasploit"
 cask "miro"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
-# German banking and financial management software
-cask "moneymoney"
 # Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
 # Open source implementation of Microsoft's .NET Framework
