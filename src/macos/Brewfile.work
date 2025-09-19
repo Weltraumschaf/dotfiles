@@ -661,8 +661,6 @@ cask "macdown"
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
 cask "maltego"
-# Markdown editor
-cask "mark-text"
 # Penetration testing framework
 cask "metasploit"
 # Online collaborative whiteboard platform
@@ -691,16 +689,12 @@ cask "ollama-app"
 cask "onyx"
 # ZFS driver and utilities
 cask "openzfs"
-# Markdown editor with pandoc integration and paginated preview
-cask "panwriter"
 # Translation editor
 cask "poedit"
 # Command-line shell and scripting language
 cask "powershell"
 # Trash, backup, lock and restore video editor preferences
 cask "preference-manager"
-# Image viewer
-cask "qview"
 # Protect your personal files
 cask "ransomwhere"
 # Archive manager for data compression and backups
@@ -709,8 +703,6 @@ cask "rar"
 cask "raspberry-pi-imager"
 # Scans, detects, and monitors keyboard taps
 cask "reikey"
-# Manage SSH tunnels
-cask "secure-pipes"
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
@@ -763,8 +755,6 @@ cask "xquartz"
 cask "zap"
 # Multiplayer code editor
 cask "zed"
-# Multi-platform graphical interface for official Nmap Security Scanner
-cask "zenmap"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Annotate", id: 918207447
