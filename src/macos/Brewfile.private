@@ -699,14 +699,10 @@ cask "openttd"
 cask "openzfs"
 # Web browser
 cask "opera"
-# Markdown editor with pandoc integration and paginated preview
-cask "panwriter"
 # Translation editor
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
 cask "portfolioperformance"
-# Command-line shell and scripting language
-cask "powershell"
 # Trash, backup, lock and restore video editor preferences
 cask "preference-manager"
 # Flexible software sketchbook and a language for learning how to code
