@@ -593,8 +593,6 @@ cask "dosbox"
 cask "dotnet-sdk"
 # Online diagram software
 cask "drawio"
-# Finds duplicate files in a computer system
-cask "dupeguru"
 # Find files, folders, or contents in any file
 cask "easyfind"
 # Matrix collaboration client
@@ -691,8 +689,6 @@ cask "onyx"
 cask "openzfs"
 # Translation editor
 cask "poedit"
-# Command-line shell and scripting language
-cask "powershell"
 # Trash, backup, lock and restore video editor preferences
 cask "preference-manager"
 # Protect your personal files
@@ -811,6 +807,8 @@ vscode "formulahendry.auto-rename-tag"
 vscode "formulahendry.docker-explorer"
 vscode "formulahendry.docker-extension-pack"
 vscode "foxundermoon.shell-format"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "golang.go"
 vscode "gregorbiswanger.json2ts"
 vscode "humao.rest-client"
@@ -878,11 +876,13 @@ vscode "visualstudioexptteam.intellicode-api-usage-examples"
 vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vmware.vscode-boot-dev-pack"
 vscode "vmware.vscode-spring-boot"
+vscode "vscjava.migrate-java-to-azure"
 vscode "vscjava.vscode-gradle"
 vscode "vscjava.vscode-java-debug"
 vscode "vscjava.vscode-java-dependency"
 vscode "vscjava.vscode-java-pack"
 vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-java-upgrade"
 vscode "vscjava.vscode-maven"
 vscode "vscjava.vscode-spring-boot-dashboard"
 vscode "vscjava.vscode-spring-initializr"
