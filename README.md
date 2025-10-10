@@ -34,5 +34,5 @@ There is a `Brewfile` generated from/for [Homebrew Bundle](https://github.com/Ho
 ### Update the Brewfile
 
 ```bash
-brew bundle dump --describe --force
+brew bundle dump --describe --force --verbose --file FILE
 ```
