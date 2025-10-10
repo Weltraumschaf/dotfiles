@@ -191,4 +191,3 @@ cask "vlc"
 cask "zap"
 # Multiplayer code editor
 cask "zed"
-mas "Caffeinated", id: 1362171212
