@@ -1,6 +1,5 @@
 tap "akirakyle/qemu-virgl"
 tap "filippo.io/age", "https://filippo.io/age"
-tap "homebrew/core"
 tap "jenkins-x/jx"
 tap "petere/sgml"
 tap "rusty-ferris-club/tap"
