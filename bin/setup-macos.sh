@@ -104,6 +104,12 @@ step_install_python() {
 
     eval "$(pyenv init -)"
 
+    export PATH="$(brew --prefix tcl-tk)/bin:$PATH"
+    export LDFLAGS="-L$(brew --prefix tcl-tk)/lib"
+    export CPPFLAGS="-I$(brew --prefix tcl-tk)/include"
+    export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
+    export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl9.0 -ltk9.0'"
+
     pyenv install "${PYTHON3_VERSION}" || true
     pyenv rehash
     pyenv global "${PYTHON3_VERSION}"
