@@ -131,15 +131,23 @@ step_install_python() {
     pyenv install "${PYTHON_VERSION}" || true
     pyenv rehash
     pyenv global "${PYTHON_VERSION}"
+
+    unset LDFLAGS CPPFLAGS PKG_CONFIG_PATH PYTHON_CONFIGURE_OPTS
 }
 
 step_install_ruby() {
     # see https://medium.com/@jules2689/homebrew-ruby-and-gems-78d6c26b89e
     # List available versions: rbenv install --list
     eval "$(rbenv init -)"
-    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)" rbenv install -f "${RUBY_VERSION}"
+
+    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
+    export RUBY_CONFIGURE_OPTS
+
+    rbenv install -f "${RUBY_VERSION}"
     rbenv rehash
     rbenv global "${RUBY_VERSION}"
+
+    unset RUBY_CONFIGURE_OPTS
 }
 
 step_ansible_playbook() {
