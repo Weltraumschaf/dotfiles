@@ -11,7 +11,7 @@ RUBY_VERSION="3.4.5"
 [ -z "${SCRIPT_DIRECTORY:-}" ] &&
     SCRIPT_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
 
-USAGE="$(basename "${0}") <HOST_NAME> <DOMAIN_NAME>"
+USAGE="$(basename "${0}") <HOST_NAME> <DOMAIN_NAME> <BREWFILE>"
 HOST_NAME="${1:-}"
 
 if [[ -z "${HOST_NAME}" ]]; then
@@ -24,6 +24,14 @@ DOMAIN_NAME="${2:-}"
 
 if [[ -z "${DOMAIN_NAME}" ]]; then
     >&2 echo "No domain name given as second argument!"
+    >&2 echo "${USAGE}"
+    exit 1
+fi
+
+BREWFILE="${3:-}"
+
+if [[ -z "${BREWFILE}" ]]; then
+    >&2 echo "No brewfile given as third argument!"
     >&2 echo "${USAGE}"
     exit 1
 fi
@@ -93,7 +101,7 @@ step_home_brew_stuff() {
     # https://thoughtbot.com/blog/brewfile-a-gemfile-but-for-homebrew
     # Write the Brewfile: brew bundle dump --describe --force --verbose --file "${PROJECT}/src/macos/Brewfile"
     set +e
-    "${HOMEBREW_PREFIX}/bin/brew" bundle install --force --file "${MACOS_DIR}/Brewfile"
+    "${HOMEBREW_PREFIX}/bin/brew" bundle install --force --file "${MACOS_DIR}/${BREWFILE}"
     set -e
     "${HOMEBREW_PREFIX}/opt/fzf/install" \
         --key-bindings \
