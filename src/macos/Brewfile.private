@@ -629,6 +629,8 @@ cask "hex-fiend"
 cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Media system
+cask "jellyfin"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Secure video conferencing app
