@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Python versions we use w/ Pyenv:
-PYTHON3_VERSION='3.14.0'
+PYTHON_VERSION='3.14.0'
 # Ruby version we use w/ rbenv:
 RUBY_VERSION="3.4.5"
 
@@ -104,15 +104,21 @@ step_install_python() {
 
     eval "$(pyenv init -)"
 
-    export PATH="$(brew --prefix tcl-tk)/bin:$PATH"
-    export LDFLAGS="-L$(brew --prefix tcl-tk)/lib"
-    export CPPFLAGS="-I$(brew --prefix tcl-tk)/include"
-    export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
-    export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl9.0 -ltk9.0'"
+    PATH="$(brew --prefix tcl-tk)/bin:$PATH"
+    export PATH
+    LDFLAGS="-L$(brew --prefix tcl-tk)/lib"
+    export LDFLAGS
+    CPPFLAGS="-I$(brew --prefix tcl-tk)/include"
+    export CPPFLAGS
+    PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
+    export PKG_CONFIG_PATH
+    # shellcheck disable=SC2089
+    PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl9.0 -ltk9.0'"
+    export PYTHON_CONFIGURE_OPTS
 
-    pyenv install "${PYTHON3_VERSION}" || true
+    pyenv install "${PYTHON_VERSION}" || true
     pyenv rehash
-    pyenv global "${PYTHON3_VERSION}"
+    pyenv global "${PYTHON_VERSION}"
 }
 
 step_install_ruby() {
