@@ -110,12 +110,12 @@ step_home_brew_stuff() {
 }
 
 step_install_python() {
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
+    export PYENV_ROOT="${HOME}/.pyenv"
+    export PATH="${PYENV_ROOT}/bin:${PATH}"
 
     eval "$(pyenv init -)"
 
-    PATH="$(brew --prefix tcl-tk)/bin:$PATH"
+    PATH="$(brew --prefix tcl-tk)/bin:${PATH}"
     export PATH
     LDFLAGS="-L$(brew --prefix tcl-tk)/lib"
     export LDFLAGS
@@ -125,6 +125,7 @@ step_install_python() {
     export PKG_CONFIG_PATH
     # shellcheck disable=SC2089
     PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib -ltcl9.0 -ltk9.0'"
+    # shellcheck disable=SC2090
     export PYTHON_CONFIGURE_OPTS
 
     pyenv install "${PYTHON_VERSION}" || true
