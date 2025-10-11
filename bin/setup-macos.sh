@@ -68,6 +68,9 @@ step_system_settings_stuff() {
 
     # Enable automatic software updates.
     sudo softwareupdate --schedule on
+
+    # Install Rosetta
+    sudo softwareupdate --install-rosetta --agree-to-license
 }
 
 step_home_brew_stuff() {
