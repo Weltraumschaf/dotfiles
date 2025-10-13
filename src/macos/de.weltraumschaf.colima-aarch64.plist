@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+	</dict>
+	<key>Label</key>
+	<string>de.weltraumschaf.colima-aarch64</string>
+	<key>LimitLoadToSessionType</key>
+	<array>
+		<string>Aqua</string>
+		<string>Background</string>
+		<string>LoginWindow</string>
+		<string>StandardIO</string>
+	</array>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/opt/colima/bin/colima</string>
+		<string>start</string>
+		<string>-f</string>
+		<string>--kubernetes</string>
+		<string>--arch</string>
+		<string>aarch64</string>
+		<string>--cpu</string>
+		<string>4</string>
+		<string>--memory</string>
+		<string>8</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>~/Library/Logs/colima-aarch64.log</string>
+	<key>StandardOutPath</key>
+	<string>~/Library/Logs/colima-aarch64.log</string>
+	<key>WorkingDirectory</key>
+	<string>~</string>
+</dict>
+</plist>
