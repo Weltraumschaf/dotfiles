@@ -35,7 +35,7 @@ brew "sqlite"
 brew "aider"
 # Asynchronous DNS library
 brew "c-ares"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # CLI tool for Angular
 brew "angular-cli"
@@ -794,17 +794,19 @@ cask "zoom"
 # Collect, organise, cite, and share research sources
 cask "zotero"
 mas "Bitwarden", id: 1352778147
+mas "Brother iPrint&Scan", id: 1193539993
 mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "Draw Things", id: 6444050820
+mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
-mas "MindNode", id: 1289197285
+mas "MindNode Classic", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Perplexity", id: 6714467650
