@@ -581,8 +581,6 @@ cask "coconutbattery"
 cask "cryptomator"
 # UI for creating Windows installer ISO from UUPDump
 cask "crystalfetch"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Disk space visualiser
@@ -659,8 +657,6 @@ cask "krita"
 cask "lapce"
 # Create, manage and debug system and user services
 cask "launchcontrol"
-# Official client for LBRY, a decentralised file-sharing and payment network
-cask "lbry"
 # Free cross-platform office suite, fresh version
 cask "libreoffice"
 # Host-based application firewall
@@ -820,4 +816,3 @@ mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
 mas "WireGuard", id: 1451685025
-vscode "golang.go"
