@@ -1,4 +1,4 @@
-# shellcheck disable=SC2148
+#!/usr/bin/env bash
 
 # The systems defaults are (from /etc/paths):
 # /usr/local/bin
