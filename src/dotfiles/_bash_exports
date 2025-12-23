@@ -31,7 +31,7 @@ if [ -d "${HOMEBREW_PREFIX}" ] ; then
     PATH="${HOMEBREW_PREFIX}/bin:${HOMEBREW_PREFIX}/sbin:${PATH}"
 fi
 
-# Haskell Plattform
+# Haskell Platform
 if [ -d "${HOME}/Library/Haskell/bin" ] ; then
   PATH="${HOME}/Library/Haskell/bin:${PATH}"
 fi
@@ -94,11 +94,11 @@ if [ -d "${HOMEBREW_PREFIX}/anaconda3" ]; then
 fi
 
 if [[ -d "${HOME}/.cache/lm-studio/bin" ]]; then
-    PATH="$PATH:${HOME}/.cache/lm-studio/bin"
+    PATH="${PATH}:${HOME}/.cache/lm-studio/bin"
 fi
 
 if [[ -d "/opt/whalebrew/bin" ]]; then
-    PATH="$PATH:/opt/whalebrew/bin"
+    PATH="${PATH}:/opt/whalebrew/bin"
 fi
 
 export PATH
@@ -177,8 +177,8 @@ export DARCS_ALWAYS_COLOR=1
 
 if [ "linux-gnu" = "${OSTYPE}" ]; then
     # Export some debian stuff
-    DEBEMAIL=$DEBEMAIL_local
-    DEBFULLNAME=$DEBFULLNAME_local
+    DEBEMAIL="${DEBEMAIL_local:-}"
+    DEBFULLNAME="${DEBFULLNAME_local:-}"
     export DEBEMAIL DEBFULLNAME
 fi
 

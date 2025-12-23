@@ -206,6 +206,7 @@ if [[ "$(command -v brew)" ]]; then
 fi
 
 if [[ "$(command -v op)" ]]; then
+    # shellcheck disable=SC1090
     source <(op completion bash)
 fi
 

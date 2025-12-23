@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 dev() {
-    local working_dir="$(pwd)"
+    local working_dir
+    working_dir="$(pwd)"
     echo "Developing in ${working_dir}..."
 
     idea "${working_dir}" && fork "${working_dir}"
