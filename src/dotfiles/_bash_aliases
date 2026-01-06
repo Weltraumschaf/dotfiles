@@ -42,7 +42,7 @@ alias now="date +'%Y-%m-%dT%H:%M:%S%z'"
 alias wd='echo -n $(pwd)'
 
 if [ -x "${HOMEBREW_PREFIX}/bin/brew" ] ; then
-    alias brew-update="brew update && brew upgrade && brew cleanup"
+    alias brew-update="brew update && brew upgrade && brew cleanup -ds"
 fi
 
 # svn helpers
@@ -69,16 +69,11 @@ if [ "$(command -v docker)" ] ; then
     alias d-webtop='docker run -d --name=webtop -e PUID=1000 -e PGID=1000 -e TZ=Europe/Berlin -p 3000:3000 -v $HOME/.webtop:/config --shm-size="8gb" --restart unless-stopped ghcr.io/linuxserver/webtop'
 fi
 
-if [ -x "${HOMEBREW_PREFIX}/bin/ultralist" ] ; then
-    alias todos='ultralist l group:project --notes'
-    alias priv-todos='ultralist l project:Privat --notes'
-    alias work-todos='ultralist l project:-Privat group:project --notes'
-fi
-
 alias signal-private='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Private" &'
 alias signal-work='2>/dev/null 1>&2 /Applications/Signal.app/Contents/MacOS/Signal --user-data-dir="$HOME/Library/Application Support/Signal-Work" &'
 alias flush-dns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
-alias a='$HOME/.pyenv/versions/3.12.0/bin/arsenal'
+# python -m pip install arsenal-cli
+alias a='${HOME}/.pyenv/versions/$(pyenv global)/bin/arsenal'
 
 if [ -f "${HOME}/.local_aliases" ] ; then
     # shellcheck disable=SC1090
