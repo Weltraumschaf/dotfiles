@@ -300,6 +300,8 @@ brew "hugo"
 brew "iat"
 # Improved colored diff
 brew "icdiff"
+# LLVM's OpenMP runtime library
+brew "libomp"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Tool to capture still images from an iSight or other video source
@@ -757,11 +759,9 @@ cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Annotate", id: 918207447
-mas "Bitwarden", id: 1352778147
 mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
-mas "Draw Things", id: 6444050820
 mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
@@ -776,6 +776,5 @@ mas "Perplexity", id: 6714467650
 mas "Pocket", id: 568494494
 mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
-mas "Trello", id: 1278508951
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
