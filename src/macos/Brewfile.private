@@ -11,6 +11,18 @@ tap "weltraumschaf/tap"
 brew "ack"
 # Run your GitHub Actions locally
 brew "act"
+# C string library for manipulating Unicode strings
+brew "libunistring"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
+# Core application library for C
+brew "glib"
+# Low-level library for pixel manipulation
+brew "pixman"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # GNU multiple precision arithmetic library
 brew "gmp"
 # Integer Set Library for the polyhedral model
@@ -19,8 +31,6 @@ brew "isl"
 brew "mpfr"
 # C library for the arithmetic of high precision complex numbers
 brew "libmpc"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # GNU compiler collection
 brew "gcc"
 # YAML Parser
@@ -45,16 +55,6 @@ brew "tree"
 brew "ansible"
 # Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
-# C string library for manipulating Unicode strings
-brew "libunistring"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
-# XML-based font configuration API for X Windows
-brew "fontconfig"
-# Core application library for C
-brew "glib"
-# Low-level library for pixel manipulation
-brew "pixman"
 # Java build tool
 brew "ant"
 # ANother Tool for Language Recognition
@@ -167,6 +167,22 @@ brew "nss"
 brew "coreutils"
 # Securely send things from one computer to another
 brew "croc"
+# Ogg Bitstream Library
+brew "libogg"
+# Free lossless audio codec
+brew "flac"
+# Vorbis general audio compression codec
+brew "libvorbis"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
+brew "sdl2"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Open video compression format
+brew "theora"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Duplicate file utility
+brew "czkawka"
 # Converts boring normal dates to fun Discordian Date
 brew "ddate"
 # OWASP dependency-check
@@ -219,18 +235,6 @@ brew "fcrackzip"
 brew "fd"
 # Identify or delete duplicate files
 brew "fdupes"
-# Ogg Bitstream Library
-brew "libogg"
-# Free lossless audio codec
-brew "flac"
-# Vorbis general audio compression codec
-brew "libvorbis"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
-# Open video compression format
-brew "theora"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # Fast web fuzzer written in Go
 brew "ffuf"
 # Banner-like program prints strings as ASCII art
@@ -397,6 +401,8 @@ brew "ocamlbuild"
 brew "ollama"
 # SGML parser
 brew "open-sp"
+# General-purpose speech recognition model
+brew "openai-whisper"
 # OpenShift command-line interface tools
 brew "openshift-cli"
 # Drop-in replacement for Terraform. Infrastructure as Code Tool
@@ -665,8 +671,6 @@ cask "little-snitch"
 cask "lm-studio"
 # Clipboard manager
 cask "maccy"
-# Open-source Markdown editor
-cask "macdown"
 # Operating system maintenance and cleaning utility
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
@@ -800,11 +804,9 @@ mas "Camera Window", id: 6444870729
 mas "Congress – 39C3", id: 941205524
 mas "Cuppa", id: 1297865739
 mas "Draw Things", id: 6444050820
-mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
-mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "MindNode Classic", id: 1289197285
