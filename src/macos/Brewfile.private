@@ -159,7 +159,7 @@ brew "libusb"
 brew "gnupg"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Libraries for security-enabled client and server applications
 brew "nss"
@@ -167,20 +167,20 @@ brew "nss"
 brew "coreutils"
 # Securely send things from one computer to another
 brew "croc"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
+brew "sdl2"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
 # Ogg Bitstream Library
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
 # Vorbis general audio compression codec
 brew "libvorbis"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Open video compression format
 brew "theora"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # Duplicate file utility
 brew "czkawka"
 # Converts boring normal dates to fun Discordian Date
