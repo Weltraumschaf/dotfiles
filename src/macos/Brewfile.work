@@ -204,28 +204,18 @@ brew "fcrackzip"
 brew "fd"
 # Identify or delete duplicate files
 brew "fdupes"
-# Ogg Bitstream Library
-brew "libogg"
-# Free lossless audio codec
-brew "flac"
-# Asynchronous event library
-brew "libevent"
-# Low-level cryptographic library
-brew "nettle"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Vorbis general audio compression codec
-brew "libvorbis"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
-# Open video compression format
-brew "theora"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Fast web fuzzer written in Go
 brew "ffuf"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
+# Ogg Bitstream Library
+brew "libogg"
+# Free lossless audio codec
+brew "flac"
 # Apt for fonts, the missing font manager for macOS/linux
 brew "fnt"
 # XSL-FO print formatter for making PDF or PS documents
@@ -250,6 +240,12 @@ brew "gitleaks"
 brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# Asynchronous event library
+brew "libevent"
+# Low-level cryptographic library
+brew "nettle"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -300,9 +296,7 @@ brew "hugo"
 brew "iat"
 # Improved colored diff
 brew "icdiff"
-# LLVM's OpenMP runtime library
-brew "libomp"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Tool to capture still images from an iSight or other video source
 brew "imagesnap"
@@ -332,8 +326,12 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
+# LLVM's OpenMP runtime library
+brew "libomp"
 # C implementation of a Sass compiler
 brew "libsass"
+# Vorbis general audio compression codec
+brew "libvorbis"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Additional guest agents for Lima
@@ -362,6 +360,8 @@ brew "mob"
 brew "moreutils"
 # Remote terminal application
 brew "mosh"
+# Open video compression format
+brew "theora"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
@@ -612,8 +612,8 @@ cask "figma"
 cask "firefox"
 # GIT client
 cask "fork"
-# 3D parametric modeller
-cask "freecad"
+# Zero-configuration polyglot dependency analysis tool
+cask "fossa"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
 # Desktop client for GitHub repositories
@@ -662,8 +662,6 @@ cask "little-snitch"
 cask "lm-studio"
 # Clipboard manager
 cask "maccy"
-# Open-source Markdown editor
-cask "macdown"
 # Operating system maintenance and cleaning utility
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
@@ -678,8 +676,6 @@ cask "mitmproxy"
 cask "mongodb-compass"
 # Open source implementation of Microsoft's .NET Framework
 cask "mono-mdk-for-visual-studio"
-# Run LLMs locally
-cask "msty"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
 # Visual tool to design, develop and administer MySQL servers
@@ -759,13 +755,14 @@ cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Annotate", id: 918207447
+mas "Bitwarden", id: 1352778147
+mas "Brother iPrint&Scan", id: 1193539993
 mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
-mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Marked", id: 448925439
