@@ -360,8 +360,6 @@ brew "mob"
 brew "moreutils"
 # Remote terminal application
 brew "mosh"
-# Open video compression format
-brew "theora"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
@@ -498,6 +496,8 @@ brew "telnet"
 brew "terraform"
 # Linter for Terraform files
 brew "tflint"
+# Open video compression format
+brew "theora"
 # Text interface for Git repositories
 brew "tig"
 # Terminal multiplexer
@@ -580,6 +580,8 @@ cask "busycal"
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Multi-platform client-side cloud file encryption tool
@@ -596,6 +598,8 @@ cask "db-browser-for-sqlite"
 cask "deeper"
 # AI-powered translator
 cask "deepl"
+# Voice and text chat software
+cask "discord"
 # Emulator for x86 with DOS
 cask "dosbox"
 # Developer platform
@@ -754,7 +758,6 @@ cask "zap"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "Annotate", id: 918207447
 mas "Bitwarden", id: 1352778147
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Caffeinated", id: 1362171212
