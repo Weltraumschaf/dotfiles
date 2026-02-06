@@ -30,6 +30,8 @@ brew "xz"
 brew "gcc"
 # YAML Parser
 brew "libyaml"
+# LLVM's OpenMP runtime library
+brew "libomp"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Library for command-line editing
@@ -326,8 +328,6 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
-# LLVM's OpenMP runtime library
-brew "libomp"
 # C implementation of a Sass compiler
 brew "libsass"
 # Vorbis general audio compression codec
