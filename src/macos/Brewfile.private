@@ -143,28 +143,8 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
-# Asynchronous event library
-brew "libevent"
-# Low-level cryptographic library
-brew "nettle"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Common error values for all GnuPG components
-brew "libgpg-error"
-# Cryptographic library based on the code from GnuPG
-brew "libgcrypt"
-# Library for USB device access
-brew "libusb"
-# GNU Privacy Guard (OpenPGP)
-brew "gnupg"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
-# Tools and libraries to manipulate images in select formats
-brew "imagemagick"
-# Libraries for security-enabled client and server applications
-brew "nss"
-# PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler"
+# Portable file server
+brew "copyparty"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Securely send things from one computer to another
@@ -177,8 +157,16 @@ brew "ffmpeg"
 brew "libogg"
 # Free lossless audio codec
 brew "flac"
+# Asynchronous event library
+brew "libevent"
+# Low-level cryptographic library
+brew "nettle"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Vorbis general audio compression codec
 brew "libvorbis"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Open video compression format
@@ -263,6 +251,14 @@ brew "gitleaks"
 brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# Common error values for all GnuPG components
+brew "libgpg-error"
+# Cryptographic library based on the code from GnuPG
+brew "libgcrypt"
+# Library for USB device access
+brew "libusb"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Task is a task runner/build tool that aims to be simpler and easier to use
@@ -305,6 +301,8 @@ brew "hugo"
 brew "iat"
 # Improved colored diff
 brew "icdiff"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
 # Tool to capture still images from an iSight or other video source
 brew "imagesnap"
 # Calculate various network masks, etc. from a given IP address
@@ -389,6 +387,8 @@ brew "ncdu"
 brew "ncrack"
 # Port scanning utility for large networks
 brew "nmap"
+# Libraries for security-enabled client and server applications
+brew "nss"
 # HTTP/DNS scanner configurable via YAML templates
 brew "nuclei"
 # Manage multiple Node.js versions
@@ -431,6 +431,8 @@ brew "platformio"
 brew "pnpm"
 # Python package management tool
 brew "poetry"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Library like getopt(3) with a number of enhancements
 brew "popt"
 # Framework for managing multi-language pre-commit hooks
@@ -599,6 +601,8 @@ cask "cyberduck"
 cask "daisydisk"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
+# Universal database tool and SQL client
+cask "dbeaver-community"
 # Tool to enable and disable hidden functions of Finder and other apps
 cask "deeper"
 # AI-powered translator
@@ -717,6 +721,8 @@ cask "opera"
 cask "poedit"
 # Calculate the overall performance of an investment portfolio
 cask "portfolioperformance"
+# GUI client for PostgreSQL databases
+cask "postico"
 # Trash, backup, lock and restore video editor preferences
 cask "preference-manager"
 # Flexible software sketchbook and a language for learning how to code
@@ -751,6 +757,8 @@ cask "sqlitestudio"
 cask "steam"
 # Application for inspecting installer packages
 cask "suspicious-package"
+# Native GUI tool for relational databases
+cask "tableplus"
 # Tool to explore all the running tasks (processes)
 cask "taskexplorer"
 # Remote access and connectivity software focused on security
