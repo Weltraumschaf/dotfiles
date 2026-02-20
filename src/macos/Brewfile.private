@@ -153,24 +153,8 @@ brew "croc"
 brew "sdl2"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
-# Ogg Bitstream Library
-brew "libogg"
-# Free lossless audio codec
-brew "flac"
-# Asynchronous event library
-brew "libevent"
-# Low-level cryptographic library
-brew "nettle"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Vorbis general audio compression codec
-brew "libvorbis"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
-# OCR (Optical Character Recognition) engine
-brew "tesseract"
-# Open video compression format
-brew "theora"
 # Duplicate file utility
 brew "czkawka"
 # Converts boring normal dates to fun Discordian Date
@@ -229,6 +213,10 @@ brew "fdupes"
 brew "ffuf"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
+# Ogg Bitstream Library
+brew "libogg"
+# Free lossless audio codec
+brew "flac"
 # Apt for fonts, the missing font manager for macOS/linux
 brew "fnt"
 # XSL-FO print formatter for making PDF or PS documents
@@ -251,6 +239,12 @@ brew "gitleaks"
 brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# Asynchronous event library
+brew "libevent"
+# Low-level cryptographic library
+brew "nettle"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -319,6 +313,8 @@ brew "jinja2-cli"
 brew "john"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Handy way to save and run project-specific commands
 brew "just"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -335,6 +331,8 @@ brew "lesspipe"
 brew "libffi"
 # C implementation of a Sass compiler
 brew "libsass"
+# Vorbis general audio compression codec
+brew "libvorbis"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Additional guest agents for Lima
@@ -403,6 +401,10 @@ brew "ocamlbuild"
 brew "ollama"
 # SGML parser
 brew "open-sp"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Open video compression format
+brew "theora"
 # General-purpose speech recognition model
 brew "openai-whisper"
 # OpenShift command-line interface tools
@@ -413,8 +415,6 @@ brew "opentofu"
 brew "osv-scanner"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
-# Swiss-army knife of markup format conversion
-brew "pandoc"
 # Parallel bzip2
 brew "pbzip2"
 # Perl compatible regular expressions library
