@@ -11,8 +11,8 @@ disable = [
     "pnpm",
     "poetry",
     "ruby_gems",
-    "system",
-    "vagrant"
+    "vagrant",
+    "uv"
 ]
 
 # Ignore failures for these steps
