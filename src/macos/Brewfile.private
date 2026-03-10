@@ -77,8 +77,6 @@ brew "docbook"
 brew "asciidoc"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
-# Distributed revision control system
-brew "git"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
@@ -225,6 +223,10 @@ brew "fop"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Distributed revision control system
+brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # Clean C library for processing UTF-8 Unicode data
@@ -315,6 +317,8 @@ brew "john"
 brew "jq"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Interactive environments for writing and running code
+brew "jupyterlab"
 # Handy way to save and run project-specific commands
 brew "just"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -401,8 +405,6 @@ brew "ocamlbuild"
 brew "ollama"
 # SGML parser
 brew "open-sp"
-# OCR (Optical Character Recognition) engine
-brew "tesseract"
 # Open video compression format
 brew "theora"
 # General-purpose speech recognition model
@@ -419,6 +421,10 @@ brew "p7zip"
 brew "pbzip2"
 # Perl compatible regular expressions library
 brew "pcre"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Search PDFs for strings matching a regular expression
+brew "pdfgrep"
 # Simplistic interactive filtering tool
 brew "peco"
 # Pinentry for GPG on Mac
@@ -431,8 +437,6 @@ brew "platformio"
 brew "pnpm"
 # Python package management tool
 brew "poetry"
-# PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler"
 # Library like getopt(3) with a number of enhancements
 brew "popt"
 # Framework for managing multi-language pre-commit hooks
@@ -643,6 +647,8 @@ cask "greenfoot"
 cask "hammerspoon"
 # Open-source video transcoder
 cask "handbrake-app"
+# Chromium-based web browser
+cask "helium-browser"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # Vector graphics editor
@@ -681,6 +687,8 @@ cask "little-snitch"
 cask "lm-studio"
 # Clipboard manager
 cask "maccy"
+# Full TeX Live distribution with GUI applications
+cask "mactex"
 # Operating system maintenance and cleaning utility
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
@@ -727,6 +735,8 @@ cask "postico"
 cask "preference-manager"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
+# Static website generator
+cask "publii"
 # Scientific and technical publishing system built on Pandoc
 cask "quarto"
 # Protect your personal files
