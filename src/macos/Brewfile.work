@@ -28,10 +28,10 @@ brew "libmpc"
 brew "xz"
 # GNU compiler collection
 brew "gcc"
-# YAML Parser
-brew "libyaml"
 # LLVM's OpenMP runtime library
 brew "libomp"
+# YAML Parser
+brew "libyaml"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Library for command-line editing
@@ -84,8 +84,6 @@ brew "docbook"
 brew "asciidoc"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
-# Distributed revision control system
-brew "git"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
@@ -226,6 +224,8 @@ brew "fop"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Distributed revision control system
+brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
 # Git extension for versioning large files
@@ -316,6 +316,10 @@ brew "jinja2-cli"
 brew "john"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Ruby implementation in pure Java
+brew "jruby"
+# Python implementation written in Java (successor to JPython)
+brew "jython"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Package manager for kubectl plugins
@@ -702,8 +706,6 @@ cask "poedit"
 cask "preference-manager"
 # Protect your personal files
 cask "ransomwhere"
-# Archive manager for data compression and backups
-cask "rar"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # Scans, detects, and monitors keyboard taps
@@ -764,7 +766,6 @@ mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Cuppa", id: 1297865739
 mas "GarageBand", id: 682658836
-mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
