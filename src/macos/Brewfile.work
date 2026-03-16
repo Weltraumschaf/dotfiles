@@ -426,6 +426,8 @@ brew "plantuml"
 brew "platformio"
 # Python package management tool
 brew "poetry"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Library like getopt(3) with a number of enhancements
 brew "popt"
 # Framework for managing multi-language pre-commit hooks
@@ -434,6 +436,8 @@ brew "pre-commit"
 brew "pwgen"
 # Python version management
 brew "pyenv"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -474,6 +478,8 @@ brew "smartmontools"
 brew "smimesign"
 # Daemon to provide vmnet.framework support for rootless QEMU
 brew "socket_vmnet"
+# Launcher to analyze a project with SonarQube
+brew "sonar-scanner"
 # Editor of encrypted files
 brew "sops"
 # SQLite extension providing 256-bit AES encryption
@@ -526,6 +532,8 @@ brew "wdiff"
 brew "wget"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Best command-line tool to install and switch between multiple versions of Xcode
+brew "xcodes"
 # ISO9660+RR manipulation tool
 brew "xorriso"
 # JavaScript package manager
@@ -554,8 +562,6 @@ brew "updatecli/updatecli/updatecli"
 brew "weltraumschaf/tap/sshpass"
 # Black box WordPress vulnerability scanner
 brew "wpscanteam/tap/wpscan"
-# Install and switch between multiple versions of Xcode
-brew "xcodesorg/made/xcodes"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -752,6 +758,8 @@ cask "vlc"
 cask "wireshark-app"
 # X Certificate and Key management
 cask "xca"
+# Install and switch between multiple versions of Xcode
+cask "xcodes-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # Free and open source web app scanner
