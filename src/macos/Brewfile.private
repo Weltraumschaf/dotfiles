@@ -405,8 +405,6 @@ brew "ocamlbuild"
 brew "ollama"
 # SGML parser
 brew "open-sp"
-# Open video compression format
-brew "theora"
 # General-purpose speech recognition model
 brew "openai-whisper"
 # OpenShift command-line interface tools
@@ -509,6 +507,8 @@ brew "telnet"
 brew "terraform"
 # Linter for Terraform files
 brew "tflint"
+# Open video compression format
+brew "theora"
 # Text interface for Git repositories
 brew "tig"
 # Terminal multiplexer
