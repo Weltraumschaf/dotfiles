@@ -159,6 +159,8 @@ brew "czkawka"
 brew "ddate"
 # OWASP dependency-check
 brew "dependency-check"
+# Reference implementation for the Development Containers specification
+brew "devcontainer"
 # Ncurses based advanced hex editor featuring diff mode and more
 brew "dhex"
 # Passphrases to remember
@@ -689,6 +691,8 @@ cask "lm-studio"
 cask "maccy"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Speech recognition tool
+cask "macwhisper"
 # Operating system maintenance and cleaning utility
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
@@ -741,8 +745,6 @@ cask "publii"
 cask "quarto"
 # Protect your personal files
 cask "ransomwhere"
-# Archive manager for data compression and backups
-cask "rar"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # WinAMP clone written in SwiftUI
@@ -761,8 +763,6 @@ cask "slack"
 cask "smcfancontrol"
 # Code-based music creation and performance tool
 cask "sonic-pi"
-# Create, edit, browse SQLite databases
-cask "sqlitestudio"
 # Video game digital distribution service
 cask "steam"
 # Application for inspecting installer packages
@@ -785,6 +785,8 @@ cask "thonny"
 cask "threema@beta"
 # Customizable email client
 cask "thunderbird"
+# Music streaming service with high fidelity sound and hi-def video quality
+cask "tidal"
 # Flexible level editor
 cask "tiled"
 # Web browser focusing on security
@@ -801,6 +803,8 @@ cask "virtualbox"
 cask "visual-studio"
 # Open-source code editor
 cask "visual-studio-code"
+# Web browser with built-in email client focusing on customization and control
+cask "vivaldi"
 # Multimedia player
 cask "vlc"
 # Network protocol analyzer
