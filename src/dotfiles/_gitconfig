@@ -36,6 +36,17 @@
 [merge]
   tool = opendiff
 
+# Apply it globally in ~/.config/git/attributes:
+# ```
+# * merge=mergiraf
+# ```
+# The wildcard (*) tells Git to run every file through mergiraf. This might sound aggressive,
+# but it’s fine. If mergiraf doesn’t recognize the file type, it steps aside and Git handles it normally.
+# https://haacked.com/archive/2026/03/25/resolve-merge-conflicts/
+[merge "mergiraf"]
+  name = mergiraf
+  driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+
 [color]
   diff   = auto
   status = auto
