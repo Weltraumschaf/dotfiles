@@ -63,6 +63,8 @@ brew "antlr"
 brew "apr"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Apple Intelligence from the command-line, with OpenAi-compatible API server
+brew "apfel"
 # Download with resuming and segmented downloading
 brew "aria2"
 # C library for creating IP packets
@@ -589,14 +591,14 @@ cask "burp-suite"
 cask "busycal"
 # E-books management software
 cask "calibre"
-# OpenAI's official ChatGPT desktop app
-cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
+# Plain-text editor for web pages, program source codes and more
+cask "coteditor"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
 # UI for creating Windows installer ISO from UUPDump
