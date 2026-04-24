@@ -19,12 +19,14 @@ HOMEBREW_PREFIX=""
 CPU_ARCH="$(uname -m)"
 
 if [[ "${CPU_ARCH}" == 'x86_64' ]]; then
-  HOMEBREW_PREFIX="${#HOMEBREW_PREFIX_INTEL}"
+  HOMEBREW_PREFIX="${HOMEBREW_PREFIX_INTEL}"
 elif [[ "${CPU_ARCH}" == 'arm64' ]]; then
   HOMEBREW_PREFIX="${HOMEBREW_PREFIX_SILICON}"
 else
     echo "WARNING: Unsupported CPU architecture ${CPU_ARCH}!"
 fi
+
+export HOMEBREW_PREFIX
 
 # Homebrew
 if [ -d "${HOMEBREW_PREFIX}" ] ; then
