@@ -70,6 +70,8 @@ brew "antlr"
 brew "apr"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Apple Intelligence from the command-line, with OpenAi-compatible API server
+brew "apfel"
 # Download with resuming and segmented downloading
 brew "aria2"
 # C library for creating IP packets
@@ -154,6 +156,8 @@ brew "croc"
 brew "csvkit"
 # OWASP dependency-check
 brew "dependency-check"
+# Reference implementation for the Development Containers specification
+brew "devcontainer"
 # Ncurses based advanced hex editor featuring diff mode and more
 brew "dhex"
 # Passphrases to remember
@@ -356,10 +360,14 @@ brew "maven-completion"
 brew "md5deep"
 # Scalable distributed version control system
 brew "mercurial"
+# Syntax-aware git merge driver
+brew "mergiraf"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Tool for smooth Git handover in mob programming sessions
 brew "mob"
+# Deep clean and optimize your Mac
+brew "mole"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Remote terminal application
@@ -648,6 +656,8 @@ cask "hex-fiend"
 cask "inkscape"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Offline AI chat tool
+cask "jan"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Secure video conferencing app
@@ -740,6 +750,8 @@ cask "the-unarchiver"
 cask "threema@beta"
 # Customizable email client
 cask "thunderbird"
+# Music streaming service with high fidelity sound and hi-def video quality
+cask "tidal"
 # Web browser focusing on security
 cask "tor-browser"
 # Open-source BitTorrent client
@@ -787,3 +799,4 @@ mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
+krew "oidc-login"
