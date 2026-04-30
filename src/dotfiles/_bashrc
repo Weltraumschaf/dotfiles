@@ -190,9 +190,9 @@ debug ">> Nvm done."
 [[ "$(command -v starship)" ]] && eval "$(starship init bash)"
 debug ">> Starship done."
 
-if [[ "$(command -v pyenv)" ]]; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="${HOME}/.pyenv"
+if [[ -d "${PYENV_ROOT}" ]]; then
+    export PATH="${PYENV_ROOT}/bin:${PATH}"
     eval "$(pyenv init -)"
 fi
 
