@@ -1,8 +1,10 @@
 tap "akirakyle/qemu-virgl"
+tap "dart-lang/dart"
 tap "filippo.io/age", "https://filippo.io/age"
 tap "jenkins-x/jx"
 tap "petere/sgml"
 tap "rusty-ferris-club/tap"
+tap "sass/sass"
 tap "snyk/tap"
 tap "theseal/ssh-askpass"
 tap "updatecli/updatecli"
@@ -245,14 +247,14 @@ brew "gitleaks"
 brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# Asynchronous event library
-brew "libevent"
 # Low-level cryptographic library
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # Common error values for all GnuPG components
 brew "libgpg-error"
+# Asynchronous event library
+brew "libevent"
 # Cryptographic library based on the code from GnuPG
 brew "libgcrypt"
 # Library for USB device access
@@ -337,8 +339,6 @@ brew "leiningen"
 brew "lesspipe"
 # Portable Foreign Function Interface library
 brew "libffi"
-# C implementation of a Sass compiler
-brew "libsass"
 # Vorbis general audio compression codec
 brew "libvorbis"
 # Generic machine emulator and virtualizer
@@ -363,6 +363,8 @@ brew "maven-completion"
 brew "md5deep"
 # Scalable distributed version control system
 brew "mercurial"
+# Syntax-aware git merge driver
+brew "mergiraf"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Tool for smooth Git handover in mob programming sessions
@@ -421,8 +423,6 @@ brew "osv-scanner"
 brew "p7zip"
 # Parallel bzip2
 brew "pbzip2"
-# Perl compatible regular expressions library
-brew "pcre"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Search PDFs for strings matching a regular expression
@@ -447,6 +447,8 @@ brew "pre-commit"
 brew "pwgen"
 # Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -469,8 +471,6 @@ brew "rmlint"
 brew "rsync"
 # Rust toolchain installer
 brew "rustup"
-# Wrapper around libsass that helps to create command-line apps
-brew "sassc"
 # Substitute for classic 'make' tool with autoconf/automake functionality
 brew "scons"
 # Easily detect and prevent bugs and anti-patterns in your codebase
@@ -555,6 +555,8 @@ brew "petere/sgml/docbook-dsssl"
 brew "petere/sgml/openjade"
 # Secure shell history commands
 brew "rusty-ferris-club/tap/shellclear"
+# Stylesheet Preprocessor
+brew "sass/sass/sass"
 # Find & fix known vulnerabilities in open-source dependencies
 brew "snyk/tap/snyk"
 # Passphrase dialog for use with OpenSSH in macOS
@@ -591,6 +593,8 @@ cask "burp-suite"
 cask "busycal"
 # E-books management software
 cask "calibre"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
@@ -755,8 +759,6 @@ cask "reamp"
 cask "reikey"
 # Run classic graphical adventure and role-playing games
 cask "scummvm-app"
-# Tool for sending personal documents to Kindles from Macs
-cask "send-to-kindle"
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
@@ -791,6 +793,8 @@ cask "thunderbird"
 cask "tidal"
 # Flexible level editor
 cask "tiled"
+# Markdown knowledgebase manager
+cask "tolaria"
 # Web browser focusing on security
 cask "tor-browser"
 # Open-source BitTorrent client
