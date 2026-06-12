@@ -47,6 +47,8 @@ brew "sqlite"
 brew "aider"
 # Asynchronous DNS library
 brew "c-ares"
+# Portable Foreign Function Interface library
+brew "libffi"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # CLI tool for Angular
@@ -337,8 +339,6 @@ brew "lazydocker"
 brew "leiningen"
 # Input filter for the pager less
 brew "lesspipe"
-# Portable Foreign Function Interface library
-brew "libffi"
 # Vorbis general audio compression codec
 brew "libvorbis"
 # Generic machine emulator and virtualizer
