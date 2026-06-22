@@ -1,15 +1,17 @@
-tap "akirakyle/qemu-virgl"
-tap "filippo.io/age", "https://filippo.io/age"
+tap "akirakyle/qemu-virgl", trusted: true
+tap "dart-lang/dart", trusted: true
+tap "filippo.io/age", "https://filippo.io/age", trusted: true
 tap "homebrew/core"
-tap "jenkins-x/jx"
+tap "jenkins-x/jx", trusted: true
 tap "petere/sgml"
 tap "rusty-ferris-club/tap"
+tap "sass/sass"
 tap "snyk/tap"
 tap "theseal/ssh-askpass"
 tap "updatecli/updatecli"
 tap "weltraumschaf/tap"
 tap "wpscanteam/tap"
-tap "xcodesorg/made"
+tap "xcodesorg/made", trusted: true
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Run your GitHub Actions locally
@@ -246,8 +248,6 @@ brew "gitleaks"
 brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# Asynchronous event library
-brew "libevent"
 # Low-level cryptographic library
 brew "nettle"
 # GNU Transport Layer Security (TLS) Library
@@ -270,6 +270,8 @@ brew "goaccess"
 brew "gobuster"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Asynchronous event library
+brew "libevent"
 # Manage your GnuPG keys with ease!
 brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -334,10 +336,6 @@ brew "lazydocker"
 brew "leiningen"
 # Input filter for the pager less
 brew "lesspipe"
-# Portable Foreign Function Interface library
-brew "libffi"
-# C implementation of a Sass compiler
-brew "libsass"
 # Vorbis general audio compression codec
 brew "libvorbis"
 # Generic machine emulator and virtualizer
@@ -420,8 +418,6 @@ brew "p7zip"
 brew "pandoc"
 # Parallel bzip2
 brew "pbzip2"
-# Perl compatible regular expressions library
-brew "pcre"
 # Simplistic interactive filtering tool
 brew "peco"
 # Pinentry for GPG on Mac
@@ -468,8 +464,6 @@ brew "rmlint"
 brew "rsync"
 # Rust toolchain installer
 brew "rustup"
-# Wrapper around libsass that helps to create command-line apps
-brew "sassc"
 # Substitute for classic 'make' tool with autoconf/automake functionality
 brew "scons"
 # Security health metrics for Open Source
@@ -530,6 +524,8 @@ brew "trufflehog"
 brew "typescript"
 # This UML tool aimed at providing a fast way of creating UML diagrams
 brew "umlet"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Sends magic packets to wake up network-devices
 brew "wakeonlan"
 # Executes a program periodically, showing output fullscreen
@@ -553,23 +549,23 @@ brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
 # Modular DocBook DSSSL stylesheets
-brew "petere/sgml/docbook-dsssl"
+brew "petere/sgml/docbook-dsssl", trusted: true
 # Implementation of the DSSSL language
-brew "petere/sgml/openjade"
+brew "petere/sgml/openjade", trusted: true
 # Secure shell history commands
-brew "rusty-ferris-club/tap/shellclear"
+brew "rusty-ferris-club/tap/shellclear", trusted: true
 # Find & fix known vulnerabilities in open-source dependencies
-brew "snyk/tap/snyk"
+brew "snyk/tap/snyk", trusted: true
 # Passphrase dialog for use with OpenSSH in macOS
-brew "theseal/ssh-askpass/ssh-askpass"
+brew "theseal/ssh-askpass/ssh-askpass", trusted: true
 # A declarative update policy engine.
-brew "updatecli/updatecli/updatecli"
+brew "updatecli/updatecli/updatecli", trusted: true
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
 # "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
-brew "weltraumschaf/tap/sshpass"
+brew "weltraumschaf/tap/sshpass", trusted: true
 # Black box WordPress vulnerability scanner
-brew "wpscanteam/tap/wpscan"
+brew "wpscanteam/tap/wpscan", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -599,7 +595,7 @@ cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Multi-platform client-side cloud file encryption tool
