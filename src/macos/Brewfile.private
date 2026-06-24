@@ -1,7 +1,7 @@
-tap "akirakyle/qemu-virgl"
-tap "dart-lang/dart"
-tap "filippo.io/age", "https://filippo.io/age"
-tap "jenkins-x/jx"
+tap "akirakyle/qemu-virgl", trusted: true
+tap "darrylmorley/whatcable"
+tap "dart-lang/dart", trusted: true
+tap "jenkins-x/jx", trusted: true
 tap "petere/sgml"
 tap "rusty-ferris-club/tap"
 tap "sass/sass"
@@ -153,8 +153,8 @@ brew "copyparty"
 brew "coreutils"
 # Securely send things from one computer to another
 brew "croc"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
+# SDL2 compatibility layer that uses SDL3 behind the scenes
+brew "sdl2-compat"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Package compiler and linker metadata toolkit
@@ -550,23 +550,23 @@ brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
 # Modular DocBook DSSSL stylesheets
-brew "petere/sgml/docbook-dsssl"
+brew "petere/sgml/docbook-dsssl", trusted: true
 # Implementation of the DSSSL language
-brew "petere/sgml/openjade"
+brew "petere/sgml/openjade", trusted: true
 # Secure shell history commands
-brew "rusty-ferris-club/tap/shellclear"
+brew "rusty-ferris-club/tap/shellclear", trusted: true
 # Stylesheet Preprocessor
-brew "sass/sass/sass"
+brew "sass/sass/sass", trusted: true
 # Find & fix known vulnerabilities in open-source dependencies
-brew "snyk/tap/snyk"
+brew "snyk/tap/snyk", trusted: true
 # Passphrase dialog for use with OpenSSH in macOS
-brew "theseal/ssh-askpass/ssh-askpass"
+brew "theseal/ssh-askpass/ssh-askpass", trusted: true
 # A declarative update policy engine.
-brew "updatecli/updatecli/updatecli"
+brew "updatecli/updatecli/updatecli", trusted: true
 # Sshpass is a tool for non-interactivly performing password authentication with SSH's so called 
 # "interactive keyboard password authentication". Most user should use SSH's more secure public 
 # key authentiaction instead.
-brew "weltraumschaf/tap/sshpass"
+brew "weltraumschaf/tap/sshpass", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -598,7 +598,7 @@ cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Plain-text editor for web pages, program source codes and more
@@ -641,8 +641,6 @@ cask "firefox"
 cask "fork"
 # 3D parametric modeller
 cask "freecad"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "gcloud-cli"
 # Desktop client for GitHub repositories
 cask "github"
 # Web browser
@@ -844,9 +842,9 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "MindNode Classic", id: 1289197285
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Perplexity", id: 6714467650
+mas "Numbers", id: 361304891
+mas "Pages", id: 361309726
 mas "QReate", id: 6446048195
 mas "Save to Pocket", id: 1477385213
 mas "Shareful", id: 1522267256
