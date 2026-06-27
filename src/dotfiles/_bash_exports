@@ -64,6 +64,11 @@ if [ -d "${HOME}/.fastlane/bin" ] ; then
     PATH="${HOME}/.fastlane/bin:${PATH}"
 fi
 
+# pipx binaries
+if [ -d "${HOME}/.local/bin" ] ; then
+    PATH="${HOME}/.local/bin:${PATH}"
+fi
+
 if [ -d "${HOME}/Library/Python/3.11/bin" ] ; then
     PATH="${HOME}/Library/Python/3.11/bin:${PATH}"
 fi
