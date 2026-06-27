@@ -527,6 +527,8 @@ brew "trufflehog"
 brew "typescript"
 # This UML tool aimed at providing a fast way of creating UML diagrams
 brew "umlet"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Sends magic packets to wake up network-devices
 brew "wakeonlan"
 # Executes a program periodically, showing output fullscreen
@@ -573,6 +575,8 @@ cask "1password"
 cask "1password-cli"
 # Instant messaging application
 cask "adium"
+# Browse, search and analyse your past AI coding sessions
+cask "agentsview"
 # Application launcher and productivity software
 cask "alfred"
 # Local-first and end-to-end encrypted notes app
@@ -811,6 +815,8 @@ cask "visual-studio-code"
 cask "vivaldi"
 # Multimedia player
 cask "vlc"
+# Menu bar app for USB-C cable diagnostics
+cask "darrylmorley/whatcable/whatcable", trusted: true
 # Network protocol analyzer
 cask "wireshark-app"
 # X Certificate and Key management
