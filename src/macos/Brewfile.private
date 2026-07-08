@@ -255,8 +255,6 @@ brew "nettle"
 brew "gnutls"
 # Common error values for all GnuPG components
 brew "libgpg-error"
-# Asynchronous event library
-brew "libevent"
 # Cryptographic library based on the code from GnuPG
 brew "libgcrypt"
 # Library for USB device access
@@ -273,6 +271,8 @@ brew "goaccess"
 brew "gobuster"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Asynchronous event library
+brew "libevent"
 # Manage your GnuPG keys with ease!
 brew "gpg-tui"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -373,10 +373,6 @@ brew "mob"
 brew "moreutils"
 # Remote terminal application
 brew "mosh"
-# Feature-rich command-line audio/video downloader
-brew "yt-dlp"
-# Media player based on MPlayer and mplayer2
-brew "mpv"
 # SMTP client that can be used as an SMTP plugin for Mutt
 brew "msmtp"
 # 'traceroute' and 'ping' in a single tool
@@ -431,6 +427,8 @@ brew "pdfgrep"
 brew "peco"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # Draw UML diagrams
 brew "plantuml"
 # Your Gateway to Embedded Software Development Excellence
@@ -539,7 +537,7 @@ brew "wdiff"
 brew "wget"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
-# Best command-line tool to install and switch between multiple versions of Xcode
+# Command-line tool to install and switch between multiple versions of Xcode
 brew "xcodes"
 # ISO9660+RR manipulation tool
 brew "xorriso"
@@ -845,7 +843,7 @@ mas "Draw Things", id: 6444050820
 mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
+mas "Keynote", id: 361285480
 mas "Magnet", id: 441258766
 mas "MindNode Classic", id: 1289197285
 mas "Perplexity", id: 6714467650
