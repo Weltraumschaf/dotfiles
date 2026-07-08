@@ -44,6 +44,10 @@ brew "sqlite"
 brew "aider"
 # Asynchronous DNS library
 brew "c-ares"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@78"
+# Portable Foreign Function Interface library
+brew "libffi"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # CLI tool for Angular
@@ -210,8 +214,8 @@ brew "fcrackzip"
 brew "fd"
 # Identify or delete duplicate files
 brew "fdupes"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
+# SDL2 compatibility layer that uses SDL3 behind the scenes
+brew "sdl2-compat"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Fast web fuzzer written in Go
@@ -536,7 +540,7 @@ brew "wdiff"
 brew "wget"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
-# Best command-line tool to install and switch between multiple versions of Xcode
+# Command-line tool to install and switch between multiple versions of Xcode
 brew "xcodes"
 # ISO9660+RR manipulation tool
 brew "xorriso"
@@ -554,6 +558,8 @@ brew "petere/sgml/docbook-dsssl", trusted: true
 brew "petere/sgml/openjade", trusted: true
 # Secure shell history commands
 brew "rusty-ferris-club/tap/shellclear", trusted: true
+# Stylesheet Preprocessor
+brew "sass/sass/sass", trusted: true
 # Find & fix known vulnerabilities in open-source dependencies
 brew "snyk/tap/snyk", trusted: true
 # Passphrase dialog for use with OpenSSH in macOS
@@ -758,8 +764,6 @@ cask "utm"
 cask "vagrant"
 # Virtualiser for arm64 hardware
 cask "virtualbox"
-# Integrated development environment
-cask "visual-studio"
 # Multimedia player
 cask "vlc"
 # Network protocol analyzer
@@ -796,3 +800,5 @@ mas "SimpleMind", id: 439654198
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
 krew "oidc-login"
+npm "@cyclonedx/cyclonedx-npm"
+npm "webpack"
