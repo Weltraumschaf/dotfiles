@@ -1,6 +1,9 @@
 ---
 name: write-commit-messages
-description: Use whenever you want to write a commit message.
+description: >-
+  Formatting rules for git commit messages. Use this BEFORE running
+  `git commit` or writing any commit message — whenever committing,
+  staging and committing, creating a commit, or amending a commit.
 ---
 # Write Commit Messages
 
