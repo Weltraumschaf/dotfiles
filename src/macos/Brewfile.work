@@ -364,6 +364,8 @@ brew "md5deep"
 brew "mercurial"
 # Syntax-aware git merge driver
 brew "mergiraf"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Tool for smooth Git handover in mob programming sessions
@@ -789,9 +791,9 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
-mas "Marked", id: 448925439
 mas "MindNode Lite", id: 402397683
 mas "Numbers", id: 409203825
+mas "Numbers", id: 361304891
 mas "Pages", id: 409201541
 mas "Perplexity", id: 6714467650
 mas "Pocket", id: 568494494
