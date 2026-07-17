@@ -1,6 +1,7 @@
 tap "akirakyle/qemu-virgl", trusted: true
 tap "darrylmorley/whatcable"
 tap "dart-lang/dart", trusted: true
+tap "docker/tap", trusted: true
 tap "jenkins-x/jx", trusted: true
 tap "petere/sgml"
 tap "rusty-ferris-club/tap"
@@ -147,6 +148,8 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
 # Portable file server
 brew "copyparty"
 # GNU File, Shell, and Text utilities
@@ -757,6 +760,8 @@ cask "raspberry-pi-imager"
 cask "reamp"
 # Scans, detects, and monitors keyboard taps
 cask "reikey"
+# Build, run, and govern agents across the software development lifecycle
+cask "docker/tap/sbx", trusted: true
 # Run classic graphical adventure and role-playing games
 cask "scummvm-app"
 # Instant messaging application focusing on security
@@ -799,6 +804,8 @@ cask "tolaria"
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
+# Management tool for Unity
+cask "unity-hub"
 # Virtual machines UI using QEMU
 cask "utm"
 # Development environment
