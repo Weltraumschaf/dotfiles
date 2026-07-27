@@ -1,5 +1,6 @@
 tap "akirakyle/qemu-virgl", trusted: true
 tap "dart-lang/dart", trusted: true
+tap "docker/tap", trusted: true
 tap "filippo.io/age", "https://filippo.io/age", trusted: true
 tap "homebrew/core"
 tap "jenkins-x/jx", trusted: true
@@ -154,6 +155,8 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Securely send things from one computer to another
@@ -248,6 +251,8 @@ brew "subversion"
 brew "git-svn"
 # Audit git repos for secrets
 brew "gitleaks"
+# Open-source GitLab command-line tool
+brew "glab"
 # Render markdown on the CLI
 brew "glow"
 # GNU implementation of the famous stream editor
@@ -510,10 +515,6 @@ brew "syft"
 brew "tcl-tk"
 # User interface to the TELNET protocol
 brew "telnet"
-# Tool to build, change, and version infrastructure
-brew "terraform"
-# Linter for Terraform files
-brew "tflint"
 # Open video compression format
 brew "theora"
 # Text interface for Git repositories
@@ -694,16 +695,12 @@ cask "maccy"
 cask "maintenance"
 # Open source intelligence and graphical link analysis tool
 cask "maltego"
-# Penetration testing framework
-cask "metasploit"
 # Online collaborative whiteboard platform
 cask "miro"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
 # Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
-# Open source implementation of Microsoft's .NET Framework
-cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
 # Visual tool to design, develop and administer MySQL servers
@@ -730,6 +727,8 @@ cask "ransomwhere"
 cask "raspberry-pi-imager"
 # Scans, detects, and monitors keyboard taps
 cask "reikey"
+# Build, run, and govern agents across the software development lifecycle
+cask "docker/tap/sbx", trusted: true
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
