@@ -644,8 +644,6 @@ cask "figma"
 cask "firefox"
 # GIT client
 cask "fork"
-# 3D parametric modeller
-cask "freecad"
 # Desktop client for GitHub repositories
 cask "github"
 # Web browser
@@ -680,8 +678,6 @@ cask "jordanbaird-ice"
 cask "keepassxc"
 # GUI replacement for the Java command-line utilities keytool and jarsigner
 cask "keystore-explorer"
-# Electronics design automation suite
-cask "kicad"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
 # Free and open-source painting and sketching program
@@ -839,7 +835,6 @@ mas "Camera Window", id: 6444870729
 mas "Congress – 39C3", id: 941205524
 mas "Cuppa", id: 1297865739
 mas "Draw Things", id: 6444050820
-mas "GarageBand", id: 682658836
 mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Keynote", id: 361285480
