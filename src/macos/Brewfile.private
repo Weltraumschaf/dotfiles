@@ -698,8 +698,8 @@ cask "little-snitch"
 cask "lm-studio"
 # Clipboard manager
 cask "maccy"
-# Full TeX Live distribution with GUI applications
-cask "mactex"
+# Full TeX Live distribution without GUI applications
+cask "mactex-no-gui"
 # Speech recognition tool
 cask "macwhisper"
 # Operating system maintenance and cleaning utility
@@ -708,8 +708,6 @@ cask "maintenance"
 cask "maltego"
 # Manages online multimedia libs of German, Austrian and Swiss public broadcasters
 cask "mediathekview"
-# Penetration testing framework
-cask "metasploit"
 # Online collaborative whiteboard platform
 cask "miro"
 # Intercept, modify, replay, save HTTP/S traffic
@@ -718,8 +716,6 @@ cask "mitmproxy"
 cask "moneymoney"
 # Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
-# Open source implementation of Microsoft's .NET Framework
-cask "mono-mdk-for-visual-studio"
 # Launcher utility to run multiple versions of Firefox side-by-side
 cask "multifirefox"
 # Visual tool to design, develop and administer MySQL servers
@@ -812,8 +808,6 @@ cask "utm"
 cask "vagrant"
 # Virtualiser for arm64 hardware
 cask "virtualbox"
-# Integrated development environment
-cask "visual-studio"
 # Open-source code editor
 cask "visual-studio-code"
 # Web browser with built-in email client focusing on customization and control
@@ -830,8 +824,6 @@ cask "xca"
 cask "xcodes-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
-# Free and open source web app scanner
-cask "zap"
 # Multiplayer code editor
 cask "zed"
 # Open-source markdown editor
@@ -861,4 +853,5 @@ mas "Save to Pocket", id: 1477385213
 mas "Shareful", id: 1522267256
 mas "SimpleMind", id: 439654198
 mas "Trello", id: 1278508951
+mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
