@@ -282,6 +282,8 @@ brew "gpg-tui"
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Smarter Dockerfile linter to validate best practices
+brew "hadolint"
 # World's fastest and most advanced password recovery utility
 brew "hashcat"
 # Command-line interface for Hetzner Cloud
@@ -834,13 +836,10 @@ mas "Caffeinated", id: 1362171212
 mas "Camera Window", id: 6444870729
 mas "Congress – 39C3", id: 941205524
 mas "Cuppa", id: 1297865739
-mas "Draw Things", id: 6444050820
-mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Keynote", id: 361285480
 mas "Magnet", id: 441258766
 mas "MindNode Classic", id: 1289197285
-mas "Perplexity", id: 6714467650
 mas "Numbers", id: 361304891
 mas "Pages", id: 361309726
 mas "QReate", id: 6446048195
