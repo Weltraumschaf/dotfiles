@@ -13,6 +13,7 @@ Icon?
 Thumbs.db
 *~
 ._*
+.fseventsd/
 
 # Files that might appear on external disk
 .Spotlight-V100
