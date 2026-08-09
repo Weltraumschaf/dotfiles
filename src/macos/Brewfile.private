@@ -6,6 +6,7 @@ tap "jenkins-x/jx", trusted: true
 tap "petere/sgml"
 tap "rusty-ferris-club/tap"
 tap "sass/sass"
+tap "shixinhuang99/brew", trusted: true
 tap "snyk/tap"
 tap "theseal/ssh-askpass"
 tap "updatecli/updatecli"
@@ -616,6 +617,8 @@ cask "cryptomator"
 cask "crystalfetch"
 # Server and cloud storage browser
 cask "cyberduck"
+# A Tauri-based frontend for Czkawka on macOS and include bundled FFmpeg binaries
+cask "shixinhuang99/brew/czkawka-tauri-ffmpeg"
 # Disk space visualiser
 cask "daisydisk"
 # Browser for SQLite databases
