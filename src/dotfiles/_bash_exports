@@ -108,6 +108,10 @@ if [[ -d "/opt/whalebrew/bin" ]]; then
     PATH="${PATH}:/opt/whalebrew/bin"
 fi
 
+if [[ -d "${HOME}/.local/bin" ]]; then
+    PATH="${PATH}:${HOME}/.local/bin"
+fi
+
 export PATH
 
 if [ -d "${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src" ] ; then
