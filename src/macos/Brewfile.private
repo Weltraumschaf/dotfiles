@@ -606,7 +606,7 @@ cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
-cask "claude-code@latest"
+cask "claude-code"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Plain-text editor for web pages, program source codes and more
@@ -649,6 +649,8 @@ cask "figma"
 cask "firefox"
 # GIT client
 cask "fork"
+# Kext-less implementation of FUSE
+cask "fuse-t"
 # Desktop client for GitHub repositories
 cask "github"
 # Web browser
@@ -801,6 +803,8 @@ cask "tolaria"
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
+# Command-line interface for Unity
+cask "unity-cli"
 # Management tool for Unity
 cask "unity-hub"
 # Virtual machines UI using QEMU
