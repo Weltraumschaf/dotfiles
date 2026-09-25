@@ -221,3 +221,6 @@ fi
 
 echo ".bashrc loaded :-)"
 echo
+
+# Unity CLI
+[[ -f "${HOME}/.unity/env" ]] && source "${HOME}/.unity/env"
