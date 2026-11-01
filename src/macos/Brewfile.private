@@ -645,6 +645,8 @@ cask "easyfind"
 cask "element"
 # Collaborative team software
 cask "figma"
+# Tool for organising and renaming movies, TV shows, anime or music
+cask "filebot"
 # Web browser
 cask "firefox"
 # GIT client
@@ -837,6 +839,7 @@ cask "zettlr"
 cask "zoom"
 # Collect, organise, cite, and share research sources
 cask "zotero"
+mas "AdGuard Mini", id: 1440147259
 mas "Bitwarden", id: 1352778147
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Caffeinated", id: 1362171212
